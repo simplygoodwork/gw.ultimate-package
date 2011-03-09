@@ -1,0 +1,89 @@
+/*
+
+    [PROJECT] by ERSKINE DESIGN
+    VERSION 1.0
+    
+    IE 6 STYLES
+    
+*/
+
+
+
+/* @group BODY
+---------------------------------------------------------------------- */
+
+ul#nav_access { 
+    background:yellow;
+    top:-40px;
+    margin-bottom:-40px;
+}
+ul#nav_access li a.focus {
+    top:40px;
+}
+
+/* @end */
+
+
+
+/* @group BODY
+---------------------------------------------------------------------- */
+
+form div.multiselect input {
+    left:0;
+}
+
+/* @end */
+
+
+
+/* @group LAYOUT
+
+---------------------------------------------------------------------- */
+
+div#content_wrapper {
+    overflow:visible;
+    height:1px;
+}
+div#content_pri,
+div#content_sec {
+    display:inline;
+}
+
+/* @end */
+
+
+
+/* @group HEADER & BRANDING
+---------------------------------------------------------------------- */
+
+div#header {
+    overflow:visible;
+    height:1px;
+}
+
+#branding,
+form#site_search {
+    display:inline;
+}
+
+form#site_search {
+    width:300px;
+}
+
+/* @end */
+
+
+
+/* @group NAVIGATION
+---------------------------------------------------------------------- */
+
+ul#navigation_pri {
+    overflow:visible;
+    height:1px;
+    width:100%;
+}
+ul#navigation_pri li {
+    display:inline;
+}
+
+/* @end */

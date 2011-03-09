@@ -1,0 +1,331 @@
+/*
+
+    [PROJECT] by ERSKINE DESIGN
+    VERSION 1.0
+    
+    CONTENTS ----------
+    
+        1.BODY
+        2.DEFAULT STYLING
+        3.HEADINGS
+        4.LINKS
+        5.LAYOUT
+        6.HEADER & BRANDING
+        7.NAVIGATION
+        8.SITEINFO/FOOTER
+        9.GLOBAL ELEMENTS
+    
+    -------------------
+    
+    COLOURS -----------
+    
+        black #000000
+        white #FFFFFF
+    
+    -------------------
+    
+*/
+
+
+
+@import url(reset.css);
+
+
+
+/* @group 1.BODY
+---------------------------------------------------------------------- */
+
+body {
+
+}
+
+/* NAVIGATION ACCESS ---------- */
+    ul#nav_access {
+        position:relative;
+        margin:0;
+        list-style:none;
+        height:0;
+    }
+    ul#nav_access li {
+        height:0;
+    }
+    ul#nav_access li a {
+        position:absolute;
+        left:-9999px;
+        top:0;
+        z-index:9999;
+        font-size:11px;
+        font-weight:bold;
+        background:#FFFFCC;
+        border:2px solid #ddd;
+        padding:10px;
+        display:block;
+    }
+    ul#nav_access li a:focus,
+    ul#nav_access li a.focus {
+        left:0; 
+        color:#333; 
+    }
+
+/* @end */
+
+
+
+/* @group 2.DEFAULT STYLING
+---------------------------------------------------------------------- */
+
+p,
+ul,
+dl,
+ol {
+
+}
+
+ul {
+
+}
+ul li {
+
+}
+
+dl {
+     
+}
+dl dt {
+
+}
+dl dd {
+
+}
+
+ol {
+
+}
+ol li {
+
+}
+
+hr {
+
+}
+
+blockquote {
+
+}
+blockquote p {
+    
+}
+blockquote cite {
+
+}
+
+code {
+
+}
+pre {
+
+}
+pre code {
+
+}
+
+abbr {
+
+}
+abbr:hover {
+
+}
+del {
+
+}
+strong {
+
+}
+em {
+
+}
+sup {
+
+}
+sub {
+
+}
+
+/* FORMS ---------- */
+    form {
+
+    }
+    form fieldset {
+
+    }
+    form fieldset div {
+
+    }
+    label {
+
+    }
+    label em {
+
+    }
+    input,
+    textarea {
+
+    }
+    input[type="text"],
+    input[type="password"] {
+    
+    }
+    textarea {
+    
+    }
+    
+    /* SUBMIT ---------- */
+        form div.submit {
+
+        }
+        input[type="submit"] {
+
+        }
+    
+/* TABLES ---------- */
+    table {
+
+    }
+    caption {
+
+    }
+    tr {
+    
+    }
+    th,td {
+
+    }
+    th {
+
+    }
+    td {
+    
+    }
+    thead th {
+    
+    }
+    thead td {
+    
+    }
+    tbody th {
+    
+    }
+    tbody td {
+    
+    }
+    
+
+/* @end */
+
+
+
+/* @group 3.HEADINGS
+---------------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { 
+
+}
+h1 {
+
+}
+h2 { 
+
+}
+h3 { 
+
+}
+h4 { 
+
+}
+h5 { 
+
+}
+h6 { 
+
+}
+
+/* @end */
+
+
+
+/* @group 4.LINKS
+---------------------------------------------------------------------- */
+
+a {
+    
+}
+a:hover,
+a:focus {
+    
+}
+
+/* @end */
+
+
+
+/* @group 5.LAYOUT
+
+---------------------------------------------------------------------- */
+
+div#page {
+
+}
+
+div#content_wrapper {
+    
+}
+div#content_pri {
+    
+}
+div#content_sec {
+    
+}
+
+/* @end */
+
+
+
+/* @group 6.HEADER & BRANDING
+---------------------------------------------------------------------- */
+
+div#header {
+    
+}
+
+/* @end */
+
+
+
+/* @group 7.NAVIGATION
+---------------------------------------------------------------------- */
+
+ul#navigation_pri {
+    
+}
+
+/* @end */
+
+
+
+/* @group 8.SITEINFO/FOOTER
+---------------------------------------------------------------------- */
+
+div#footer {
+    
+}
+
+/* @end */
+
+
+
+/* @group 9.GLOBAL ELEMENTS
+---------------------------------------------------------------------- */
+
+
+
+/* @end */

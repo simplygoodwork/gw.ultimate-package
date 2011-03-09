@@ -1,0 +1,41 @@
+/*
+
+	AUTHOR: ERSKINE DESIGN
+	HOLDING PAGE
+	VERSION 1.1
+	
+*/
+
+
+
+body { text-shadow:rgba(0,0,0,0.01) 0 0 0; background:#eee; font-family:Helvetica, Arial, sans-serif; font-size:13px; line-height:20px; color:#333; }
+
+p,ul,dl,ol { margin:0 0 13px; }
+
+strong { font-weight:bold; }
+em { font-style:italic; }
+
+h2 { font-size:18px; margin:0 0 12px 0; font-weight:bold; color:#587faa; line-height:1.2em; } 
+
+a:link,
+a:visited { color:red; }
+a:hover,
+a:focus { color:blue; }
+
+
+
+div#user_message { width:600px; background:#fff; margin:15% auto 0 auto; box-shadow:rgba(0,0,0,0.1) 0 0 10px; -webkit-box-shadow:rgba(0,0,0,0.1) 0 0 10px; -moz-box-shadow:rgba(0,0,0,0.1) 0 0 10px; }
+
+div#branding { margin:0; padding:30px 0 0 0; }
+div#branding h1 { margin:0 0 30px 30px; }
+
+div#message_title { background:#666; padding:12px 30px; }
+div#message_title h2 { color:#fff; font-size:15px; margin:0; }
+
+div#message_content { padding:30px 30px 17px 30px; }
+
+div#message_action { background:#eee; padding:10px 15px; border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; margin:0 30px; }
+div#message_action p { margin:0; }
+div#message_action p a { font-size:14px; font-weight:bold; }
+
+
