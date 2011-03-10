@@ -6,8 +6,10 @@
     <!-- META -->
     <meta charset="UTF-8" />
     <meta name="description" content="" />
-    <meta name="author" content="Erskine Design" />
+    <meta name="author" content="" />
     <meta name="Copyright" content="" />
+    
+    <link type="text/plain" rel="author" href="/humans.txt" />
     
     <!-- TITLE -->
     <title><?php echo $page_title ?> | Site name</title>
@@ -32,6 +34,8 @@
     <link rel="shortcut icon" href="/assets/images/site/icons/favicon.png"/>
     <!-- <link rel="apple-touch-icon" href="/assets/images/site/icons/apple_touch-icon.png" /> -->
     <!-- <link rel="apple-touch-startup-image" href="/assets/images/site/icons/apple_touch-startup.png" /> -->
+    
+    
         
 </head>
 
