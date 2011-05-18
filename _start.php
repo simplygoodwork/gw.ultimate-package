@@ -50,17 +50,17 @@
     
     <div id="header">
     
-        <?php if ($section == "home") { ?>
+        <?php if ($location == "home") { ?> 
             <h1 id="branding">
                 <img src="/assets/images/site/branding.png" alt="Branding" width="300" height="38" />
             </h1>
-        <?php } else { ?>
+        <?php } else { ?> 
             <p id="branding">
                 <a href="/">
                     <img src="/assets/images/site/branding.png" alt="Branding" width="300" height="38" />
                 </a>
             </p>
-        <?php } ?>
+        <?php } ?> 
         
         <form action="" id="site_search">
             <fieldset>
@@ -77,8 +77,8 @@
     </div> <!-- // #header -->
     
     <ul id="navigation_pri">
-        <li<?php if ($section == "home") { ?> class="cur"<?php } ?>><a href="/">Home</a></li>
-        <li<?php if ($section == "section1") { ?> class="cur"<?php } ?>><a href="/section1">Section1</a></li>
-        <li<?php if ($section == "section2") { ?> class="cur"<?php } ?>><a href="/section2">Section2</a></li>
-        <li<?php if ($section == "section3") { ?> class="cur"<?php } ?>><a href="/section3">Section3</a></li>
+        <li<?php if ($location == "home") { ?> class="cur"<?php } ?>><a href="/">Home</a></li>
+        <li<?php if ($location == "section1") { ?> class="cur"<?php } ?>><a href="/section1">Section1</a></li>
+        <li<?php if ($location == "section2") { ?> class="cur"<?php } ?>><a href="/section2">Section2</a></li>
+        <li<?php if ($location == "section3") { ?> class="cur"<?php } ?>><a href="/section3">Section3</a></li>
     </ul> <!-- // #navigation_pri -->
