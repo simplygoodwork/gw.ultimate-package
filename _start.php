@@ -29,14 +29,12 @@
         docElement = this.document.documentElement;
         docElement.className = docElement.className.replace(/\bjs-disabled\b/,'') + ' js-enabled';
     </script>
-        
+    
     <!-- ICONS -->
     <link rel="shortcut icon" href="/assets/images/site/icons/favicon.png"/>
     <!-- <link rel="apple-touch-icon" href="/assets/images/site/icons/apple_touch-icon.png" /> -->
     <!-- <link rel="apple-touch-startup-image" href="/assets/images/site/icons/apple_touch-startup.png" /> -->
     
-    
-        
 </head>
 
 <body class="<?php echo $body_class ?>">
