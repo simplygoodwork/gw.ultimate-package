@@ -76,28 +76,23 @@ del {
     text-decoration:line-through;
 }
 
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-input, 
-select {
-    vertical-align:middle;
-}
-
 /* tables still need 'cellspacing="0"' in the markup */
-table {	
-	border-collapse:separate; 
-	border-spacing:0; 
+table {
+    /*border-collapse:collapse;*/
+    border-collapse:separate;
+    border-spacing:0;
 }
 caption,
 th,
 td { 
-	text-align:left; 
-	font-weight:normal; 
+    text-align:left;
+    font-weight:normal;
 }
 
 input { 
-	vertical-align:middle; 
+    vertical-align:middle;
+}
+input, 
+select {
+    vertical-align:middle;
 }
