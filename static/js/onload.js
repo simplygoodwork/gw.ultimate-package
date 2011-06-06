@@ -1,7 +1,7 @@
 // Set up our global Erskine Design Javascript object
 var EDJ = {
     debug: true,
-    STATIC_URL: '/assets/',
+    STATIC_URL: '/static/',
     is_touch: false,
     run_list: [
         'navigation',
