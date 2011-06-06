@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+
     // FORMS
     $("input[type='button']").addClass('button');
     $("input[type='checkbox']").addClass('checkbox');
@@ -9,8 +9,11 @@ $(document).ready(function(){
     $("input[type='radio']").addClass('radio');
     $("input[type='submit']").addClass('submit');
     $("input[type='text']").addClass('text');
-    
+
 });
 
     // BELATED PNG IMAGE FIXING
-    DD_belatedPNG.fix('');
+    DD_belatedPNG.fix(
+        '.selector, ' +
+        '.final_selector'
+    );
