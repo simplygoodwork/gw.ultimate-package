@@ -27,7 +27,7 @@ EDJ.on_ready = function(settings) {
     var i = 0;
     var functions_to_run = EDJ.run_list.length;
 
-    // Create the settings object
+    // Extend the settings object with any vars passed in
     $.extend(EDJ.settings, settings);
 
     // Cache the body object for use later

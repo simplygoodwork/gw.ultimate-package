@@ -8,8 +8,8 @@
 </div> <!-- // #page -->
 
 <!-- JAVASCRIPT -->
+<script src="/static/js/EDJ.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-<script src="/static/js/onload.js"></script>
 
 <!-- CALL DOC READY FUNCTIONS -->
 <script>
