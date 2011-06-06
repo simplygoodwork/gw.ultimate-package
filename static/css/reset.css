@@ -30,12 +30,12 @@ html {
     */
 }
 
-ol,ul { 
-	list-style:none; 
-}
-
 article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,img { 
     display:block;
+}
+
+ol,ul { 
+    list-style:none; 
 }
 
 blockquote,q {
@@ -48,6 +48,14 @@ q:before,
 q:after {
     content:'';
     content:none;
+}
+
+strong {
+    font-weight:bold;
+}
+
+em {
+    font-style:italic;
 }
 
 a {
