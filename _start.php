@@ -15,14 +15,14 @@
     <title><?php echo $page_title ?> | Site name</title>
     
     <!-- CSS -->
-    <link href="/assets/css/screen.css" rel="stylesheet" media="screen" />
+    <link href="/static/css/screen.css" rel="stylesheet" media="screen" />
     
-    <!--[if IE 8]><link href="/assets/css/screen_ie8.css" rel="stylesheet" media="screen" /><![endif]-->
-    <!--[if lte IE 7]><link href="/assets/css/screen_ie.css" rel="stylesheet" media="screen" /><![endif]-->
-    <!--[if IE 7]><link href="/assets/css/screen_ie7.css" rel="stylesheet" media="screen" /><![endif]-->
-    <!--[if IE 6]><link href="/assets/css/screen_ie6.css" rel="stylesheet" media="screen" /><![endif]-->
+    <!--[if IE 8]><link href="/static/css/screen_ie8.css" rel="stylesheet" media="screen" /><![endif]-->
+    <!--[if lte IE 7]><link href="/static/css/screen_ie.css" rel="stylesheet" media="screen" /><![endif]-->
+    <!--[if IE 7]><link href="/static/css/screen_ie7.css" rel="stylesheet" media="screen" /><![endif]-->
+    <!--[if IE 6]><link href="/static/css/screen_ie6.css" rel="stylesheet" media="screen" /><![endif]-->
         
-    <link href="/assets/css/print.css" rel="stylesheet" media="print" />
+    <link href="/static/css/print.css" rel="stylesheet" media="print" />
     
     <!-- ALLOW JAVASCRIPT STYLING -->
     <script>
@@ -31,9 +31,9 @@
     </script>
     
     <!-- ICONS -->
-    <link rel="shortcut icon" href="/assets/images/site/icons/favicon.png"/>
-    <!-- <link rel="apple-touch-icon" href="/assets/images/site/icons/apple_touch-icon.png" /> -->
-    <!-- <link rel="apple-touch-startup-image" href="/assets/images/site/icons/apple_touch-startup.png" /> -->
+    <link rel="shortcut icon" href="/static/images/site/icons/favicon.png"/>
+    <!-- <link rel="apple-touch-icon" href="/static/images/site/icons/apple_touch-icon.png" /> -->
+    <!-- <link rel="apple-touch-startup-image" href="/static/images/site/icons/apple_touch-startup.png" /> -->
     
 </head>
 
@@ -50,12 +50,12 @@
     
         <?php if ($location == "home") { ?> 
             <h1 id="branding">
-                <img src="/assets/images/site/branding.png" alt="Branding" width="300" height="38" />
+                <img src="/static/images/site/branding.png" alt="Branding" width="300" height="38" />
             </h1>
         <?php } else { ?> 
             <p id="branding">
                 <a href="/">
-                    <img src="/assets/images/site/branding.png" alt="Branding" width="300" height="38" />
+                    <img src="/static/images/site/branding.png" alt="Branding" width="300" height="38" />
                 </a>
             </p>
         <?php } ?> 

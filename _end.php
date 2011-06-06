@@ -9,10 +9,22 @@
 
 <!-- JAVASCRIPT -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-<script src="/assets/js/onload.js"></script>
+<script src="/static/js/onload.js"></script>
+
+<!-- CALL DOC READY FUNCTIONS -->
+<script>
+$(document).ready(function() {
+    var settings = {
+        debug: true,
+        STATIC_URL: '/schwing/'
+    };
+    EDJ.on_ready(settings);
+});
+</script>
+
 <!--[if IE 6]>
-    <script src="/assets/js/ie6/DD_belatedPNG_0.0.8a.js"></script>
-    <script src="/assets/js/ie6/ie6.js"></script>
+    <script src="/static/js/ie6/DD_belatedPNG_0.0.8a.js"></script>
+    <script src="/static/js/ie6/ie6.js"></script>
 <![endif]-->
 
 </body>

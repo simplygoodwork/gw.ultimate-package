@@ -1,7 +1,9 @@
 // Set up our global Erskine Design Javascript object
 var EDJ = {
-    debug: true,
-    STATIC_URL: '/static/',
+    settings: {
+        debug: true,
+        STATIC_URL: '/static/'
+    },
     is_touch: false,
     run_list: [
         'navigation',
@@ -17,12 +19,17 @@ var EDJ = {
  * Used on: all pages
  *
  * @namespace EDJ
+ * @param settings
  * @class on_ready
  * ---------------------------------------------------------------------------------------------------
 */
-EDJ.on_ready = function() {
+EDJ.on_ready = function(settings) {
     var i = 0;
     var functions_to_run = EDJ.run_list.length;
+
+    // Create the settings object
+    $.extend(EDJ.settings, settings);
+    console.log(EDJ.settings);
 
     // Cache the body object for use later
     EDJ.$body = $('body');
@@ -78,7 +85,7 @@ EDJ.is_touch_device = function() {
  * Log
  *
  * Will log any arguments (arrays, objects, strings etc.) to the console
- * if it exists, and EDJ.debug is set to true
+ * if it exists, and EDJ.settings.debug is set to true
  *
  * Used on: all pages
  *
@@ -88,7 +95,7 @@ EDJ.is_touch_device = function() {
  * ---------------------------------------------------------------------------------------------------
 */
 EDJ.log = function() {
-    if (EDJ.debug === true && typeof(console) !== 'undefined') {
+    if (EDJ.settings.debug === true && typeof(console) !== 'undefined') {
         console.log('[EDJ] ' + Array.prototype.join.call(arguments, ' '));
     }
 };
