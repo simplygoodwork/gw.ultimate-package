@@ -29,7 +29,6 @@ EDJ.on_ready = function(settings) {
 
     // Create the settings object
     $.extend(EDJ.settings, settings);
-    console.log(EDJ.settings);
 
     // Cache the body object for use later
     EDJ.$body = $('body');
