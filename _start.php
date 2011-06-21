@@ -1,82 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" class="js-disabled">
 
-<head>
+    <head>
     
-    <!-- META -->
-    <meta charset="UTF-8" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta name="Copyright" content="" />
+        <!-- METADATA -->
+        <meta charset="UTF-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="Erskine Design" />
+        <link rel="author" type="text/plain" href="/humans.txt" />
+        <title><?php echo $page_title ?> | Site name</title>
     
-    <link type="text/plain" rel="author" href="/humans.txt" />
+        <!-- CSS -->
+        <link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/screen.css" />
+        <link rel="stylesheet" media="print" type="text/css" href="/static/css/print.css" />
     
-    <!-- TITLE -->
-    <title><?php echo $page_title ?> | Site name</title>
+        <!-- INTERNET EXPLORER CSS -->
+        <!--[if lte IE 7]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie.css" /><![endif]-->
+        <!--[if IE 7]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie7.css" /><![endif]-->
+        <!--[if IE 6]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie6.css" /><![endif]-->
     
-    <!-- CSS -->
-    <link href="/static/css/screen.css" rel="stylesheet" media="screen" />
+        <!-- ICONS -->
+        <link rel="icon" type="image/x-icon" href="/static/images/site/icons/favicon.ico" />
     
-    <!--[if IE 8]><link href="/static/css/screen_ie8.css" rel="stylesheet" media="screen" /><![endif]-->
-    <!--[if lte IE 7]><link href="/static/css/screen_ie.css" rel="stylesheet" media="screen" /><![endif]-->
-    <!--[if IE 7]><link href="/static/css/screen_ie7.css" rel="stylesheet" media="screen" /><![endif]-->
-    <!--[if IE 6]><link href="/static/css/screen_ie6.css" rel="stylesheet" media="screen" /><![endif]-->
-        
-    <link href="/static/css/print.css" rel="stylesheet" media="print" />
+        <!-- RSS -->
+        <!-- <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss/feed.xml" /> -->
     
-    <!-- ALLOW JAVASCRIPT STYLING -->
-    <script>
-        docElement = this.document.documentElement;
-        docElement.className = docElement.className.replace(/\bjs-disabled\b/,'') + ' js-enabled';
-    </script>
+        <!-- ALLOW JAVASCRIPT STYLING -->
+        <script>
+            docElement = this.document.documentElement;
+            docElement.className = docElement.className.replace(/\bjs-disabled\b/,'') + ' js-enabled';
+        </script>
     
-    <!-- ICONS -->
-    <link rel="shortcut icon" href="/static/images/site/icons/favicon.png"/>
-    <!-- <link rel="apple-touch-icon" href="/static/images/site/icons/apple_touch-icon.png" /> -->
-    <!-- <link rel="apple-touch-startup-image" href="/static/images/site/icons/apple_touch-startup.png" /> -->
-    
-</head>
+    </head>
 
-<body class="<?php echo $body_class ?>">
+    <body class="<?php echo $body_class ?>">
 
-<ul id="nav_access">
-    <li><a href="#navigation_pri">Skip to navigation</a></li>
-    <li><a href="#content_wrapper">Skip to content</a></li>
-</ul>
+        <ul id="nav_access">
+            <li><a href="#navigation_pri">Skip to navigation</a></li>
+            <li><a href="#content_wrapper">Skip to content</a></li>
+        </ul> <!-- // #nav_access -->
 
-<div id="page">
+        <div id="page">
     
-    <div id="header">
+            <div id="header">
     
-        <?php if ($location == "home") { ?> 
-            <h1 id="branding">
-                <img src="/static/images/site/branding.png" alt="Branding" width="300" height="38" />
-            </h1>
-        <?php } else { ?> 
-            <p id="branding">
-                <a href="/">
-                    <img src="/static/images/site/branding.png" alt="Branding" width="300" height="38" />
-                </a>
-            </p>
-        <?php } ?> 
-        
-        <form action="" id="site_search">
-            <fieldset>
-                <div>
-                    <label for="site_search_keywords">Search</label>
-                    <input type="text" id="site_search_keywords" size="20" placeholder="Keywords" title="Keywords" />
-                </div>
-                <div class="submit">
-                    <input type="submit" value="Go" />
-                </div>
-            </fieldset>
-        </form>
+                <?php if ($location == "home") { ?>
+                    <h1 id="branding">
+                        <img src="/static/images/dev/dev.png" alt="" width="250" height="50" />
+                    </h1> <!-- // #branding -->
+                <?php } else { ?>
+                    <p id="branding">
+                        <a href="/">
+                            <img src="/static/images/dev/dev.png" alt="" width="250" height="50" />
+                        </a>
+                    </p> <!-- // #branding -->
+                <?php } ?>
     
-    </div> <!-- // #header -->
+            </div> <!-- // #header -->
     
-    <ul id="navigation_pri">
-        <li<?php if ($location == "home") { ?> class="cur"<?php } ?>><a href="/">Home</a></li>
-        <li<?php if ($location == "section1") { ?> class="cur"<?php } ?>><a href="/section1">Section1</a></li>
-        <li<?php if ($location == "section2") { ?> class="cur"<?php } ?>><a href="/section2">Section2</a></li>
-        <li<?php if ($location == "section3") { ?> class="cur"<?php } ?>><a href="/section3">Section3</a></li>
-    </ul> <!-- // #navigation_pri -->
+            <ul id="navigation_pri">
+                <li<?php if ($location == "home") { ?> class="cur"<?php } ?>><a href="/">Home</a></li>
+                <li<?php if ($location == "section_1") { ?> class="cur"<?php } ?>><a href="/section1">Section 1</a></li>
+                <li<?php if ($location == "section_2") { ?> class="cur"<?php } ?>><a href="/section2">Section 2</a></li>
+                <li<?php if ($location == "section_3") { ?> class="cur"<?php } ?>><a href="/section3">Section 3</a></li>
+            </ul> <!-- // #navigation_pri -->
+    
+            <form action="#" id="site_search">
+                <fieldset>
+                    <div>
+                        <label for="site_search_keywords">Search</label>
+                        <input type="search" id="site_search_keywords" size="20" placeholder="Keywords" title="Keywords" />
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Go" />
+                    </div>
+                </fieldset>
+            </form> <!-- // #site_search -->
+    

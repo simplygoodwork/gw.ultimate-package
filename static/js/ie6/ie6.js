@@ -12,8 +12,8 @@ $(document).ready(function(){
 
 });
 
-    // BELATED PNG IMAGE FIXING
-    DD_belatedPNG.fix(
-        '.selector, ' +
-        '.final_selector'
-    );
+// BELATED PNG IMAGE FIXING
+DD_belatedPNG.fix(
+    '.selector, ' +
+    '.final_selector'
+);
