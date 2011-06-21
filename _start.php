@@ -15,7 +15,8 @@
         <link rel="stylesheet" media="print" type="text/css" href="/static/css/print.css" />
     
         <!-- INTERNET EXPLORER CSS -->
-        <!--[if lte IE 7]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie.css" /><![endif]-->
+        <!--[if IE 8]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie8.css" /><![endif]-->
         <!--[if IE 7]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie7.css" /><![endif]-->
         <!--[if IE 6]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie6.css" /><![endif]-->
     
