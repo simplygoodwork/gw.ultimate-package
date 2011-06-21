@@ -1,26 +1,31 @@
 /*
 
-    [PROJECT] by ERSKINE DESIGN
-    VERSION 1.0
+    [PROJECT NAME]
+    
+    @version: 1.0
+    @author: Erskine Design
     
     CONTENTS ----------
     
-        1.BODY
-        2.DEFAULT STYLING
-        3.HEADINGS
-        4.LINKS
-        5.LAYOUT
-        6.HEADER & BRANDING
-        7.NAVIGATION
-        8.SITEINFO/FOOTER
-        9.GLOBAL ELEMENTS
+        1. BODY
+            1.1. ACCESSIBILITY NAVIGATION
+        2. DEFAULT STYLING
+            2.1. FORMS
+            2.2. TABLES
+        3. HEADLINES
+        4. LINKS
+        5. LAYOUT
+            5.1. HEADER & BRANDING
+            5.2. FOOTER
+        6. NAVIGATION
+        7. GLOBAL ELEMENTS
     
     -------------------
     
     COLOURS -----------
     
-        black #000000
-        white #FFFFFF
+        black: #000000
+        white: #FFFFFF
     
     -------------------
     
@@ -32,78 +37,77 @@
 
 
 
-/* @group 1.BODY
----------------------------------------------------------------------- */
+/* @group 1. BODY -------------------- */
 
 body {
 
 }
 
-/* NAVIGATION ACCESS ---------- */
+
+
+    /* @group 1.1. ACCESSIBILITY NAVIGATION ---------- */
+    
     ul#nav_access {
         position:relative;
         margin:0;
-        list-style:none;
-        height:0;
     }
-    ul#nav_access li {
-        height:0;
-    }
-    ul#nav_access li a {
-        position:absolute;
-        left:-9999px;
-        top:0;
-        z-index:9999;
-        font-size:11px;
-        font-weight:bold;
-        background:#FFFFCC;
-        border:2px solid #ddd;
-        padding:10px;
-        display:block;
-    }
-    ul#nav_access li a:focus,
-    ul#nav_access li a.focus {
-        left:0; 
-        color:#333; 
-    }
-
+        ul#nav_access li {
+            height:0;
+        }
+            ul#nav_access li a {
+                position:absolute;
+                left:-9999px;
+                top:0;
+                font-size:11px;
+                font-weight:bold;
+                background:#FFFFCC;
+                border:2px solid #ddd;
+                padding:10px;
+                display:block;
+            }
+                ul#nav_access li a:focus,
+                ul#nav_access li a.focus {
+                    left:0; 
+                    color:#333; 
+                }
+    
+    /* @end */
+    
+    
+    
 /* @end */
 
 
 
-/* @group 2.DEFAULT STYLING
----------------------------------------------------------------------- */
+/* @group 2. DEFAULT STYLING -------------------- */
 
-p,
-ul,
-dl,
-ol {
+p, ul, dl, ol {
 
 }
 
 ul {
 
 }
-ul li {
+    ul li {
 
-}
+    }
 
 dl {
      
 }
-dl dt {
+    dl dt {
 
-}
-dl dd {
+    }
+    dl dd {
 
-}
+    }
 
 ol {
 
 }
-ol li {
+    ol li {
 
-}
+    }
 
 hr {
 
@@ -112,74 +116,89 @@ hr {
 blockquote {
 
 }
-blockquote p {
+    blockquote p {
     
-}
-blockquote cite {
+    }
+    blockquote cite {
 
-}
+    }
 
+code,
+pre {
+    font-family:monospace;
+}
 code {
-
+    
 }
 pre {
 
 }
-pre code {
+    pre code {
 
-}
+    }
 
 abbr {
 
 }
-abbr:hover {
+    abbr:hover {
+        cursor:help;
+    }
 
-}
 del {
-
+    text-decoration:line-through;
 }
+
 strong {
-
+    font-weight:bold;
 }
+
 em {
-
+    font-style:italic;
 }
+
 sup {
-
+    vertical-align:super;
 }
+
 sub {
-
+    vertical-align:sub;
 }
 
-/* FORMS ---------- */
+
+
+    /* @group 2.1. FORMS ---------- */
+
     form {
 
     }
-    form fieldset {
+        form fieldset {
 
-    }
-    form fieldset div {
+        }
+        form fieldset div {
 
-    }
+        }
+        
     label {
 
     }
-    label em {
+        label em {
+
+        }
+        
+    textarea {
 
     }
+    
     input,
     textarea {
 
     }
-    input[type="text"],
-    input[type="password"] {
+        input[type="text"],
+        input[type="password"] {
     
-    }
-    textarea {
+        }
     
-    }
-    
-    /* SUBMIT ---------- */
+        /* SUBMIT ---------- */
         form div.submit {
 
         }
@@ -187,17 +206,24 @@ sub {
 
         }
     
-/* TABLES ---------- */
+    /* @end */
+    
+
+
+    /* @group 2.2. TABLES ---------- */
     table {
 
     }
     caption {
 
     }
+    legend {
+        
+    }
     tr {
     
     }
-    th,td {
+    th, td {
 
     }
     th {
@@ -206,27 +232,30 @@ sub {
     td {
     
     }
-    thead th {
+        thead th {
     
-    }
-    thead td {
+        }
+        thead td {
     
-    }
-    tbody th {
+        }
+        tbody th {
     
-    }
-    tbody td {
+        }
+        tbody td {
     
-    }
+        }
 
+    /* @end */
+    
+    
+    
 /* @end */
 
 
 
-/* @group 3.HEADINGS
----------------------------------------------------------------------- */
+/* @group 3. HEADLINES -------------------- */
 
-h1,h2,h3,h4,h5,h6 { 
+h1, h2, h3, h4, h5, h6 { 
 
 }
 h1 {
@@ -252,24 +281,22 @@ h6 {
 
 
 
-/* @group 4.LINKS
----------------------------------------------------------------------- */
+/* @group 4. LINKS -------------------- */
+
 
 a {
     
 }
-a:hover,
-a:focus {
+    a:hover,
+    a:focus {
     
-}
+    }
 
 /* @end */
 
 
 
-/* @group 5.LAYOUT
-
----------------------------------------------------------------------- */
+/* @group 5. LAYOUT -------------------- */
 
 div#page {
 
@@ -278,53 +305,66 @@ div#page {
 div#content_wrapper {
     
 }
-div#content_pri {
-    
-}
-div#content_sec {
-    
-}
 
+    div#content_pri {
+    
+    }
+    
+    div#content_sec {
+    
+    }
+    
+    
+    
+    /* @group 5.1. HEADER & BRANDING -------------------- */
+
+    div#header {
+
+    }
+
+    /* @end */
+    
+    
+    
+    /* @group 5.2. FOOTER -------------------- */
+
+    div#footer {
+
+    }
+
+    /* @end */
+    
+    
+    
 /* @end */
 
 
 
-/* @group 6.HEADER & BRANDING
----------------------------------------------------------------------- */
+/* @group 6. NAVIGATION -------------------- */
 
-div#header {
-    
-}
-
-/* @end */
-
-
-
-/* @group 7.NAVIGATION
----------------------------------------------------------------------- */
 
 ul#navigation_pri {
     
 }
+    ul#navigation_pri li {
+        
+    }
+        ul#navigation_pri li a {
+            
+        }
+            ul#navigation_pri li a:hover,
+            ul#navigation_pri li a:focus {
+                
+            }
 
 /* @end */
 
 
 
-/* @group 8.SITEINFO/FOOTER
----------------------------------------------------------------------- */
-
-div#footer {
-    
-}
-
-/* @end */
-
-
-
-/* @group 9.GLOBAL ELEMENTS
----------------------------------------------------------------------- */
+/* @group 7. GLOBAL ELEMENTS -------------------- */
 
 
 
 /* @end */
+
+

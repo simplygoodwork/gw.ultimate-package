@@ -1,19 +1,23 @@
 /*
 
-    [PROJECT] by ERSKINE DESIGN
-    VERSION 1.0
+    SCREEN PROTOTYPE STYLESHEET
+    For rapid prototyping of projects
+    
+    @version: 1.0
+    @author: Erskine Design
     
     CONTENTS ----------
     
-        BODY
-        DEFAULT STYLING
-        HEADINGS
-        LINKS
-        LAYOUT
-        HEADER & BRANDING
-        NAVIGATION
-        SITEINFO/FOOTER
-        GLOBAL ELEMENTS
+        1. BODY
+            1.1. ACCESSIBILITY NAVIGATION
+        2. DEFAULT STYLING
+        3. HEADINGS
+        4. LINKS
+        5. LAYOUT
+        6. HEADER & BRANDING
+        7. NAVIGATION
+        8. SITEINFO/FOOTER
+        9. GLOBAL ELEMENTS
     
     -------------------
     
@@ -29,11 +33,10 @@
 
 
 @import url(reset.css);
-@import url(components.css);
 
 
 
-/* @group BODY
+/* @group 1. BODY
 ---------------------------------------------------------------------- */
 
 body {
@@ -44,12 +47,10 @@ body {
     background:#ddd;
 }
 
-/* NAVIGATION ACCESS ---------- */
+    /* @group 1.1. ACCESSIBILITY NAVIGATION ---------- */
     ul#nav_access {
         position:relative;
         margin:0;
-        list-style:none;
-        height:0;
     }
     ul#nav_access li {
         height:0;
@@ -58,7 +59,6 @@ body {
         position:absolute;
         left:-9999px;
         top:0;
-        z-index:9999;
         font-size:11px;
         font-weight:bold;
         background:#FFFFCC;
@@ -76,7 +76,7 @@ body {
 
 
 
-/* @group DEFAULT STYLING
+/* @group 2.DEFAULT STYLING
 ---------------------------------------------------------------------- */
 
 p,
@@ -246,8 +246,6 @@ sub {
             font-weight:normal;
             float:none;
             margin:0;
-            cursor:pointer;
-            display:inline-block;
         }
         form fieldset div ul li input {
             position:absolute;
@@ -266,7 +264,7 @@ sub {
             margin-bottom:1em;
             border:0;
         }
-        div.message.failure {
+        div.message.error {
             background:#ffcccc;
         }
         div.message.success {
@@ -327,11 +325,12 @@ sub {
     
     }
     
+
 /* @end */
 
 
 
-/* @group HEADINGS
+/* @group 3.HEADINGS
 ---------------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6 { 
@@ -363,7 +362,7 @@ h6 {
 
 
 
-/* @group LINKS
+/* @group 4.LINKS
 ---------------------------------------------------------------------- */
 
 a {
@@ -378,103 +377,67 @@ a:focus {
 
 
 
-/* @group LAYOUT
+/* @group 5.LAYOUT
 
 ---------------------------------------------------------------------- */
 
 div#page {
-    width:980px;
+    width:940px;
+    padding:20px;
     margin:0 auto;
     background:#fff;
 }
 
 div#content_wrapper {
-    overflow:hidden;
+    
 }
 div#content_pri {
-    width:63.265%;
-    margin-left:2.041%;
-    float:left;
+    
 }
 div#content_sec {
-    width:30.612%;
-    margin-right:2.041%;
-    float:right;
+    
 }
 
 /* @end */
 
 
 
-/* @group HEADER & BRANDING
+/* @group 6.HEADER & BRANDING
 ---------------------------------------------------------------------- */
 
 div#header {
-    overflow:hidden;
-}
-
-#branding {
-    width:300px;
-    height:38px;
-    margin:2.041%;
-    float:left;
-}
-
-form#site_search {
-    float:right;
-    margin:20px 2.041%;
-    overflow:hidden;
-}
-form#site_search fieldset {
-    margin:0;
-}
-form#site_search div {
-    border:0;
-    padding:0;
-    float:left;
-}
-form#site_search label {
-    width:auto;
-    left:0;
-    margin:0;
+    
 }
 
 /* @end */
 
 
 
-/* @group NAVIGATION
+/* @group 7.NAVIGATION
 ---------------------------------------------------------------------- */
 
 ul#navigation_pri {
-    background:#ccc;
-    list-style:none;
-    overflow:hidden;
-}
-ul#navigation_pri li {
-    margin:0;
-    float:left;
-}
-ul#navigation_pri li a {
-    display:block;
-    padding:1em;
-}
-ul#navigation_pri li a:hover,
-ul#navigation_pri li a:focus {
-    background:#999;
+    
 }
 
 /* @end */
 
 
 
-/* @group SITEINFO/FOOTER
+/* @group 8.SITEINFO/FOOTER
 ---------------------------------------------------------------------- */
 
 div#footer {
-    background:#ccc;
-    padding:2.041%;
-    margin:30px 0 0 0;
+    
 }
+
+/* @end */
+
+
+
+/* @group 9.GLOBAL ELEMENTS
+---------------------------------------------------------------------- */
+
+
 
 /* @end */
