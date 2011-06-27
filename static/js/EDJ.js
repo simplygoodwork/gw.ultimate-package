@@ -71,12 +71,12 @@ EDJ.on_ready = function(settings) {
  * ---------------------------------------------------------------------------------------------------
 */
 EDJ.is_touch_device = function() {
-  try {
-    document.createEvent("TouchEvent");
-    return true;
-  } catch (e) {
-    return false;
-  }
+    try {
+        document.createEvent("TouchEvent");
+        return true;
+    } catch (e) {
+        return false;
+    }
 }
 
 
