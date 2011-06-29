@@ -1,12 +1,12 @@
-/**
+/*
 
- HTML5 & 4 reset stylesheet
- Adapted from YUI & HTML5 Doctor
- v1.0
+    HTML5 & 4 reset stylesheet
+    Adapted from YUI & HTML5 Doctor
+    
+    @version: 1.0
+    @author: Erskine Design
  
- @author: Erskine Design
- 
-**/
+*/
 
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,img,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,hgroup,menu,nav,summary,time,mark,audio,video,header,footer { 
@@ -21,7 +21,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,img
     background:transparent;
 }
 
-html { 
+html {
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
     /*
@@ -30,21 +30,21 @@ html {
     */
 }
 
-article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,img { 
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,img {
     display:block;
 }
 
-ol,ul { 
-    list-style:none; 
+ol,ul {
+    list-style:none;
 }
 
 blockquote,q {
     quotes:none;
 }
 
-blockquote:before, 
+blockquote:before,
 blockquote:after,
-q:before, 
+q:before,
 q:after {
     content:'';
     content:none;
@@ -68,13 +68,13 @@ a {
 }
 
 ins {
-    background-color:#ff9;
+    background-color:#FF9;
     color:#000;
     text-decoration:none;
 }
 
 mark {
-    background-color:#ff9;
+    background-color:#FF9;
     color:#000; 
     font-style:italic;
     font-weight:bold;
@@ -92,15 +92,15 @@ table {
 }
 caption,
 th,
-td { 
+td {
     text-align:left;
     font-weight:normal;
 }
 
-input { 
+input {
     vertical-align:middle;
 }
-input, 
+input,
 select {
     vertical-align:middle;
 }

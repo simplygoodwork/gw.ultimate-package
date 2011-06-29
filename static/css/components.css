@@ -3,84 +3,114 @@
     COMPONENTS LIBRARY
     For usage with screen_prototype.css
     
+    @version: 1.0
+    @author: Erskine Design
+    
+    CONTENTS ----------
+    
+        1. BLOCK
+            1.1 BLOCK FORM
+        2. ITEM LISTING
+        3. CALL TO ACTION BUTTON
+    
+    -------------------
+    
 */
 
 
 
-/* BLOCKS */
-    div.block {
-        background:#ddd;
-        padding:20px 20px 4px 20px;
-        margin:0 0 20px 0;
-    }
+/* @group 1. BLOCK -------------------- */
+
+div.block {
+    background:#ddd;
+    padding:20px 20px 4px 20px;
+    margin:0 0 20px 0;
+}
+
+    /* @group 1.1. BLOCK FORM ---------- */
     
-    /* FORMS */
-        div.block form {
-            margin:0;
-            font-size:0.9em;
-            line-height:1.3em;
-        }
-        div.block form fieldset {
-            margin:0;
-        }
-        div.block form fieldset div {
-            padding:10px 0;
-            border-color:#999;
-        }
-        div.block label {
-            float:none;
-            left:0;
-            margin:0 0 5px 0;
-            width:auto;
-        }
-        div.block input[type="text"],
-        div.block textarea {
-            width:98%;
-            padding:1%;
-            margin:0;
-        }
-        div.block form div.multiselect input {
-            position:absolute;
-            left:0;
-            top:1em;
-        }
-        div.block form div.submit {
-            padding:10px 0;
-            text-align:right;
-        }
-        
-    
-/* ITEM LISTING */
-    ul.item_listing {
-        list-style:none;
-        border-bottom:1px dotted #999;
-    }
-    ul.item_listing li {
+    div.block form {
         margin:0;
-        border-top:1px dotted #999;
+        font-size:0.9em;
+        line-height:1.3em;
     }
-    ul.item_listing li a {
-        display:block;
-        padding:0.25em 0.5em;
+    div.block form fieldset {
+        margin:0;
     }
-    ul.item_listing li a:hover,
-    ul.item_listing li a:focus {
-        background:#ddd;
+    div.block form fieldset div {
+        padding:10px 0;
+        border-color:#999;
+    }
+    div.block label {
+        float:none;
+        left:0;
+        margin:0 0 5px 0;
+        width:auto;
+    }
+    div.block input[type="text"],
+    div.block textarea {
+        width:98%;
+        padding:1%;
+        margin:0;
+    }
+    div.block form div.multiselect input {
+        position:absolute;
+        left:0;
+        top:1em;
+    }
+    div.block form div.submit {
+        padding:10px 0;
+        text-align:right;
     }
     
+    /* @end */
     
-/* CALL TO ACTION BUTTON */
-    .cta_button a {
-        font-weight:bold;
-        font-size:1.5em;
-        display:block;
-        background:#666;
-        color:#fff;
-        text-align:center;
-        padding:0.5em;
-        line-height:1.2em;
-    }
-    .cta_button a:hover,
-    .cta_button a:focus {
-        background:#333;
-    }
+    
+    
+/* @end */
+
+
+
+/* @group 2. ITEM LISTING -------------------- */
+
+ul.item_listing {
+    list-style:none;
+    border-bottom:1px dotted #999;
+}
+ul.item_listing li {
+    margin:0;
+    border-top:1px dotted #999;
+}
+ul.item_listing li a {
+    display:block;
+    padding:0.25em 0.5em;
+}
+ul.item_listing li a:hover,
+ul.item_listing li a:focus {
+    background:#ddd;
+}
+
+/* @end */
+
+
+
+/* @group 3. CALL TO ACTION BUTTON -------------------- */
+
+.cta_button a {
+    font-weight:bold;
+    font-size:1.5em;
+    display:block;
+    background:#666;
+    color:#fff;
+    text-align:center;
+    padding:0.5em;
+    line-height:1.2em;
+}
+.cta_button a:hover,
+.cta_button a:focus {
+    background:#333;
+}
+
+/* @end */
+
+
