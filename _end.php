@@ -1,6 +1,6 @@
         <div id="footer">
         
-            <p class="copyright">&copy; <?php echo date('Y'); ?> Site name</p>
+            <p class="copyright">&copy; <?php echo date('Y') ?> Site name</p>
             <p class="credit">Site by <a href="http://erskinedesign.com">Erskine Design</a></p>
         
         </div> <!-- // #footer -->

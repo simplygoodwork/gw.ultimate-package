@@ -67,8 +67,8 @@ body {
             }
                 ul#nav_access li a:focus,
                 ul#nav_access li a.focus {
-                    left:0; 
-                    color:#333; 
+                    left:0;
+                    color:#333;
                 }
     
     /* @end */
@@ -86,41 +86,41 @@ p, ul, dl, ol {
 }
 
 ul {
-
+    
 }
     ul li {
-
+        
     }
 
 dl {
-     
+    
 }
     dl dt {
-
+        
     }
     dl dd {
-
+        
     }
 
 ol {
-
+    
 }
     ol li {
-
+        
     }
 
 hr {
-
+    
 }
 
 blockquote {
-
+    
 }
     blockquote p {
-    
+        
     }
     blockquote cite {
-
+        
     }
 
 code,
@@ -131,14 +131,14 @@ code {
     
 }
 pre {
-
+    
 }
     pre code {
-
+        
     }
 
 abbr {
-
+    
 }
     abbr:hover {
         cursor:help;
@@ -167,84 +167,85 @@ sub {
 
 
     /* @group 2.1. FORMS ---------- */
-
+    
     form {
-
+        
     }
         form fieldset {
-
+            
         }
         form fieldset div {
-
+            
         }
-        
+    
     label {
-
+        
     }
         label em {
-
+            
         }
-        
+    
     textarea {
-
+        
     }
     
     input,
     textarea {
-
+        
     }
         input[type="text"],
         input[type="password"] {
-    
+            
         }
-    
+        
         /* SUBMIT ---------- */
         form div.submit {
-
+            
         }
         input[type="submit"] {
-
+            
         }
     
     /* @end */
     
-
-
+    
+    
     /* @group 2.2. TABLES ---------- */
+    
     table {
-
+        
     }
     caption {
-
+        
     }
     legend {
         
     }
     tr {
-    
+        
     }
     th, td {
-
+        
     }
     th {
-
+        
     }
     td {
-    
+        
     }
         thead th {
-    
+            
         }
         thead td {
-    
+            
         }
         tbody th {
-    
+            
         }
         tbody td {
-    
+            
         }
-
+    
     /* @end */
     
     
@@ -255,26 +256,26 @@ sub {
 
 /* @group 3. HEADLINES -------------------- */
 
-h1, h2, h3, h4, h5, h6 { 
-
+h1, h2, h3, h4, h5, h6 {
+    
 }
 h1 {
-
+    
 }
-h2 { 
-
+h2 {
+    
 }
-h3 { 
-
+h3 {
+    
 }
-h4 { 
-
+h4 {
+    
 }
-h5 { 
-
+h5 {
+    
 }
-h6 { 
-
+h6 {
+    
 }
 
 /* @end */
@@ -283,13 +284,12 @@ h6 {
 
 /* @group 4. LINKS -------------------- */
 
-
 a {
     
 }
     a:hover,
     a:focus {
-    
+        
     }
 
 /* @end */
@@ -299,7 +299,7 @@ a {
 /* @group 5. LAYOUT -------------------- */
 
 div#page {
-
+    
 }
 
 div#content_wrapper {
@@ -307,31 +307,31 @@ div#content_wrapper {
 }
 
     div#content_pri {
-    
+        
     }
     
     div#content_sec {
-    
+        
     }
     
     
     
     /* @group 5.1. HEADER & BRANDING -------------------- */
-
+    
     div#header {
-
+        
     }
-
+    
     /* @end */
     
     
     
     /* @group 5.2. FOOTER -------------------- */
-
+    
     div#footer {
-
+        
     }
-
+    
     /* @end */
     
     
@@ -341,7 +341,6 @@ div#content_wrapper {
 
 
 /* @group 6. NAVIGATION -------------------- */
-
 
 ul#navigation_pri {
     
