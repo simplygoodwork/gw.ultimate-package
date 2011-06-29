@@ -2,9 +2,23 @@
 
     PRINT STYLESHEET
     
+    @version: 1.0
+    @author: Erskine Design
+    
+    CONTENTS ----------
+    
+        - BODY
+        - HEADLINES
+        - LINKS
+        - FOOTER
+    
+    -------------------
+ 
 */
 
 
+
+/* @group BODY -------------------- */
 
 body {
     font-size:16px;
@@ -14,16 +28,17 @@ body {
     margin:0;
 }
 
-/* DISPLAY NONE */
-form, 
-.pagination {
-    display:none;
-}
+    /* DISPLAY NONE */
+    form,
+    .pagination {
+        display:none;
+    }
+
+/* @end */
 
 
 
-/* @group HEADINGS
----------------------------------------------------------------------- */
+/* @group HEADLINES -------------------- */
 
 h1,h2,h3,h4 { 
     font-weight:normal;
@@ -34,17 +49,15 @@ h1 {
     font-size:1.875em;
     line-height:1.1;
 }
-
-h2 { 
+h2 {
     font-size:1.25em;
     line-height:1.25em;
     margin-bottom:0.75em;
 }
-
-h3 { 
+h3 {
     font-size:1.125em;
 }
-h4 { 
+h4 {
     font-size:0.938em;
     text-transform:uppercase;
     font-style:italic;
@@ -54,8 +67,7 @@ h4 {
 
 
 
-/* @group LINKS
----------------------------------------------------------------------- */
+/* @group LINKS -------------------- */
 
 a {
     color:#000;
@@ -65,8 +77,7 @@ a {
 
 
 
-/* @group SITEINFO/FOOTER
----------------------------------------------------------------------- */
+/* @group FOOTER -------------------- */
 
 div#footer {
     color:#666;
@@ -75,11 +86,13 @@ div#footer {
     margin:50px 0 0 0;
     padding:15px 0 0 0;
 }
-div#footer p {
-    margin:0;
-}
-div#footer a {
-    color:#666;
-}
+    div#footer p {
+        margin:0;
+    }
+    div#footer a {
+        color:#666;
+    }
 
 /* @end */
+
+
