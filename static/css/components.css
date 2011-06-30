@@ -27,43 +27,45 @@ div.block {
     margin:0 0 20px 0;
 }
 
-/* @group 1.1. BLOCK FORM ---------- */
+    /* @group 1.1. BLOCK FORM ---------- */
+    
+    div.block form {
+        margin:0;
+        font-size:0.9em;
+        line-height:1.3em;
+    }
+    div.block form fieldset {
+        margin:0;
+    }
+    div.block form fieldset div {
+        padding:10px 0;
+        border-color:#999;
+    }
+    div.block label {
+        float:none;
+        left:0;
+        margin:0 0 5px 0;
+        width:auto;
+    }
+    div.block input[type="text"],
+    div.block textarea {
+        width:98%;
+        padding:1%;
+        margin:0;
+    }
+    div.block form div.multiselect input {
+        position:absolute;
+        left:0;
+        top:1em;
+    }
+    div.block form div.submit {
+        padding:10px 0;
+        text-align:right;
+    }
+    
+    /* @end */
 
-div.block form {
-    margin:0;
-    font-size:0.9em;
-    line-height:1.3em;
-}
-div.block form fieldset {
-    margin:0;
-}
-div.block form fieldset div {
-    padding:10px 0;
-    border-color:#999;
-}
-div.block label {
-    float:none;
-    left:0;
-    margin:0 0 5px 0;
-    width:auto;
-}
-div.block input[type="text"],
-div.block textarea {
-    width:98%;
-    padding:1%;
-    margin:0;
-}
-div.block form div.multiselect input {
-    position:absolute;
-    left:0;
-    top:1em;
-}
-div.block form div.submit {
-    padding:10px 0;
-    text-align:right;
-}
 
-/* @end */
 
 /* @end */
 

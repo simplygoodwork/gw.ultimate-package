@@ -43,33 +43,35 @@ body {
 
 }
 
-/* @group 1.1. ACCESSIBILITY NAVIGATION ---------- */
+    /* @group 1.1. ACCESSIBILITY NAVIGATION ---------- */
+    
+    ul#nav_access {
+        position:relative;
+        margin:0;
+    }
+    ul#nav_access li {
+        height:0;
+    }
+    ul#nav_access li a {
+        position:absolute;
+        left:-9999px;
+        top:0;
+        font-size:11px;
+        font-weight:bold;
+        background:#FFFFCC;
+        border:2px solid #DDD;
+        padding:10px;
+        display:block;
+    }
+    ul#nav_access li a:focus,
+    ul#nav_access li a.focus {
+        left:0;
+        color:#333;
+    }
+    
+    /* @end */
 
-ul#nav_access {
-    position:relative;
-    margin:0;
-}
-ul#nav_access li {
-    height:0;
-}
-ul#nav_access li a {
-    position:absolute;
-    left:-9999px;
-    top:0;
-    font-size:11px;
-    font-weight:bold;
-    background:#FFFFCC;
-    border:2px solid #DDD;
-    padding:10px;
-    display:block;
-}
-ul#nav_access li a:focus,
-ul#nav_access li a.focus {
-    left:0;
-    color:#333;
-}
 
-/* @end */
 
 /* @end */
 
@@ -160,85 +162,87 @@ sub {
     vertical-align:sub;
 }
 
-/* @group 2.1. FORMS ---------- */
+    /* @group 2.1. FORMS ---------- */
+    
+    form {
+    
+    }
+    form fieldset {
+    
+    }
+    form fieldset div {
+    
+    }
+    
+    label {
+    
+    }
+    label em {
+    
+    }
+    
+    textarea {
+    
+    }
+    
+    input,
+    textarea {
+    
+    }
+    input[type="text"],
+    input[type="password"] {
+    
+    }
+    
+    /* SUBMIT ---------- */
+    form div.submit {
+    
+    }
+    input[type="submit"] {
+    
+    }
+    
+    /* @end */
+    
+    /* @group 2.2. TABLES ---------- */
+    
+    table {
+    
+    }
+    caption {
+    
+    }
+    legend {
+    
+    }
+    tr {
+    
+    }
+    th, td {
+    
+    }
+    th {
+    
+    }
+    td {
+    
+    }
+    thead th {
+    
+    }
+    thead td {
+    
+    }
+    tbody th {
+    
+    }
+    tbody td {
+    
+    }
+    
+    /* @end */
 
-form {
-    
-}
-form fieldset {
-    
-}
-form fieldset div {
-    
-}
 
-label {
-    
-}
-label em {
-    
-}
-
-textarea {
-    
-}
-
-input,
-textarea {
-    
-}
-input[type="text"],
-input[type="password"] {
-    
-}
-
-/* SUBMIT ---------- */
-form div.submit {
-    
-}
-input[type="submit"] {
-    
-}
-
-/* @end */
-
-/* @group 2.2. TABLES ---------- */
-
-table {
-    
-}
-caption {
-    
-}
-legend {
-    
-}
-tr {
-    
-}
-th, td {
-    
-}
-th {
-    
-}
-td {
-    
-}
-thead th {
-    
-}
-thead td {
-    
-}
-tbody th {
-    
-}
-tbody td {
-    
-}
-
-/* @end */
 
 /* @end */
 
@@ -304,21 +308,23 @@ div#content_sec {
     
 }
 
-/* @group 5.1. HEADER & BRANDING -------------------- */
-
-div#header {
+    /* @group 5.1. HEADER & BRANDING -------------------- */
     
-}
-
-/* @end */
-
-/* @group 5.2. FOOTER -------------------- */
-
-div#footer {
+    div#header {
     
-}
+    }
+    
+    /* @end */
+    
+    /* @group 5.2. FOOTER -------------------- */
+    
+    div#footer {
+    
+    }
+    
+    /* @end */
 
-/* @end */
+
 
 /* @end */
 
