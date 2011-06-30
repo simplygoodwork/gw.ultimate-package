@@ -28,11 +28,11 @@ body {
     margin:0;
 }
 
-    /* DISPLAY NONE */
-    form,
-    .pagination {
-        display:none;
-    }
+/* DISPLAY NONE */
+form,
+.pagination {
+    display:none;
+}
 
 /* @end */
 

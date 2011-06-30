@@ -43,38 +43,34 @@ body {
 
 }
 
+/* @group 1.1. ACCESSIBILITY NAVIGATION ---------- */
 
+ul#nav_access {
+    position:relative;
+    margin:0;
+}
+ul#nav_access li {
+    height:0;
+}
+ul#nav_access li a {
+    position:absolute;
+    left:-9999px;
+    top:0;
+    font-size:11px;
+    font-weight:bold;
+    background:#FFFFCC;
+    border:2px solid #DDD;
+    padding:10px;
+    display:block;
+}
+ul#nav_access li a:focus,
+ul#nav_access li a.focus {
+    left:0;
+    color:#333;
+}
 
-    /* @group 1.1. ACCESSIBILITY NAVIGATION ---------- */
-    
-    ul#nav_access {
-        position:relative;
-        margin:0;
-    }
-        ul#nav_access li {
-            height:0;
-        }
-            ul#nav_access li a {
-                position:absolute;
-                left:-9999px;
-                top:0;
-                font-size:11px;
-                font-weight:bold;
-                background:#FFFFCC;
-                border:2px solid #ddd;
-                padding:10px;
-                display:block;
-            }
-                ul#nav_access li a:focus,
-                ul#nav_access li a.focus {
-                    left:0;
-                    color:#333;
-                }
-    
-    /* @end */
-    
-    
-    
+/* @end */
+
 /* @end */
 
 
@@ -88,26 +84,26 @@ p, ul, dl, ol {
 ul {
     
 }
-    ul li {
-        
-    }
+ul li {
+    
+}
 
 dl {
     
 }
-    dl dt {
-        
-    }
-    dl dd {
-        
-    }
+dl dt {
+    
+}
+dl dd {
+    
+}
 
 ol {
     
 }
-    ol li {
-        
-    }
+ol li {
+    
+}
 
 hr {
     
@@ -116,12 +112,12 @@ hr {
 blockquote {
     
 }
-    blockquote p {
-        
-    }
-    blockquote cite {
-        
-    }
+blockquote p {
+    
+}
+blockquote cite {
+    
+}
 
 code,
 pre {
@@ -133,16 +129,16 @@ code {
 pre {
     
 }
-    pre code {
-        
-    }
+pre code {
+    
+}
 
 abbr {
     
 }
-    abbr:hover {
-        cursor:help;
-    }
+abbr:hover {
+    cursor:help;
+}
 
 del {
     text-decoration:line-through;
@@ -164,92 +160,86 @@ sub {
     vertical-align:sub;
 }
 
+/* @group 2.1. FORMS ---------- */
 
+form {
+    
+}
+form fieldset {
+    
+}
+form fieldset div {
+    
+}
 
-    /* @group 2.1. FORMS ---------- */
+label {
     
-    form {
-        
-    }
-        form fieldset {
-            
-        }
-        form fieldset div {
-            
-        }
+}
+label em {
     
-    label {
-        
-    }
-        label em {
-            
-        }
+}
+
+textarea {
     
-    textarea {
-        
-    }
+}
+
+input,
+textarea {
     
-    input,
-    textarea {
-        
-    }
-        input[type="text"],
-        input[type="password"] {
-            
-        }
-        
-        /* SUBMIT ---------- */
-        form div.submit {
-            
-        }
-        input[type="submit"] {
-            
-        }
+}
+input[type="text"],
+input[type="password"] {
     
-    /* @end */
+}
+
+/* SUBMIT ---------- */
+form div.submit {
     
+}
+input[type="submit"] {
     
+}
+
+/* @end */
+
+/* @group 2.2. TABLES ---------- */
+
+table {
     
-    /* @group 2.2. TABLES ---------- */
+}
+caption {
     
-    table {
-        
-    }
-    caption {
-        
-    }
-    legend {
-        
-    }
-    tr {
-        
-    }
-    th, td {
-        
-    }
-    th {
-        
-    }
-    td {
-        
-    }
-        thead th {
-            
-        }
-        thead td {
-            
-        }
-        tbody th {
-            
-        }
-        tbody td {
-            
-        }
+}
+legend {
     
-    /* @end */
+}
+tr {
     
+}
+th, td {
     
+}
+th {
     
+}
+td {
+    
+}
+thead th {
+    
+}
+thead td {
+    
+}
+tbody th {
+    
+}
+tbody td {
+    
+}
+
+/* @end */
+
 /* @end */
 
 
@@ -287,10 +277,10 @@ h6 {
 a {
     
 }
-    a:hover,
-    a:focus {
-        
-    }
+a:hover,
+a:focus {
+    
+}
 
 /* @end */
 
@@ -306,36 +296,30 @@ div#content_wrapper {
     
 }
 
-    div#content_pri {
-        
-    }
+div#content_pri {
     
-    div#content_sec {
-        
-    }
+}
+
+div#content_sec {
     
+}
+
+/* @group 5.1. HEADER & BRANDING -------------------- */
+
+div#header {
     
+}
+
+/* @end */
+
+/* @group 5.2. FOOTER -------------------- */
+
+div#footer {
     
-    /* @group 5.1. HEADER & BRANDING -------------------- */
-    
-    div#header {
-        
-    }
-    
-    /* @end */
-    
-    
-    
-    /* @group 5.2. FOOTER -------------------- */
-    
-    div#footer {
-        
-    }
-    
-    /* @end */
-    
-    
-    
+}
+
+/* @end */
+
 /* @end */
 
 
@@ -345,16 +329,16 @@ div#content_wrapper {
 ul#navigation_pri {
     
 }
-    ul#navigation_pri li {
-        
-    }
-        ul#navigation_pri li a {
-            
-        }
-            ul#navigation_pri li a:hover,
-            ul#navigation_pri li a:focus {
-                
-            }
+ul#navigation_pri li {
+    
+}
+ul#navigation_pri li a {
+    
+}
+ul#navigation_pri li a:hover,
+ul#navigation_pri li a:focus {
+    
+}
 
 /* @end */
 
