@@ -27,6 +27,20 @@ Getting started
 
 The package is a barebones framework to help you rapidly develop your projects. Create templates duplicated from index.php as you need them, use elements.php to check your styles. You can change the screen.css reference in _start.php to screen-prototype.css to use the experimental prototyping stylesheet.
 
+Before you deploy to production
+-------------------------------
+
+Firstly, don't forget to remove the following files or folders:
+
+* elements.php
+* static/css/screen_prototype.png
+* static/images/dev/
+
+Then, the following are also worth considering:
+
+* Update your humans.txt in the root directory
+* Update the holding assets in /holding/
+
 License
 =======
 
