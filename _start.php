@@ -21,7 +21,7 @@
         <!--[if IE 6]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie6.css" /><![endif]-->
         
         <!-- ICONS -->
-        <link rel="icon" type="image/x-icon" href="/static/images/site/icons/favicon.ico" />
+        <link rel="shortcut icon" href="/static/images/site/icons/favicon.ico" />
         
         <!-- RSS -->
         <!-- <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss/feed.xml" /> -->
