@@ -47,12 +47,12 @@
             
                 <?php if ($location == "home") { ?> 
                     <h1 id="branding">
-                        <img src="/static/images/dev/dev.png" alt="" width="250" height="50" />
+                        <img src="/static/images/site/branding/branding.png" alt="Your branding" width="480" height="100" />
                     </h1> <!-- // #branding -->
                 <?php } else { ?> 
                     <p id="branding">
                         <a href="/">
-                            <img src="/static/images/dev/dev.png" alt="" width="250" height="50" />
+                            <img src="/static/images/site/branding/branding.png" alt="Your branding" width="480" height="100" />
                         </a>
                     </p> <!-- // #branding -->
                 <?php } ?> 
