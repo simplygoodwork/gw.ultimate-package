@@ -26,11 +26,8 @@
         <!-- RSS -->
         <!-- <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss/feed.xml" /> -->
         
-        <!-- ALLOW JAVASCRIPT STYLING -->
-        <script>
-            docElement = this.document.documentElement;
-            docElement.className = docElement.className.replace(/\bjs-disabled\b/,'') + ' js-enabled';
-        </script>
+        <!-- THE EDJ -->
+        <script src="/static/js/EDJ.js"></script>
     
     </head>
     

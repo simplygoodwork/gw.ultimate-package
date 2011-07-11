@@ -11,6 +11,59 @@ var EDJ = {
     $body: {}
 };
 
+
+/**
+ * Bootstrap
+ *
+ * Called immediately - blocking script, so be careful
+ *
+ * Used on: all pages
+ *
+ * @namespace EDJ
+ * @class init
+ */
+EDJ.bootstrap = {
+
+    /**
+     * Is touch device
+     *
+     * returns true if the agent is a touch device
+     *
+     * @method is_touch_device
+     *
+     */
+    is_touch_device: function() {
+        try {
+            document.createEvent("TouchEvent");
+            return true;
+        } catch (e) {
+            return false;
+        }
+    },
+
+    /**
+     * Is JavaScript enabled
+     * 
+     * replaces the js-disabled class in the html tag with js-enabled for styling etc.
+     * @method is_javascript_enabled
+     *
+     */
+    is_javascript_enabled: function() {
+        var docElement = window.document.documentElement;
+        docElement.className = docElement.className.replace(/\bjs-disabled\b/,'') + ' js-enabled';
+    },
+
+    init: function() {
+        EDJ.is_touch = this.is_touch_device();
+        this.is_javascript_enabled();
+    }
+
+};
+
+// Run the bootstrap
+EDJ.bootstrap.init();
+
+
 /**
  * On ready
  *
@@ -33,16 +86,13 @@ EDJ.on_ready = function(settings) {
     // Cache the body object for use later
     EDJ.$body = $('body');
     
-    // Check for a touch device
-    EDJ.is_touch = this.is_touch_device();
-
     // Loop through our functions and run those that exist and said they should
     for (i=0; i<functions_to_run; i++) {
         // If the init function exists, and the run key is set to true
-        if (typeof EDJ[EDJ.run_list[i]].init === 'function' && ( 
+        if (
             (typeof EDJ[EDJ.run_list[i]].run === 'function' && EDJ[EDJ.run_list[i]].run() === true) ||
             (typeof EDJ[EDJ.run_list[i]].run === 'boolean' && EDJ[EDJ.run_list[i]].run === true)
-        )) {
+        ) {
             // Log that we've called the init function
             EDJ.log('initialising EDJ.'+EDJ.run_list[i]);
 
@@ -57,27 +107,6 @@ EDJ.on_ready = function(settings) {
     }
 
 };
-
-/**
- * Is touch device
- *
- * Checks to see if the agent is a touch device
- *
- * Used on: all pages
- *
- * @namespace EDJ
- * @return boolean
- * @class on_ready
- * ---------------------------------------------------------------------------------------------------
-*/
-EDJ.is_touch_device = function() {
-    try {
-        document.createEvent("TouchEvent");
-        return true;
-    } catch (e) {
-        return false;
-    }
-}
 
 
 /**
