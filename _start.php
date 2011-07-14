@@ -56,6 +56,18 @@
                         </a>
                     </p> <!-- // #branding -->
                 <?php } ?> 
+                
+                <form action="#" id="site_search">
+                    <fieldset>
+                        <div>
+                            <label for="site_search_keywords">Search</label>
+                            <input type="search" id="site_search_keywords" size="20" placeholder="Keywords" title="Keywords" />
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Go" />
+                        </div>
+                    </fieldset>
+                </form> <!-- // #site_search -->
             
             </div> <!-- // #header -->
             
@@ -65,16 +77,4 @@
                 <li<?php if ($location == "section_2") { ?> class="cur"<?php } ?>><a href="/section2">Section 2</a></li>
                 <li<?php if ($location == "section_3") { ?> class="cur"<?php } ?>><a href="/section3">Section 3</a></li>
             </ul> <!-- // #navigation_pri -->
-            
-            <form action="#" id="site_search">
-                <fieldset>
-                    <div>
-                        <label for="site_search_keywords">Search</label>
-                        <input type="search" id="site_search_keywords" size="20" placeholder="Keywords" title="Keywords" />
-                    </div>
-                    <div class="submit">
-                        <input type="submit" value="Go" />
-                    </div>
-                </fieldset>
-            </form> <!-- // #site_search -->
     
