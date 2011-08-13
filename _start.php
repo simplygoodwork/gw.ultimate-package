@@ -11,14 +11,15 @@
         <title><?php echo $page_title ?> | Site name</title>
         
         <!-- CSS -->
-        <link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/screen.css" />
-        <link rel="stylesheet" media="print" type="text/css" href="/static/css/print.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="/static/css/screen.css" />
         
         <!-- INTERNET EXPLORER CSS -->
-        <!--[if IE 8]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie8.css" /><![endif]-->
-        <!--[if lte IE 7]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie.css" /><![endif]-->
-        <!--[if IE 7]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie7.css" /><![endif]-->
-        <!--[if IE 6]><link rel="stylesheet" media="screen, projection" type="text/css" href="/static/css/ie/screen_ie6.css" /><![endif]-->
+        <!--[if IE 8]><link rel="stylesheet" media="all" type="text/css" href="/static/css/ie/screen_ie8.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" media="all" type="text/css" href="/static/css/ie/screen_ie.css" /><![endif]-->
+        <!--[if IE 7]><link rel="stylesheet" media="all" type="text/css" href="/static/css/ie/screen_ie7.css" /><![endif]-->
+        <!--[if IE 6]><link rel="stylesheet" media="all" type="text/css" href="/static/css/ie/screen_ie6.css" /><![endif]-->
+        
+        <link rel="stylesheet" media="print" type="text/css" href="/static/css/print.css" />
         
         <!-- ICONS -->
         <link rel="icon" type="image/png" href="/static/images/site/icons/favicon.png" />

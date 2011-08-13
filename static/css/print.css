@@ -18,14 +18,18 @@
 
 
 
+@import url(reset.css);
+@import url(screen.css);
+@import url(components.css);
+
+
+
 /* @group BODY -------------------- */
 
 body {
-    font-size:16px;
-    line-height:1.375em;
-    font-family:Georgia,serif;
-    padding:7%;
+    font-family:16px/1.375em Georgia,serif;
     margin:0;
+    padding:7%;
 }
 
 /* DISPLAY NONE */
@@ -71,6 +75,7 @@ h4 {
 
 a {
     color:#000;
+    text-decoration:underline;
 }
 
 /* @end */
