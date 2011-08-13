@@ -27,8 +27,8 @@
     
     COLOURS -----------
     
-        black: #000000
-        white: #FFFFFF
+        black: #000
+        white: #FFF
     
     -------------------
     
@@ -55,7 +55,7 @@ body {
     ul#nav_access li {
         height:0;
     }
-    ul#nav_access li a {
+    ul#nav_access a {
         position:absolute;
         left:-9999px;
         top:0;
@@ -66,8 +66,8 @@ body {
         padding:10px;
         display:block;
     }
-    ul#nav_access li a:focus,
-    ul#nav_access li a.focus {
+    ul#nav_access a:focus,
+    ul#nav_access a.focus {
         left:0;
         color:#333;
     }
@@ -159,7 +159,6 @@ em {
 sup {
     vertical-align:super;
 }
-
 sub {
     vertical-align:sub;
 }
@@ -260,6 +259,7 @@ sub {
 h1, h2, h3, h4, h5, h6 {
     
 }
+
 h1 {
     
 }
@@ -307,25 +307,29 @@ div#content_wrapper {
     
 }
 
-div#content_pri {
+#content_pri {
     
 }
 
-div#content_sec {
+#content_sec {
     
 }
 
     /* @group 5.1. HEADER & BRANDING -------------------- */
     
-    div#header {
+    #header {
     
+    }
+    
+    #branding {
+        
     }
     
     /* @end */
     
     /* @group 5.2. FOOTER -------------------- */
     
-    div#footer {
+    #footer {
     
     }
     
@@ -347,9 +351,11 @@ div#content_sec {
         list-style:none;
         overflow:hidden;
     }
+    
     .horizontal li {
         float:left;
     }
+    
     .horizontal a {
         display:block;
     }
@@ -361,9 +367,11 @@ div#content_sec {
     ul#navigation_pri {
         
     }
+    
     ul#navigation_pri li {
         
     }
+    
     ul#navigation_pri a {
         
     }
