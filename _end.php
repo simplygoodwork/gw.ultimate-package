@@ -16,7 +16,7 @@
     $(document).ready(function() {
         var settings = {
             debug: true,
-            STATIC_URL: '/schwing/'
+            STATIC_URL: '/static/'
         };
         EDJ.on_ready(settings);
     });
