@@ -11,7 +11,7 @@
         <title><?php echo $page_title ?> | Site name</title>
         
         <!-- CSS -->
-        <link rel="stylesheet" media="all" type="text/css" href="/static/css/screen.css" />
+        <link rel="stylesheet" media="all" type="text/css" href="/static/css/screen_prototype.css" />
         
         <!-- INTERNET EXPLORER CSS -->
         <!--[if IE 8]><link rel="stylesheet" media="all" type="text/css" href="/static/css/ie/screen_ie8.css" /><![endif]-->

@@ -11,7 +11,7 @@
         1. BLOCK
             1.1 BLOCK FORM
         2. ITEM LISTING
-        3. CALL TO ACTION BUTTON
+        3. CALL TO ACTION BUTTONS
     
     -------------------
     
@@ -22,36 +22,36 @@
 /* @group 1. BLOCK -------------------- */
 
 div.block {
-    background:#DDD;
-    padding:20px 20px 4px 20px;
-    margin:0 0 20px 0;
+    background-color:#DDD;
+    margin:0 0 20px;
+    padding:20px 20px 4px;
 }
 
     /* @group 1.1. BLOCK FORM ---------- */
     
     div.block form {
-        margin:0;
         font-size:0.9em;
         line-height:1.3em;
+        margin:0;
     }
     div.block form fieldset {
         margin:0;
     }
     div.block form fieldset div {
-        padding:10px 0;
         border-color:#999;
+        padding:10px 0;
     }
     div.block label {
         float:none;
         left:0;
-        margin:0 0 5px 0;
+        margin:0 0 5px;
         width:auto;
     }
     div.block input[type="text"],
     div.block textarea {
-        width:98%;
-        padding:1%;
         margin:0;
+        padding:1%;
+        width:98%;
     }
     div.block form div.multiselect input {
         position:absolute;
@@ -74,41 +74,41 @@ div.block {
 /* @group 2. ITEM LISTING -------------------- */
 
 ul.item_listing {
-    list-style:none;
     border-bottom:1px dotted #999;
+    list-style:none;
 }
 ul.item_listing li {
-    margin:0;
     border-top:1px dotted #999;
+    margin:0;
 }
-ul.item_listing li a {
+ul.item_listing a {
     display:block;
     padding:0.25em 0.5em;
 }
-ul.item_listing li a:hover,
-ul.item_listing li a:focus {
-    background:#DDD;
+ul.item_listing a:hover,
+ul.item_listing a:focus {
+    background-color:#DDD;
 }
 
 /* @end */
 
 
 
-/* @group 3. CALL TO ACTION BUTTON -------------------- */
+/* @group 3. CALL TO ACTION BUTTONS -------------------- */
 
 .cta_button a {
+    background-color:#666;
+    color:#FFF;
+    display:block;
     font-weight:bold;
     font-size:1.5em;
-    display:block;
-    background:#666;
-    color:#fff;
-    text-align:center;
-    padding:0.5em;
     line-height:1.2em;
+    padding:0.5em;
+    text-align:center;
 }
 .cta_button a:hover,
 .cta_button a:focus {
-    background:#333;
+    background-color:#333;
 }
 
 /* @end */
