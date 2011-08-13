@@ -21,7 +21,7 @@
 
 /* @group 1. BLOCK -------------------- */
 
-div.block {
+.block {
     background-color:#DDD;
     margin:0 0 20px;
     padding:20px 20px 4px;
@@ -29,36 +29,36 @@ div.block {
 
     /* @group 1.1. BLOCK FORM ---------- */
     
-    div.block form {
+    .block form {
         font-size:0.9em;
         line-height:1.3em;
         margin:0;
     }
-    div.block form fieldset {
+    .block fieldset {
         margin:0;
     }
-    div.block form fieldset div {
+    .block fieldset div {
         border-color:#999;
         padding:10px 0;
     }
-    div.block label {
+    .block label {
         float:none;
         left:0;
         margin:0 0 5px;
         width:auto;
     }
-    div.block input[type="text"],
-    div.block textarea {
+    .block input[type="text"],
+    .block textarea {
         margin:0;
         padding:1%;
         width:98%;
     }
-    div.block form div.multiselect input {
+    .block fieldset div.multiselect input {
         position:absolute;
         left:0;
         top:1em;
     }
-    div.block form div.submit {
+    .block form div.submit {
         padding:10px 0;
         text-align:right;
     }
