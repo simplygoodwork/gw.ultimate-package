@@ -10,8 +10,9 @@
     
         1. BLOCK
             1.1 BLOCK FORM
-        2. ITEM LISTING
-        3. CALL TO ACTION BUTTONS
+        2. MEDIA BLOCK
+        3. ITEM LISTING
+        4. CALL TO ACTION BUTTONS
     
     -------------------
     
@@ -71,7 +72,62 @@
 
 
 
-/* @group 2. ITEM LISTING -------------------- */
+/* @group 3. MEDIA BLOCK -------------------- */
+
+/*
+
+    EXAMPLE -----------
+    
+    <ul class="media_block">
+        <li>
+            <a href="">
+                <img src="" width="110" height="70" alt="" />
+                <h4>Have a Go Guide</h4>
+                <p>Everything you need to know about getting involved with WorldSkills London 2011 Have a Go.</p>
+                <span class="link">Download the guide</span>
+            </a>
+        </li>
+    </ul>
+    
+    -------------------
+    
+*/
+
+ul.media_block li {
+    
+}
+ul.media_block a {
+    display:block;
+    overflow:hidden;
+}
+ul.media_block a:hover,
+ul.media_block a:focus {
+    text-decoration:none;
+}
+ul.media_block img {
+    float:left;
+    margin-right:;
+}
+ul.media_block h4 {
+    
+}
+ul.media_block p {
+    
+}
+
+ul.media_block .link {
+    
+}
+ul.media_block a:hover .link,
+ul.media_block a:focus .link {
+    
+}
+
+/* @end */
+
+
+
+/* @group 3. ITEM LISTING -------------------- */
 
 ul.item_listing {
     border-bottom:1px dotted #999;
@@ -94,7 +150,7 @@ ul.item_listing a:focus {
 
 
 
-/* @group 3. CALL TO ACTION BUTTONS -------------------- */
+/* @group 4. CALL TO ACTION BUTTONS -------------------- */
 
 .cta_button a {
     background-color:#666;
