@@ -6,7 +6,7 @@ var EDJ = {
     },
     is_touch: false,
     run_list: [
-        'navigation',
+        'navigation'
     ],
     $body: {}
 };
@@ -153,6 +153,6 @@ EDJ.navigation = {
             $(this).removeClass('focus'); 
         });
 
-    },
+    }
 
 };
