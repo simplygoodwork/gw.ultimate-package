@@ -33,18 +33,16 @@
 
 
 @import url(reset.css);
-
+@import url(components.css);
 
 
 /* @group 1. BODY
 ---------------------------------------------------------------------- */
 
 body {
-    font-size:100%;
-    line-height:1.5em;
-    font-family:Helvetica,Arial,sans-serif;
+    font:100%/1.5em Helvetica,Arial,sans-serif;
     color:#000;
-    background:#ddd;
+    background:#DDD;
 }
 
     /* @group 1.1. ACCESSIBILITY NAVIGATION ---------- */
@@ -265,10 +263,10 @@ sub {
             border:0;
         }
         div.message.error {
-            background:#ffcccc;
+            background:#FCC;
         }
         div.message.success {
-            background:#ccffcc;
+            background:#CFC;
         }
     
         /* INLINE ---------- */
@@ -385,17 +383,19 @@ div#page {
     width:940px;
     padding:20px;
     margin:0 auto;
-    background:#fff;
+    background:#FFF;
 }
 
 div#content_wrapper {
-    
+    overflow:auto;
 }
 div#content_pri {
-    
+    width:63.8297872%; /* 600 / 940 */
+    float:left;
 }
 div#content_sec {
-    
+    width:30.8510638%; /* 290 / 940 */
+    float:right;
 }
 
 /* @end */
@@ -406,7 +406,32 @@ div#content_sec {
 ---------------------------------------------------------------------- */
 
 div#header {
-    
+    overflow:auto;
+}
+
+#branding {
+    width:480px;
+    height:100px;
+    float:left;
+}
+
+form#site_search {
+    float:right;
+    margin:20px 0;
+    overflow:hidden;
+}
+form#site_search fieldset {
+    margin:0;
+}
+form#site_search div {
+    border:0;
+    padding:0;
+    float:left;
+}
+form#site_search label {
+    width:auto;
+    left:0;
+    margin:0;
 }
 
 /* @end */
@@ -417,7 +442,21 @@ div#header {
 ---------------------------------------------------------------------- */
 
 ul#navigation_pri {
-    
+    background:#CCC;
+    list-style:none;
+    overflow:hidden;
+}
+ul#navigation_pri li {
+    float:left;
+    margin:0;
+}
+ul#navigation_pri li a {
+    display:block;
+    padding:1em;
+}
+ul#navigation_pri li a:hover,
+ul#navigation_pri li a:focus {
+    background:#999;
 }
 
 /* @end */
@@ -428,7 +467,9 @@ ul#navigation_pri {
 ---------------------------------------------------------------------- */
 
 div#footer {
-    
+    background:#CCC;
+    padding:2.041%;
+    margin:30px 0 0 0;
 }
 
 /* @end */
