@@ -8,6 +8,7 @@
     </div> <!-- // #page -->
     
     <!-- JAVASCRIPT -->
+    <script src="/static/js/EDJ.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     
     <!-- CALL DOC READY FUNCTIONS -->

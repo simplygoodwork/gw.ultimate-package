@@ -28,7 +28,7 @@
         <!-- <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss/feed.xml" /> -->
         
         <!-- THE EDJ -->
-        <script src="/static/js/EDJ.js"></script>
+        <script src="/static/js/EDJ.bootstrap.js"></script>
     
     </head>
     
