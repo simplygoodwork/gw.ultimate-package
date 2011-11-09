@@ -163,6 +163,10 @@ sub {
     vertical-align:sub;
 }
 
+small {
+    
+}
+
     /* @group 2.1. FORMS ---------- */
     
     form {
@@ -196,10 +200,10 @@ sub {
     }
     
     /* SUBMIT ---------- */
-    form div.submit {
+    form .submit {
     
     }
-    input[type="submit"] {
+    form .submit input {
     
     }
     
@@ -349,34 +353,34 @@ div#content_wrapper {
     
     .horizontal {
         list-style:none;
-        overflow:hidden;
     }
     
     .horizontal li {
-        float:left;
+        display:inline;
+        margin-left:0;
     }
     
     .horizontal a {
-        display:block;
+        
     }
     
     /* @end */
     
     /* @group 6.2. PRIMARY NAVIGATION -------------------- */
     
-    ul#navigation_pri {
+    ul#nav_pri {
         
     }
     
-    ul#navigation_pri li {
+    ul#nav_pri li {
         
     }
     
-    ul#navigation_pri a {
+    ul#nav_pri a {
         
     }
-    ul#navigation_pri a:hover,
-    ul#navigation_pri a:focus {
+    ul#nav_pri a:hover,
+    ul#nav_pri a:focus {
         
     }
     
