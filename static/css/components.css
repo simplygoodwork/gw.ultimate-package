@@ -22,23 +22,6 @@
 
 /* @group 1. BLOCK -------------------- */
 
-/*
-    EXAMPLE -----------
-    
-    <div class="block">
-    
-        <!--
-        
-        Put anything you want here.
-        Usually used to separate #content_sec 'components'.
-        
-        -->
-    
-    </div>
-    
-    -------------------
-*/
-
 .block {
     background-color:#DDD;
     margin:0 0 20px;
@@ -64,23 +47,6 @@
 
 
     /* @group 2.1. ITEM LISTING -------------------- */
-    
-    /*
-        EXAMPLE -----------
-        
-        <ul class="item_listing">
-            <li>
-                <div class="item_media">
-                
-                </div>
-                <div class="item_content">
-                
-                </div>
-            </li>
-        </ul>
-        
-        -------------------
-    */
     
     ul.item_listing {
         list-style:none;
@@ -129,16 +95,6 @@
 
 
 /* @group 3. CALL TO ACTION BUTTONS -------------------- */
-
-/*
-    EXAMPLE -----------
-    
-    <p class="cta_button">
-        <a href="">Extra, extra - read all about it.</a>
-    </p>
-    
-    -------------------
-*/
 
 .cta_button a {
     background-color:#666;
