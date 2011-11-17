@@ -48,41 +48,67 @@
 
     /* @group 2.1. ITEM LISTING -------------------- */
     
-    ul.item_listing {
+    /* 
+        EXAMPLE -----------
+        
+        <ul class="item_listing">
+        
+            <li class="item">
+            
+                <div class="item_media">
+                
+                </div>
+                
+                <div class="item_content">
+                
+                </div>
+            
+            </li>
+        
+        </ul>
+        
+        -------------------
+    */
+    
+    .item_listing {
         list-style:none;
     }
     
-    ul.item_listing li {
+    .item_listing li.item {
         margin-left:0;
     }
     
-    ul.item_listing a {
+    .item_listing a {
         
     }
-    ul.item_listing a:hover,
-    ul.item_listing a:focus {
+    .item_listing a:hover,
+    .item_listing a:focus {
         
     }
     
-    .item_listing .item_media {
+    .item_media {
         width:;
     }
     
-    .item_listing .item_content {
+    .item_content {
         width:;
     }
     
     /* ITEM LISTING: CLEARFIX ---------- */
     
-    .item_listing li {
+    .item_listing,
+    .item_listing li.item {
         zoom:1;
     }
-    .item_listing li:before,
-    .item_listing li:after {
+    .item_listing:before,
+    .item_listing:after,
+    .item_listing li.item:before,
+    .item_listing li.item:after {
         content:"";
         display:table;
     }
-    .item_listing li:after {
+    .item_listing:after
+    .item_listing li.item:after {
         clear:both;
     }
     
