@@ -76,7 +76,7 @@
             
             </div> <!-- // #header -->
             
-            <ul id="nav_pri" role="navigation">
+            <ul class="horizontal" id="nav_pri" role="navigation">
                 <li<?php if ($location == "home") { ?> class="cur"<?php } ?>><a href="/">Home</a></li>
                 <li<?php if ($location == "section_1") { ?> class="cur"<?php } ?>><a href="/section1">Section 1</a></li>
                 <li<?php if ($location == "section_2") { ?> class="cur"<?php } ?>><a href="/section2">Section 2</a></li>
