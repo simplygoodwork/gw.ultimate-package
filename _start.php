@@ -42,7 +42,7 @@
     <body class="<?php echo $body_class ?>">
     
         <ul id="nav_access">
-            <li><a href="#navigation_pri">Skip to navigation</a></li>
+            <li><a href="#nav_pri">Skip to navigation</a></li>
             <li><a href="#content_wrapper">Skip to content</a></li>
         </ul> <!-- // #nav_access -->
         
