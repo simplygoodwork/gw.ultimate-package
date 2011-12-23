@@ -7,17 +7,17 @@
 
         <div id="content_wrapper">
 
-            <div id="content_pri">
+            <div class="content_pri">
 
                 
 
-            </div> <!-- // #content_pri -->
+            </div> <!-- // .content_pri -->
 
-            <div id="content_sec">
+            <div class="content_sec">
 
                 
 
-            </div> <!-- // #content_sec -->
+            </div> <!-- // .content_sec -->
 
         </div> <!-- // #content_wrapper -->
 

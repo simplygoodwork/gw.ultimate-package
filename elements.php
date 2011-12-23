@@ -7,7 +7,7 @@
 
         <div id="content_wrapper">
         
-            <div id="content_pri">
+            <div class="content_pri">
             
                 <h1>Header One</h1>
                 
@@ -184,9 +184,9 @@
                     </tbody>
                 </table>
             
-            </div> <!-- // #content_pri -->
+            </div> <!-- // .content_pri -->
             
-            <div id="content_sec">
+            <div class="content_sec">
             
                 <div class="block">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -275,7 +275,7 @@
                 
                 </div> <!-- // .block -->
             
-            </div> <!-- // #content_sec -->
+            </div> <!-- // .content_sec -->
         
         </div> <!-- // #content_wrapper -->
 
