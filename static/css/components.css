@@ -28,14 +28,6 @@
     padding:20px 20px 4px;
 }
 
-.block_pri {
-    
-}
-
-.block_sec {
-    
-}
-
 
 
 /* @end */
@@ -48,40 +40,14 @@
 
     /* @group 2.1. ITEM LISTING -------------------- */
     
-    /* 
-        EXAMPLE -----------
-        
-        <ul class="item_listing">
-        
-            <li class="item">
-            
-                <div class="item_media">
-                
-                </div>
-                
-                <div class="item_content">
-                
-                </div>
-            
-            </li>
-        
-        </ul>
-        
-        -------------------
-    */
-    
     .item_listing {
         list-style:none;
         margin-bottom:0;
     }
     
-    .item_listing,
-    .item_listing li.item {
-        overflow:hidden;
-    }
-    
     .item_listing li.item {
         margin-left:0;
+        position:relative;
     }
     
     .item_listing a {
@@ -92,12 +58,29 @@
         
     }
     
-    .item_media {
+    .item_meta {
         width:;
     }
     
     .item_content {
         width:;
+    }
+    
+    /* ITEM LISTING: CLEARFIX ----------------------- */
+    .item_listing,
+    .item_listing li.item {
+        zoom:1;
+    }
+    .item_listing:before,
+    .item_listing:after,
+    .item_listing li.item:before,
+    .item_listing li.item:after {
+        content:"";
+        display:table;
+    }
+    .item_listing:after,
+    .item_listing li.item:after {
+        clear:both;
     }
     
     /* @end */
