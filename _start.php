@@ -62,17 +62,15 @@
                     </p> <!-- // #branding -->
                 <?php } ?> 
 
-                <form action="#" id="site_search">
+                <form action="#" id="">
                     <fieldset>
-                        <div>
-                            <label for="site_search_keywords">Search</label>
-                            <input type="search" id="site_search_keywords" size="20" placeholder="Keywords" title="Keywords" />
-                        </div>
-                        <div class="submit">
-                            <input type="submit" value="Go" />
-                        </div>
+                        <dl>
+                            <dt><label for="id_search_keywords">Search</label></dt>
+                            <dd><input type="text" name="search_keywords" id="id_search_keywords" /></dd>
+                        </dl>
+                        <button type="submit">Go</button>
                     </fieldset>
-                </form> <!-- // #site_search -->
+                </form>
 
             </div> <!-- // #header -->
 
