@@ -39,7 +39,7 @@
 
     </head>
 
-    <body class="<?php echo $body_class ?>">
+    <body class="<?php echo $body_class ?>" dir="ltr">
 
         <ul id="nav_access">
             <li><a href="#nav_pri">Skip to navigation</a></li>
