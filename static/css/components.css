@@ -12,7 +12,9 @@
             1.1 BLOCK FORM
         2. LISTINGS
             2.1. ITEM LISTING
-        3. CALL TO ACTION BUTTONS
+            2.2. BLOCK LISTING
+            2.3. ARTICLE LISTING
+        3. CTA BUTTONS
     
     -------------------
     
@@ -84,6 +86,18 @@
     }
     
     /* @end */
+    
+    /* @group 2.2. BLOCK LISTING (Base: item_listing) -------------------- */
+    
+    
+    
+    /* @end */
+    
+    /* @group 2.3. ARTICLE LISTING (Base: item_listing) -------------------- */
+    
+    
+    
+    /* @end */
 
 
 
@@ -91,21 +105,24 @@
 
 
 
-/* @group 3. CALL TO ACTION BUTTONS -------------------- */
+/* @group 3. CTA BUTTONS -------------------- */
 
-.cta_button a {
-    background-color:#666;
-    color:#FFF;
-    display:block;
-    font-weight:bold;
-    font-size:1.5em;
-    line-height:1.2em;
-    padding:0.5em;
+.cta_button {
+    clear:both;
     text-align:center;
 }
+
+.cta_button a,
+.cta_button button {
+    display:block;
+    text-decoration:none;
+}
+
 .cta_button a:hover,
-.cta_button a:focus {
-    background-color:#333;
+.cta_button a:focus,
+.cta_button button:hover,
+.cta_button button:focus {
+    
 }
 
 /* @end */
