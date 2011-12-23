@@ -172,10 +172,29 @@ small {
     form {
     
     }
-    fieldset {
     
+    form small {
+        
     }
-    fieldset div {
+    
+    form dl {
+        
+    }
+    form dt {
+        
+    }
+    form dd {
+        
+    }
+    
+    form ul {
+        
+    }
+    form li {
+        
+    }
+    
+    fieldset {
     
     }
     
@@ -186,25 +205,27 @@ small {
     
     }
     
-    textarea {
-    
-    }
-    
     input,
     textarea {
     
     }
-    input[type="text"],
-    input[type="password"] {
+    textarea {
     
+    }
+    
+    .error input,
+    .error textarea {
+        
     }
     
     /* SUBMIT ---------- */
-    form .submit {
-    
+    form .cta_button {
+        
     }
-    form .submit input {
-    
+    form .cta_button button {
+        border:0;
+        cursor:pointer;
+        vertical-align:baseline;
     }
     
     /* @end */
