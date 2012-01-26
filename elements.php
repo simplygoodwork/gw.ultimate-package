@@ -1,282 +1,187 @@
 <?php
-    $body_class = 'elements';
+    $body_class = '';
     $page_title = 'Elements';
-    $location = 'elements';
+    $location = '';
     include('_start.php');
 ?>
 
         <div id="content_wrapper">
-        
+
             <div class="content_pri">
-            
-                <h1>Header One</h1>
-                
-                <p>Lorem ipsum <em>emphasised text</em> dolor <sup>sit</sup> amet, <strong>strong text</strong> consectetur adipisicing elit, <abbr title="">abbreviated text</abbr> sed do eiusmod tempor  incididunt ut labore <sub>et</sub> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a href="/">link text</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute <del>deleted text</del> irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <code>code text</code> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                
-                <blockquote>
-                    <p>Blockquote. Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                    <cite><a href="/">Cite author with link text</a>, 2008</cite>
-                </blockquote>
-                
-                <h2>Header 2</h2>
-                
+
+                <h1>A level 1 heading right here</h1>
+
+                <p>Introduction paragraph text here sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p><img class="right" src="/static/images/dev/dev.png" width="210" height="210" alt="" /></p>
+
+                <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <em>commodo consequat</em>. Duis aute irure <a href="">dolor in reprehenderit</a> in voluptate velit esse cillum dolore <abbr title="United States of America">USA</abbr> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <h2>This is a level 2 heading</h2>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                
-                <ol>
-                    <li>Ordered list</li>
-                    <li>Item 2 Consectetur adipisicing elit</li>
-                    <li>Item 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-                    <li>Item 4</li>
-                    <li>Item 5</li>
-                </ol>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                
-                <form action="">
-                
-                    <h4>Form heading</h4>
-                    
-                    <div class="message success">
-                        <p>Sweet success!</p>
-                    </div>
-                    
-                    <fieldset>
-                    
-                        <div>
-                            <label for="contact_name">Name <em>*</em></label>
-                            <input type="text" id="contact_name" size="30" />
-                        </div>
-                        
-                        <div class="error">
-                            <label for="contact_email">Email <em>*</em></label>
-                            <input type="text" id="contact_email" size="30" />
-                            <label class="error_message">This field is required. Fill it in now.</label>
-                        </div>
-                        
-                        <div>
-                            <label for="contact_url">URL</label>
-                            <input type="text" id="contact_url" size="30" value="http://" />
-                        </div>
-                        
-                        <div class="error">
-                            <label for="contact_reasons">Reasons for contact <em>*</em></label>
-                            <ul>
-                                <li>
-                                    <label for="contact_reason_1">I want your babies</label>
-                                    <input type="checkbox" id="contact_reason_1" />
-                                </li>
-                                <li>
-                                    <label for="contact_reason_2">Can I use your CSS as a Wordpress theme?</label>
-                                    <input type="checkbox" id="contact_reason_2" />
-                                </li>
-                                <li>
-                                    <label for="contact_reason_3">Where do you shop?</label>
-                                    <input type="checkbox" id="contact_reason_3" />
-                                </li>
-                            </ul>
-                            <label class="error_message">This field is required. Fill it in now.</label>
-                        </div>
-                        
-                        <div>
-                            <label for="contact_message">Message <em>*</em></label>
-                            <textarea id="contact_message" cols="30" rows="7"></textarea>
-                        </div>
-                        
-                        <div class="multiselect">
-                            <label for="submit_checkbox">Remember password, remember details, agree to terms and conditions <em>*</em></label>
-                            <input type="checkbox" id="submit_checkbox" />
-                        </div>
-                    
-                    </fieldset>
-                    
-                    <div class="submit">
-                        <input type="submit" value="Send form" />
-                    </div>
-                
-                </form>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                
+
+                <h3>This is a level 3 heading right here</h3>
+
+                <p><img class="left" src="/static/images/dev/dev.png" width="290" height="195" alt="" /></p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                <blockquote>
+                    <p>This is a blockquote, a blockquote style here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <cite>&mdash; Smith &amp; Wesson</cite>
+                </blockquote>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <figure>
+                    <img src="/static/images/dev/dev.png" width="610" height="330" alt="" />
+                    <figcaption>This is an image caption</figcaption>
+                </figure>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
                 <ul>
-                    <li>Unordered list</li>
-                    <li>Consectetur adipisicing elit</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <li>Item</li>
+                    <li>This is a list item</li>
+                    <li>This is another list item</li>
+                    <li>A list item</li>
+                    <li>Another list item here</li>
+                    <li>This is another list item</li>
                 </ul>
-                
-                <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-                <pre><code>pre and code pair {
-            display:block;
-            line-height:1.833em;
-            border-top:0.083em solid #200;
-        }</code></pre>
+                <ol>
+                    <li>This is a list item</li>
+                    <li>This is another list item</li>
+                    <li>A list item</li>
+                    <li>Another list item here</li>
+                    <li>This is another list item</li>
+                </ol>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
-                
-                <h4>Header 4</h4>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                
-                <dl>
-                    <dt>Definition list</dt>
-                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                        commodo consequat.</dd>
-                    <dt>Lorem ipsum dolor sit amet</dt>
-                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                        commodo consequat.</dd>
-                    <dt>Lorem ipsum dolor sit amet</dt>
-                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                        commodo consequat.</dd>
-                    <dt>Lorem ipsum dolor sit amet</dt>
-                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                        commodo consequat.</dd>
-                </dl>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                
-                <table summary="The summary of the table" cellspacing="0">
-                    <caption>Table caption – lorem ipsum dolor sit amet, consectetur adipisicing elit.</caption>
+                <ul class="pagination">
+                    <li class="page_prev"><a href="">Previous</a></li>
+                    <li class="cur"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li class="page_next"><a href="">Next</a></li>
+                </ul>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <form action="" id="">
+                    <fieldset>
+
+                        <dl>
+                            <dt><label for="id_label_1">This is a form label <em>(required)</em></label></dt>
+                            <dd><input type="text" name="label_1" id="id_label_1" /></dd>
+
+                            <dt><label for="id_label_2">This is a form label <em>(required)</em></label></dt>
+                            <dd class="error">
+                                <input type="text" name="label_2" id="id_label_2" />
+                                <label class="error">This field must contain between 1 and 20 characters.</label>
+                            </dd>
+
+                            <dt><label for="id_label_3">This is a form label</label></dt>
+                            <dd>
+                                <input type="text" name="label_3" id="id_label_3" />
+                                <small>This is a description of the required content, occasionally it may be required as an addition to the label.</small>
+                            </dd>
+
+                            <dt>These are checkboxes, pick any.</dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="id_checkbox_1" /> 
+                                        <label for="id_checkbox_1">This is a checkbox label</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="id_checkbox_2" /> 
+                                        <label for="id_checkbox_2">This is a checkbox label</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="id_checkbox_3" /> 
+                                        <label for="id_checkbox_3">This is a checkbox label</label>
+                                    </li>
+                                </ul>
+                            </dd>
+
+                            <dt>These are radio buttons, pick one.</dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="radios" id="id_radio_1" /> 
+                                        <label for="id_radio_1">This is a radio button</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="radios" id="id_radio_2" /> 
+                                        <label for="id_radio_2">This is a radio button</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="radios" id="id_radio_3" /> 
+                                        <label for="id_radio_3">This is a radio button</label>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        <ul class="horizontal nav_simple">
+                            <li class="cta_button"><button type="submit">Submit</button></li>
+                        </ul>
+
+                    </fieldset>
+                </form>
+
+                <table>
                     <thead>
                         <tr>
-                            <th>Column 1</th>
-                            <th>Another column</th>
-                            <th>The final column</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th>Quantity</th>
-                            <td>1</td>
-                            <td>Bicycle</td>
+                            <td>Row item</td>
+                            <td>Row item</td>
+                            <td>Row item</td>
                         </tr>
                         <tr>
-                            <th>Quantity</th>
-                            <td>2</td>
-                            <td>Car</td>
+                            <td>Row item</td>
+                            <td>Row item</td>
+                            <td>Row item</td>
                         </tr>
                         <tr>
-                            <th>Quantity</th>
-                            <td>3</td>
-                            <td>Bus</td>
+                            <td>Row item</td>
+                            <td>Row item</td>
+                            <td>Row item</td>
                         </tr>
                         <tr>
-                            <th>Quantity</th>
-                            <td>4</td>
-                            <td>By foot</td>
+                            <td>Row item</td>
+                            <td>Row item</td>
+                            <td>Row item</td>
                         </tr>
                         <tr>
-                            <th>Quantity</th>
-                            <td>5</td>
-                            <td>Train</td>
-                        </tr>
-                        <tr>
-                            <th>Quantity</th>
-                            <td>6</td>
-                            <td>Hovercract</td>
+                            <td>Row item</td>
+                            <td>Row item</td>
+                            <td>Row item</td>
                         </tr>
                     </tbody>
                 </table>
-            
+
             </div> <!-- // .content_pri -->
-            
+
             <div class="content_sec">
-            
+
                 <div class="block">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p class="cta_button"><a href="">Get all the call to action buttons</a></p>
+                    <p>This is a standard block, a standard block here. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
                 </div> <!-- // .block -->
-                
-                <div class="block">
-                    <h4>Dangerous heading</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </div> <!-- // .block -->
-                
-                <div class="block">
-                    <h4>A list of links</h4>
-                    <ul class="item_listing">
-                        <li><a href="">Nunc eu ullamcorper orci</a></li>
-                        <li><a href="">Quisque eget odio</a></li>
-                        <li><a href="">Ac lectus vestibulum faucibus</a></li>
-                        <li><a href="">Eget in metus</a></li>
-                    </ul>
-                </div> <!-- // .block -->
-                
-                <div class="block">
-                
-                    <form action="">
-                    
-                        <h4>Form heading</h4>
-                        
-                        <div class="message success">
-                            <p>Sweet success!</p>
-                        </div>
-                        
-                        <fieldset>
-                        
-                            <div>
-                                <label for="contact_name">Name <em>*</em></label>
-                                <input type="text" id="contact_name" size="30" />
-                            </div>
-                            
-                            <div class="error">
-                                <label for="contact_email">Email <em>*</em></label>
-                                <input type="text" id="contact_email" size="30" />
-                                <label class="error_message">This field is required. Fill it in now.</label>
-                            </div>
-                            
-                            <div>
-                                <label for="contact_url">URL</label>
-                                <input type="text" id="contact_url" size="30" value="http://" />
-                            </div>
-                            
-                            <div class="error">
-                                <label for="contact_reasons">Reasons for contact <em>*</em></label>
-                                <ul>
-                                    <li>
-                                        <label for="contact_reason_1">I want your babies</label>
-                                        <input type="checkbox" id="contact_reason_1" />
-                                    </li>
-                                    <li>
-                                        <label for="contact_reason_2">Can I use your CSS as a Wordpress theme?</label>
-                                        <input type="checkbox" id="contact_reason_2" />
-                                    </li>
-                                    <li>
-                                        <label for="contact_reason_3">Where do you shop?</label>
-                                        <input type="checkbox" id="contact_reason_3" />
-                                    </li>
-                                </ul>
-                                <label class="error_message">This field is required. Fill it in now.</label>
-                            </div>
-                            
-                            <div>
-                                <label for="contact_message">Message <em>*</em></label>
-                                <textarea id="contact_message" cols="30" rows="7"></textarea>
-                            </div>
-                            
-                            <div class="multiselect">
-                                <label for="submit_checkbox">Remember password, remember details, agree to terms and conditions <em>*</em></label>
-                                <input type="checkbox" id="submit_checkbox" />
-                            </div>
-                        
-                        </fieldset>
-                        
-                        <div class="submit">
-                            <input type="submit" value="Send form" />
-                        </div>
-                    
-                    </form>
-                
-                </div> <!-- // .block -->
-            
+
             </div> <!-- // .content_sec -->
-        
+
         </div> <!-- // #content_wrapper -->
 
 <?php include('_end.php') ?>
