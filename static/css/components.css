@@ -1,7 +1,6 @@
 /*
 
     COMPONENTS LIBRARY
-    For usage with screen_prototype.css
     
     @version: 1.0
     @author: Erskine Design
@@ -25,9 +24,7 @@
 /* @group 1. BLOCK -------------------- */
 
 .block {
-    background-color:#DDD;
-    margin:0 0 20px;
-    padding:20px 20px 4px;
+    
 }
 
 

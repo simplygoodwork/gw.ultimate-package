@@ -21,14 +21,6 @@
             6.1. HORIZONTAL CLASS
             6.2. PRIMARY NAVIGATION
         7. GLOBAL ELEMENTS
-            7.1. MISCELLANEOUS
-    
-    -------------------
-    
-    COLOURS -----------
-    
-        black: #000
-        white: #FFF
     
     -------------------
     
@@ -167,14 +159,20 @@ small {
     
 }
 
+figure {
+    
+}
+figure img {
+    
+}
+figcaption {
+    
+}
+
     /* @group 2.1. FORMS ---------- */
     
     form {
     
-    }
-    
-    form small {
-        
     }
     
     form dl {
@@ -205,9 +203,13 @@ small {
     
     }
     
-    input,
+    input[type="text"],
     textarea {
     
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        
     }
     textarea {
     
@@ -247,7 +249,8 @@ small {
     
     }
     
-    th, td {
+    th,
+    td {
     
     }
     th {
@@ -415,34 +418,28 @@ div#content_wrapper {
 
 /* @group 7. GLOBAL ELEMENTS -------------------- */
 
+.hide {
+    display:none;
+}
 
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
 
-    /* @group 7.1. MISCELLANEOUS -------------------- */
-    
-    .hide {
-        display:none;
-    }
-    
-    .left {
-        float:left;
-    }
-    .right {
-        float:right;
-    }
-    
-    .clearfix {
-        zoom:1;
-    }
-    .clearfix:before,
-    .clearfix:after {
-        content:"";
-        display:table;
-    }
-    .clearfix:after {
-        clear:both;
-    }
-    
-    /* @end */
+.clearfix {
+    zoom:1;
+}
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
 
 
 

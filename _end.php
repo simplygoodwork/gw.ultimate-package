@@ -22,10 +22,5 @@
     });
     </script>
 
-    <!--[if IE 6]>
-        <script src="/static/js/ie6/DD_belatedPNG_0.0.8a.js"></script>
-        <script src="/static/js/ie6/ie6.js"></script>
-    <![endif]-->
-
     </body>
 </html>

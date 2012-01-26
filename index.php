@@ -1,5 +1,5 @@
 <?php
-    $body_class = 'home';
+    $body_class = '';
     $page_title = 'Home';
     $location = 'home';
     include('_start.php');
