@@ -30,7 +30,7 @@
         <link rel="apple-touch-icon" size="57x57" href="/assets/images/site/icons/touch-iphone.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/site/icons/touch-ipad.png" />
         <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/site/icons/touch-iphone4.png" />
-        <link rel="apple-touch-startup-image" size="320x460" href="/assets/images/site/icons/touch-startup.png">
+        <link rel="apple-touch-startup-image" size="320x460" href="/assets/images/site/icons/touch-startup.png" />
         -->
 
         <!-- RSS -->
