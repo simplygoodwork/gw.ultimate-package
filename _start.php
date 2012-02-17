@@ -20,7 +20,7 @@
 
         <!-- IE CSS -->
         <!--[if IE 8]><link rel="stylesheet" media="all" type="text/css" href="/static/css/ie/screen_ie8.css" /><![endif]-->
-        <!--[if IE 7]><link rel="stylesheet" media="all" type="text/css" href="/static/css/ie/screen_ie7.css" /><![endif]-->
+        <!--[if lte IE 7]><link rel="stylesheet" media="all" type="text/css" href="/static/css/ie/screen_ie7.css" /><![endif]-->
 
         <link rel="stylesheet" media="print" type="text/css" href="/static/css/print.css" />
 
