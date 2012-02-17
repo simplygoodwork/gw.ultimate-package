@@ -1,0 +1,118 @@
+/*
+
+    COMPONENTS LIBRARY
+    
+    @version: 1.0
+    @author: Erskine Design
+    
+    CONTENTS ----------
+    
+        1. BLOCK
+        2. LISTINGS
+            2.1. ITEM LISTING
+            2.2. BLOCK LISTING
+            2.3. ARTICLE LISTING
+        3. CTA BUTTONS
+    
+    -------------------
+    
+*/
+
+
+@import "config";
+
+
+
+/* @group 1. BLOCK -------------------- */
+
+.block {
+    
+}
+
+
+
+/* @end */
+
+
+
+/* @group 2. LISTINGS -------------------- */
+
+
+
+    /* @group 2.1. ITEM LISTING -------------------- */
+
+    .item_listing {
+        list-style:none;
+        margin-bottom:0;
+        @include clearfix();
+
+        .item {
+            margin-left:0;
+            position:relative;
+            @include clearfix();
+        }
+
+        a {
+            
+
+            &:hover,
+            &:focus {
+                
+            }
+        } // .item_listing a
+
+        .item_meta {
+            
+        }
+        .item_content {
+            
+        }
+
+    } // .item_listing
+
+    /* @end */
+    
+    /* 2.2. BLOCK LISTING (Base: item_listing) -------------------- */
+
+    .block_listing {
+        
+    } // .block_listing
+
+    /* @end */
+    
+    /* @group 2.3. ARTICLE LISTING (Base: item_listing) -------------------- */
+
+    .article_listing {
+        
+    } // .article_listing
+
+    /* @end */
+
+
+
+/* @end */
+
+
+
+/* @group 3. CTA BUTTONS -------------------- */
+
+.cta_button {
+    clear:both;
+    text-align:center;
+
+    a,
+    button {
+        display:block;
+        text-decoration:none;
+
+        &:hover,
+        &:focus {
+            
+        }
+    } // .cta_button a, .cta_button button
+
+} // .cta_button
+
+/* @end */
+
+
