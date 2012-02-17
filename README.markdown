@@ -27,6 +27,21 @@ Getting started
 
 The package is a barebones framework to help you rapidly develop your projects. Create templates duplicated from index.php as you need them, use elements.php to check your styles. You can change the screen.css reference in _start.php to screen_prototype.css to use the experimental prototyping stylesheet.
 
+*Installing SASS*
+
+If you don't already have SASS installed, open a terminal window and type:
+
+    gem install sass
+
+If you're using TextMate, be sure to install the TextMate bundle:
+
+* [TM1][https://github.com/kuroir/SCSS.tmbundle]
+* [TM2][https://gist.github.com/1633355]
+
+To run SASS from the command line, open a terminal window and type:
+
+    sass --watch static/css --style compressed
+
 Before you deploy to production
 -------------------------------
 
