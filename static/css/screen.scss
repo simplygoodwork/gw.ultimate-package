@@ -414,11 +414,11 @@ div#content_wrapper {
         list-style:none;
 
         li {
-            display:inline;
+            @include inline-block;
             margin-left:0;
         }
         a {
-            
+            display:block;
         }
     } // .horizontal
     
@@ -464,7 +464,7 @@ div#content_wrapper {
 }
 
 .clearfix {
-    @include clearfix();
+    @include clearfix;
 }
 
 
