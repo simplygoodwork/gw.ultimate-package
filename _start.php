@@ -5,10 +5,9 @@
 
         <!-- META -->
         <meta charset="UTF-8" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="author" content="Erskine Design" />
         <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
         <title><?php echo $page_title ?> | Site name</title>
 
@@ -26,12 +25,6 @@
 
         <!-- ICONS -->
         <link rel="icon" type="image/png" href="/static/images/site/icons/favicon.png" />
-        <!--
-        <link rel="apple-touch-icon" size="57x57" href="/assets/images/site/icons/touch-iphone.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/site/icons/touch-ipad.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/site/icons/touch-iphone4.png" />
-        <link rel="apple-touch-startup-image" size="320x460" href="/assets/images/site/icons/touch-startup.png" />
-        -->
 
         <!-- RSS -->
         <!-- <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss/feed.xml" /> -->
@@ -63,16 +56,6 @@
                         </a>
                     </p> <!-- // #branding -->
                 <?php } ?> 
-
-                <form action="#" id="">
-                    <fieldset>
-                        <dl>
-                            <dt><label for="id_search_keywords">Search</label></dt>
-                            <dd><input type="text" name="search_keywords" id="id_search_keywords" /></dd>
-                        </dl>
-                        <button type="submit">Go</button>
-                    </fieldset>
-                </form>
 
             </div> <!-- // #header -->
 
