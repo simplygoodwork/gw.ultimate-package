@@ -1,3 +1,4 @@
+!.gitignore
 static/css/screen.css
 static/css/components.css
 .sass-cache
