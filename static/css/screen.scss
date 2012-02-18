@@ -94,12 +94,13 @@ ul {
 
 dl {
     
-}
-dt {
-    
-}
-dd {
-    
+
+    dt {
+        
+    }
+    dd {
+        
+    }
 }
 
 ol {
@@ -178,9 +179,9 @@ figure {
     img {
         
     }
-}
-figcaption {
-    
+    figcaption {
+        
+    }
 }
 
     /* @group 2.1. FORMS ---------- */
@@ -190,12 +191,13 @@ figcaption {
 
         dl {
             
-        }
-        dt {
-            
-        }
-        dd {
-            
+
+            dt {
+                
+            }
+            dd {
+                
+            }
         }
 
         ul {
@@ -348,6 +350,9 @@ a {
     &:hover,
     &:focus {
         
+    }
+    &:focus {
+        outline:0;
     }
 }
 
