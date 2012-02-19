@@ -1,24 +1,11 @@
 <?php
-    $body_class = '';
-    $page_title = 'Home';
-    $location = 'home';
-    include('_start.php');
-?>
 
-        <div id="content_wrapper">
+require_once('twig/lib/Twig/Autoloader.php');
+Twig_Autoloader::register();
 
-            <div class="content_pri">
+$loader = new Twig_Loader_Filesystem('./');
+$twig = new Twig_Environment($loader, array(
+    'cache' => './cache/',
+));
 
-                
-
-            </div> <!-- // .content_pri -->
-
-            <div class="content_sec">
-
-                
-
-            </div> <!-- // .content_sec -->
-
-        </div> <!-- // #content_wrapper -->
-
-<?php include('_end.php') ?>
+echo $twig->render('index.html');
