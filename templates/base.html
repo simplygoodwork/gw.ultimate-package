@@ -9,7 +9,7 @@
         <meta name="description" content="" />
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
-        <title><?php echo $page_title ?> | Site name</title>
+        <title>{{ page_title }} | Site name</title>
 
         <link rel="author" type="text/plain" href="/humans.txt" />
 
@@ -34,7 +34,7 @@
 
     </head>
 
-    <body class="<?php echo $body_class ?>" dir="ltr">
+    <body class="{{ body_class }}" dir="ltr">
 
         <ul id="nav_access">
             <li><a href="#nav_pri">Skip to navigation</a></li>
@@ -45,23 +45,56 @@
 
             <div id="header" role="banner">
 
-                <?php if ($location == "home") { ?> 
+                {% if location == "home" %} 
                     <h1 id="branding">
                         <img src="/static/images/site/branding/branding.png" alt="Your branding" width="480" height="100" />
                     </h1> <!-- // #branding -->
-                <?php } else { ?> 
+                {% else %} 
                     <p id="branding">
                         <a href="/">
                             <img src="/static/images/site/branding/branding.png" alt="Your branding" width="480" height="100" />
                         </a>
                     </p> <!-- // #branding -->
-                <?php } ?> 
+                {% endif %} 
 
             </div> <!-- // #header -->
 
             <ul class="horizontal" id="nav_pri" role="navigation">
-                <li<?php if ($location == "home") { ?> class="cur"<?php } ?>><a href="/">Home</a></li>
-                <li<?php if ($location == "section_1") { ?> class="cur"<?php } ?>><a href="/section1">Section 1</a></li>
-                <li<?php if ($location == "section_2") { ?> class="cur"<?php } ?>><a href="/section2">Section 2</a></li>
-                <li<?php if ($location == "section_3") { ?> class="cur"<?php } ?>><a href="/section3">Section 3</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/section1">Section 1</a></li>
+                <li><a href="/section2">Section 2</a></li>
+                <li><a href="/section3">Section 3</a></li>
             </ul> <!-- // #nav_pri -->
+
+            <div id="content_wrapper">
+
+                {% block content_wrapper %}{% endblock %}
+
+            </div> <!-- // #content_wrapper -->
+
+            <div id="footer" role="contentinfo">
+
+                <p class="copyright">&copy; {{ "now"|date("Y") }} Site name</p>
+                <p class="credit">Site by <a href="http://erskinedesign.com/">Erskine Design</a></p>
+
+            </div> <!-- // #footer -->
+
+        </div> <!-- // #page -->
+
+        <!-- JAVASCRIPT -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="/static/js/EDJ.js"></script>
+
+        <!-- CALL DOC READY FUNCTIONS -->
+        <script>
+        $(document).ready(function() {
+            var settings = {
+                debug: true,
+                STATIC_URL: '/static/'
+            };
+            EDJ.on_ready(settings);
+        });
+        </script>
+
+    </body>
+</html>
