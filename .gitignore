@@ -1,6 +1,7 @@
 !.gitignore
 !.htaccess
 static/css/screen.css
+static/css/screen_prototype.css
 static/css/components.css
 .sass-cache
 compilation_cache
