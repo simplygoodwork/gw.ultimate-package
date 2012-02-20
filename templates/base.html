@@ -60,10 +60,10 @@
             </div> <!-- // #header -->
 
             <ul class="horizontal" id="nav_pri" role="navigation">
-                <li><a href="/">Home</a></li>
-                <li><a href="/section1">Section 1</a></li>
-                <li><a href="/section2">Section 2</a></li>
-                <li><a href="/section3">Section 3</a></li>
+                <li{% if location == "home" %} class="cur"{% endif %}><a href="/">Home</a></li>
+                <li{% if location == "section1" %} class="cur"{% endif %}><a href="/section1">Section 1</a></li>
+                <li{% if location == "section2" %} class="cur"{% endif %}><a href="/section2">Section 2</a></li>
+                <li{% if location == "section3" %} class="cur"{% endif %}><a href="/section3">Section 3</a></li>
             </ul> <!-- // #nav_pri -->
 
             <div id="content_wrapper">
