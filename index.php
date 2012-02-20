@@ -3,7 +3,7 @@
 /**
  * Add your template info here
  */
-$template = key($_GET);
+$template = (key($_GET) != '') ? key($_GET) : 'index';
 
 /**
  * Twig templating
@@ -16,7 +16,7 @@ Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader, array(
     // 'debug' => TRUE,
-    'cache' => 'compilation_cache',
+    'cache' => 'lib/compilation_cache',
     'auto_reload' => TRUE
 ));
 
