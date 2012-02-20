@@ -4,3 +4,4 @@ static/css/screen.css
 static/css/components.css
 .sass-cache
 compilation_cache
+Gemfile.lock
