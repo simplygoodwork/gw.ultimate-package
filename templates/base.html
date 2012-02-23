@@ -9,7 +9,7 @@
         <meta name="description" content="" />
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
-        <title>{% block page_title %}Home{% endblock %} | Site name</title>
+        <title>{% block page_title %}{% endblock %} | Site name</title>
 
         <link rel="author" type="text/plain" href="/humans.txt" />
 
@@ -34,7 +34,7 @@
 
     </head>
 
-    <body class="{% block body_class %}home{% endblock %}" dir="ltr">
+    <body class="{% block body_class %}{% endblock %}" dir="ltr">
 
         <ul id="nav_access">
             <li><a href="#nav_pri">Skip to navigation</a></li>
@@ -45,17 +45,13 @@
 
             <div id="header" role="banner">
 
-                <!-- TODO: Need logic to show <h1> if on homepage, <p> if not. -->
-                <h1 id="branding">
-                    <img src="/static/images/site/branding/branding.png" alt="Your branding" width="480" height="100" />
-                </h1>
-                <!--
+                {% block branding %}
                 <p id="branding">
                     <a href="/">
                         <img src="/static/images/site/branding/branding.png" alt="Your branding" width="480" height="100" />
                     </a>
                 </p>
-                -->
+                {% endblock %}
 
             </div> <!-- // #header -->
 

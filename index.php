@@ -3,7 +3,7 @@
 /**
  * Add your template info here
  */
-$template = (key($_GET) != '') ? key($_GET) : 'base';
+$template = (key($_GET) != '') ? key($_GET) : 'index';
 
 /**
  * Twig templating
