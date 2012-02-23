@@ -17,11 +17,8 @@
 */
 
 
-
+@import "config";
 @import url(reset.css);
-@import url(screen.css);
-@import url(components.css);
-
 
 
 /* @group BODY -------------------- */
@@ -84,19 +81,20 @@ a {
 
 /* @group FOOTER -------------------- */
 
-div#footer {
+#footer {
     color:#666;
     font-size:0.813em;
     border-top:2px solid #999;
     margin:50px 0 0 0;
     padding:15px 0 0 0;
-}
-    div#footer p {
+
+    p {
         margin:0;
     }
-    div#footer a {
+    a {
         color:#666;
     }
+} // #footer
 
 /* @end */
 
