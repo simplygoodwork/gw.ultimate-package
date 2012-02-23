@@ -12,17 +12,10 @@ The package is a barebones framework to help you rapidly develop your projects. 
 1. **Install**: Run `gem install sass` from the terminal
 2. **Enable**: Run `sass --watch static/css:static/css/compiled --style compressed` from the terminal within your project directory
 
-## Before you deploy to production
-Firstly, don't forget to remove the following files or folders:
-
-* `/templates/elements.html`
-* `/static/images/dev`
-
-Then, the following are also worth considering:
-
-* Update your `/humans.txt` file in the root directory
-* Update the holding assets in `/holding`
-* Update your `Site Name` in `/templates/base.html` and `/static/css/screen.scss`
+## Not designed for production!
+This codebase is designed solely for development usage, we __strongly__
+advise you do not use it in production. The routing is as basic as
+possible, and thus has little protection built in.
 
 ## Credits
 The project is currently maintained by [Wil Linssen][], [Garrett Winder][] and [Chris Rowe][]. The original Ultimate Package was created by [Greg Wood][].
