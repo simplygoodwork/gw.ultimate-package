@@ -9,7 +9,7 @@
         <meta name="description" content="" />
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
-        <title>{{ page_title }} | Site name</title>
+        <title>{% block page_title %}Home{% endblock %} | Site name</title>
 
         <link rel="author" type="text/plain" href="/humans.txt" />
 
@@ -34,7 +34,7 @@
 
     </head>
 
-    <body class="{{ body_class }}" dir="ltr">
+    <body class="{% block body_class %}home{% endblock %}" dir="ltr">
 
         <ul id="nav_access">
             <li><a href="#nav_pri">Skip to navigation</a></li>
@@ -45,31 +45,44 @@
 
             <div id="header" role="banner">
 
-                {% if location == "home" %} 
-                    <h1 id="branding">
+                <!-- TODO: Need logic to show <h1> if on homepage, <p> if not. -->
+                <h1 id="branding">
+                    <img src="/static/images/site/branding/branding.png" alt="Your branding" width="480" height="100" />
+                </h1>
+                <!--
+                <p id="branding">
+                    <a href="/">
                         <img src="/static/images/site/branding/branding.png" alt="Your branding" width="480" height="100" />
-                    </h1> <!-- // #branding -->
-                {% else %} 
-                    <p id="branding">
-                        <a href="/">
-                            <img src="/static/images/site/branding/branding.png" alt="Your branding" width="480" height="100" />
-                        </a>
-                    </p> <!-- // #branding -->
-                {% endif %} 
+                    </a>
+                </p>
+                -->
 
             </div> <!-- // #header -->
 
             <ul class="horizontal" id="nav_pri" role="navigation">
-                <li{% if location == "home" %} class="cur"{% endif %}><a href="/">Home</a></li>
-                <li{% if location == "section1" %} class="cur"{% endif %}><a href="/section1">Section 1</a></li>
-                <li{% if location == "section2" %} class="cur"{% endif %}><a href="/section2">Section 2</a></li>
-                <li{% if location == "section3" %} class="cur"{% endif %}><a href="/section3">Section 3</a></li>
+                <!-- TODO: Logic for li.cur -->
+                <li class="cur"><a href="/">Home</a></li>
+                <li><a href="/section1">Section 1</a></li>
+                <li><a href="/section2">Section 2</a></li>
+                <li><a href="/section3">Section 3</a></li>
             </ul> <!-- // #nav_pri -->
 
             <div id="content_wrapper">
+                {% block content_wrapper %}
 
-                {% block content_wrapper %}{% endblock %}
+                <div class="content_pri">
 
+                    
+
+                </div> <!-- // .content_pri -->
+
+                <div class="content_sec">
+
+                    
+
+                </div> <!-- // .content_sec -->
+
+                {% endblock %}
             </div> <!-- // #content_wrapper -->
 
             <div id="footer" role="contentinfo">
