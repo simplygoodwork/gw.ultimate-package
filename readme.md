@@ -9,7 +9,6 @@ The package is a barebones framework to help you rapidly develop your projects. 
 * [SASS][] - Stylesheet language
 
 ### Installing SASS
-
 1. **Install**: Run `gem install sass` from the terminal
 2. **Enable**: Run `sass --watch static/css:static/css/compiled --style compressed` from the terminal within your project directory
 
