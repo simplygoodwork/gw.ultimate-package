@@ -1,8 +1,12 @@
 # The Ultimate Package
-The Ultimate Package is [Erskine Design][]'s framework for rapidly developing the front-end of our projects and is under constant development and improvement by the team at Erskine Design, who use it daily.
+The Ultimate Package is [Erskine Design][]'s framework for rapidly developing 
+the front-end of our projects and is under constant development and improvement 
+by the team at Erskine Design, who use it daily.
 
 ## Getting started
-The package is a barebones framework to help you rapidly develop your projects. Create templates using the [Twig template engine][] in `/templates` as you need them and use `/templates/elements.html` to check your styles.
+The package is a barebones framework to help you rapidly develop your projects. 
+Create templates using the [Twig template engine][] in `/templates` as you need
+them and use `/templates/elements.html` to check your styles.
 
 ## Requirements and setup
 * A web server to interpret the PHP files in the package
@@ -10,19 +14,13 @@ The package is a barebones framework to help you rapidly develop your projects. 
 
 ### Installing SASS
 1. **Install**: Run `gem install sass` from the terminal
-2. **Enable**: Run `sass --watch static/css:static/css/compiled --style compressed` from the terminal within your project directory
+2. **Enable**: Run `sass --watch static/css:static/css/compiled --style compressed` 
+from the terminal within your project directory
 
-## Before you deploy to production
-Firstly, don't forget to remove the following files or folders:
-
-* `/templates/elements.html`
-* `/static/images/dev`
-
-Then, the following are also worth considering:
-
-* Update your `/humans.txt` file in the root directory
-* Update the holding assets in `/holding`
-* Update your `Site Name` in `/templates/base.html` and `/static/css/screen.scss`
+## Not designed for production!
+This codebase is designed solely for development usage, we __strongly__
+advise you do not use it in production. The routing is as basic as
+possible, and thus has little protection built in.
 
 ## Credits
 The project is currently maintained by [Wil Linssen][], [Garrett Winder][] and [Chris Rowe][]. The original Ultimate Package was created by [Greg Wood][].
