@@ -8,13 +8,22 @@ The package is a barebones framework to help you rapidly develop your projects.
 Create templates using the [Twig template engine][] in `/templates` as you need
 them and use `/templates/elements.html` to check your styles.
 
+The app will render your template directly from the url, so if you go to
+`/my/page` it will render the template in `/templates/my/page.html`.
+
 ## Requirements and setup
-* A web server to interpret the PHP files in the package
+* A __PHP >= 5.3__ web server to interpret the PHP files in the package
 * [SASS][] - Stylesheet language
+
+### Installing the Ultimate Package
+1. Clone the repository, or probably better still - [download it][download] so you
+don't have all of our Git history.
+2. Install the submodules by running `git submodule init` then `git submodule update`
+3. Point your web server to the `/web` folder
 
 ### Installing SASS
 1. **Install**: Run `gem install sass` from the terminal
-2. **Enable**: Run `sass --watch static/css:static/css/compiled --style compressed` 
+2. **Enable**: Run `sass --watch web/static/css:web/static/css/compiled --style compressed` 
 from the terminal within your project directory
 
 ## Not designed for production!
@@ -23,7 +32,7 @@ advise you do not use it in production. The routing is as basic as
 possible, and thus has little protection built in.
 
 ## Credits
-The project is currently maintained by [Wil Linssen][], [Garrett Winder][] and [Chris Rowe][]. The original Ultimate Package was created by [Greg Wood][].
+The project is currently maintained by [the team at Erskine Design][]. The original Ultimate Package was created by [Greg Wood][].
 
 ## License
 The Ultimate Package is Copyright &copy; 2012 [Erskine Design][] and is licensed under the [Creative Commons 3.0][] license.
@@ -32,9 +41,9 @@ The Ultimate Package is Copyright &copy; 2012 [Erskine Design][] and is licensed
 [Twig template engine]: http://twig.sensiolabs.org/
 [SASS]: http://sass-lang.com/
 
-[Wil Linssen]: http://wil-linssen.com/
-[Garrett Winder]: http://garrettwinder.com/
-[Chris Rowe]: http://chrisrowe.net/
+[the team at Erskine Design]: https://twitter.com/erskinedesign/team/members
 [Greg Wood]: http://gregorywood.co.uk/
 
 [Creative Commons 3.0]: http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+[download]: https://github.com/erskinedesign/ed.ultimate_package/zipball/master
