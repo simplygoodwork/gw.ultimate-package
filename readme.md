@@ -32,7 +32,7 @@ advise you do not use it in production. The routing is as basic as
 possible, and thus has little protection built in.
 
 ## Credits
-The project is currently maintained by [Wil Linssen][], [Garrett Winder][] and [Chris Rowe][]. The original Ultimate Package was created by [Greg Wood][].
+The project is currently maintained by [the team at Erskine Design][]. The original Ultimate Package was created by [Greg Wood][].
 
 ## License
 The Ultimate Package is Copyright &copy; 2012 [Erskine Design][] and is licensed under the [Creative Commons 3.0][] license.
@@ -41,9 +41,7 @@ The Ultimate Package is Copyright &copy; 2012 [Erskine Design][] and is licensed
 [Twig template engine]: http://twig.sensiolabs.org/
 [SASS]: http://sass-lang.com/
 
-[Wil Linssen]: http://wil-linssen.com/
-[Garrett Winder]: http://garrettwinder.com/
-[Chris Rowe]: http://chrisrowe.net/
+[the team at Erskine Design]: https://twitter.com/erskinedesign/team/members
 [Greg Wood]: http://gregorywood.co.uk/
 
 [Creative Commons 3.0]: http://creativecommons.org/licenses/by-nc-sa/3.0/
