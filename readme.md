@@ -8,13 +8,22 @@ The package is a barebones framework to help you rapidly develop your projects.
 Create templates using the [Twig template engine][] in `/templates` as you need
 them and use `/templates/elements.html` to check your styles.
 
+The app will render your template directly from the url, so if you go to
+`/my/page` it will render the template in `/templates/my/page.html`.
+
 ## Requirements and setup
 * A web server to interpret the PHP files in the package
 * [SASS][] - Stylesheet language
 
+### Installing the Ultimate Package
+1. Clone the repository, or probably better still - [download it][download] so you
+don't have all of our Git history.
+2. Install the submodules by running `git submodule init` then `git submodule update`
+3. Point your web server to the `/web` folder
+
 ### Installing SASS
 1. **Install**: Run `gem install sass` from the terminal
-2. **Enable**: Run `sass --watch static/css:static/css/compiled --style compressed` 
+2. **Enable**: Run `sass --watch web/static/css:web/static/css/compiled --style compressed` 
 from the terminal within your project directory
 
 ## Not designed for production!
@@ -38,3 +47,5 @@ The Ultimate Package is Copyright &copy; 2012 [Erskine Design][] and is licensed
 [Greg Wood]: http://gregorywood.co.uk/
 
 [Creative Commons 3.0]: http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+[download]: https://github.com/erskinedesign/ed.ultimate_package/zipball/master
