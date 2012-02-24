@@ -2,6 +2,6 @@
 !.gitignore
 !.htaccess
 
-static/css/compiled/
+web/static/css/compiled/
 .sass-cache
 compilation_cache
