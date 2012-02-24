@@ -10,13 +10,13 @@ $template = (key($_GET) != '') ? key($_GET) : 'index';
  * http://twig-project.org/doc/
  *
  */
-require_once 'lib/Twig/Autoloader.php';
+require_once '../lib/Twig/Autoloader.php';
 Twig_Autoloader::register();
 
-$loader = new Twig_Loader_Filesystem('templates');
+$loader = new Twig_Loader_Filesystem('../templates');
 $twig = new Twig_Environment($loader, array(
     // 'debug' => TRUE,
-    'cache' => 'lib/compilation_cache',
+    'cache' => '../lib/compilation_cache',
     'auto_reload' => TRUE
 ));
 
