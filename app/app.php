@@ -2,10 +2,12 @@
 
 require_once __DIR__.'/bootstrap.php';
 
-use Symfony\Component\HttpFoundation\Response;
 
-$app->get('/', function() {
-    return new Response('Hello world');
-});
+/**
+ * Routing controller
+ */
+$app->get('{url}', function() use($app) {
+    return $app['twig']->render('index.html');
+})->assert('url', '.*');
 
 return $app;
