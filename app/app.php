@@ -2,12 +2,15 @@
 
 require_once __DIR__.'/bootstrap.php';
 
-
 /**
- * Routing controller
+ * Smallest controller eva
  */
-$app->get('{url}', function() use($app) {
-    return $app['twig']->render('index.html');
-})->assert('url', '.*');
+$app->get('{template}', function() use($app) {
+    $template = $app['request']->get('template').'.html';
+    return $app['twig']->render($template);
+})
+->assert('url', '.*')
+->value('template', 'index')
+->method('GET');
 
 return $app;
