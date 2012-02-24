@@ -12,7 +12,7 @@ The app will render your template directly from the url, so if you go to
 `/my/page` it will render the template in `/templates/my/page.html`.
 
 ## Requirements and setup
-* A web server to interpret the PHP files in the package
+* A __PHP >= 5.3__ web server to interpret the PHP files in the package
 * [SASS][] - Stylesheet language
 
 ### Installing the Ultimate Package
