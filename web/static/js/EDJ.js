@@ -94,7 +94,7 @@ EDJ.navigation = {
         });
 
         $access_links.bind("click", function(){
-            $($(this).attr("href")).find("a:first").focus();
+            $($(this).attr("href")).focus();
         });
 
     }
