@@ -41,8 +41,9 @@ body {
     /* @group 1.1. ACCESSIBILITY NAVIGATION ---------- */
     
     ul#nav_access {
-        position:relative;
+        list-style:none;
         margin:0;
+        position:relative;
 
         li {
             height:0;
