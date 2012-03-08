@@ -68,6 +68,12 @@ body {
 
     } // ul#nav_access
 
+    // Don't outline for nav_access users
+    #nav_pri:focus,
+    #content_wrapper:focus {
+        outline:0;
+    }
+
     /* @end */
 
 
