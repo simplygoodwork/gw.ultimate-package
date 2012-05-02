@@ -441,8 +441,27 @@ div#content_wrapper {
     }
 
     #branding {
-        
-    }
+        margin:0;
+        padding:0;
+
+        a {
+            display:block;
+            height:66px;
+            width:271px;
+        }
+
+    } // #branding
+    .svg #branding {
+
+        a {
+            background-image:url("../../images/site/branding/branding.svg");
+            background-repeat:no-repeat;
+        }
+        img {
+            visibility:hidden;
+        }
+
+    } // .svg #branding
 
     /* @end */
 
