@@ -63,7 +63,6 @@
             <dd>
                 <input type="text" name="address" id="id_address" />
             </dd>
-
             {#-- Small text input with quick check field --#}
             <dt><label for="id_postcode_1">Postcode</label></dt>
             <dd>
@@ -103,7 +102,7 @@
             {#-- Email input --#}
             <dt><label for="id_email">Email address</label></dt>
             <dd>
-                <input type="email" name="email" id="id_email" />
+                <input type="email" name="email" id="id_email" autocorrect="off" spellcheck="false" />
             </dd>
 
             {#-- Radio group with helper text --#}
@@ -238,7 +237,7 @@
             {#-- Textarea --#}
             <dt><label for="id_textarea">Textarea</label></dt>
             <dd>
-                <textarea name="textarea" id="id_textarea" rows="10" cols="40" ></textarea>
+                <textarea name="textarea" id="id_textarea" rows="10" cols="40" autocorrect="on" spellcheck="true"></textarea>
             </dd>
 
             {#-- Text input with quick check field --#}

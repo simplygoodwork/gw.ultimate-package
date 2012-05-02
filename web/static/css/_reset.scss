@@ -25,6 +25,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,img
 html {
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
+    // -moz-text-size-adjust:none;
+    // -webkit-text-size-adjust:none;
+    // -ms-text-size-adjust:none;
+    // text-size-adjust:none;
 }
 
 article,
