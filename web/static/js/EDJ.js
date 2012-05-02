@@ -1,3 +1,15 @@
+// Set up our global Erskine Design Javascript object
+var EDJ = {
+    settings: {
+        debug: true,
+        STATIC_URL: '/static/'
+    },
+    is_touch: false,
+    run_list: [],
+    $body: {}
+};
+
+
 EDJ.run_list = [
     'navigation'
 ];
@@ -10,9 +22,7 @@ EDJ.run_list = [
  *
  * Used on: all pages
  *
- * @namespace EDJ
  * @param settings
- * @class on_ready
  * ---------------------------------------------------------------------------------------------------
 */
 EDJ.on_ready = function(settings) {
@@ -56,9 +66,6 @@ EDJ.on_ready = function(settings) {
  *
  * Used on: all pages
  *
- * @namespace EDJ
- * @class log
- * @param anything!
  * ---------------------------------------------------------------------------------------------------
 */
 EDJ.log = function() {
@@ -75,8 +82,6 @@ EDJ.log = function() {
  *
  * Used on: all pages
  *
- * @namespace EDJ
- * @class navigation
  * ---------------------------------------------------------------------------------------------------
 */
 EDJ.navigation = {
@@ -85,16 +90,12 @@ EDJ.navigation = {
     init: function() {
         var $access_links = EDJ.$body.find('ul#nav_access li a');
 
-        $access_links.focus(function(){ 
-            $(this).addClass('focus');
+        $access_links.on('focus blur', function(){ 
+            $(this).toggleClass('focus');
         });
 
-        $access_links.blur(function(){ 
-            $(this).removeClass('focus'); 
-        });
-
-        $access_links.bind("click", function(){
-            $($(this).attr("href")).focus();
+        $access_links.on('click', function(){
+            $($(this).attr('href')).focus();
         });
 
     }
