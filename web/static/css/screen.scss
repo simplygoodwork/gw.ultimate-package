@@ -35,7 +35,10 @@
 /* @group 1. BODY -------------------- */
 
 body {
-    
+    background-color:$white;
+    color:$black;
+    font:$normal percentage($basefont/16) $sans;
+    line-height:(21 / $basefont);
 }
 
     /* @group 1.1. ACCESSIBILITY NAVIGATION ---------- */
@@ -87,8 +90,32 @@ body {
 p,
 ul,
 dl,
-ol {
-    
+ol,
+address,
+fieldset,
+figure,
+hr,
+pre,
+table,
+form {
+    // margin-bottom:;
+
+    & + h2 {
+        // padding-top:;
+    }
+    & + h3 {
+        // padding-top:;
+    }
+    & + h4 {
+        // padding-top:;
+    }
+    & + h5 {
+        // padding-top:;
+    }
+    & + h6 {
+        // padding-top:;
+    }
+
 }
 
 ul {
@@ -189,6 +216,14 @@ figure {
     figcaption {
         
     }
+}
+
+img,
+video,
+object,
+iframe {
+    height:auto;
+    max-width:100%;
 }
 
     /* @group 2.1. FORMS ---------- */
@@ -327,22 +362,39 @@ h6 {
 }
 
 h1 {
-    
+    font-size:($baseh1 / $basefont) * 1em;
+    // line-height:;
+    // margin-bottom:(20 / $baseh1) * 1em;
 }
+
 h2 {
-    
+    font-size:($baseh2 / $basefont) * 1em;
+    // line-height:;
+    // margin-bottom:(20 / $baseh2) * 1em;
 }
+
 h3 {
-    
+    font-size:($baseh3 / $basefont) * 1em;
+    // line-height:;
+    // margin-bottom:(20 / $baseh3) * 1em;
 }
+
 h4 {
-    
+    font-size:($baseh4 / $basefont) * 1em;
+    // line-height:;
+    // margin-bottom:(20 / $baseh4) * 1em;
 }
+
 h5 {
-    
+    font-size:($baseh5 / $basefont) * 1em;
+    // line-height:;
+    // margin-bottom:(20 / $baseh5) * 1em;
 }
+
 h6 {
-    
+    font-size:($baseh6 / $basefont) * 1em;
+    // line-height:;
+    // margin-bottom:(20 / $baseh6) * 1em;
 }
 
 /* @end */
