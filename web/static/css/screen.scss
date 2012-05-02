@@ -109,12 +109,12 @@ form {
     & + h4 {
         // padding-top:;
     }
-    & + h5 {
-        // padding-top:;
-    }
-    & + h6 {
-        // padding-top:;
-    }
+    // & + h5 {
+    //     padding-top:;
+    // }
+    // & + h6 {
+    //     padding-top:;
+    // }
 
 }
 
@@ -385,17 +385,17 @@ h4 {
     // margin-bottom:(20 / $baseh4) * 1em;
 }
 
-h5 {
-    font-size:($baseh5 / $basefont) * 1em;
-    // line-height:;
-    // margin-bottom:(20 / $baseh5) * 1em;
-}
+// h5 {
+//     font-size:($baseh5 / $basefont) * 1em;
+//     line-height:;
+//     margin-bottom:(20 / $baseh5) * 1em;
+// }
 
-h6 {
-    font-size:($baseh6 / $basefont) * 1em;
-    // line-height:;
-    // margin-bottom:(20 / $baseh6) * 1em;
-}
+// h6 {
+//     font-size:($baseh6 / $basefont) * 1em;
+//     line-height:;
+//     margin-bottom:(20 / $baseh6) * 1em;
+// }
 
 /* @end */
 
