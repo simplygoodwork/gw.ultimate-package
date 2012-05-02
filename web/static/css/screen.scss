@@ -452,11 +452,9 @@ div#content_wrapper {
 
     } // #branding
     .svg #branding {
+        background-image:url("../../images/site/branding/branding.svg");
+        background-repeat:no-repeat;
 
-        a {
-            background-image:url("../../images/site/branding/branding.svg");
-            background-repeat:no-repeat;
-        }
         img {
             visibility:hidden;
         }
