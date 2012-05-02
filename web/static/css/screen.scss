@@ -469,7 +469,9 @@ div#content_wrapper {
     .horizontal {
         list-style:none;
 
-        li {
+        li,
+        dt,
+        dd {
             @include inline-block;
             margin-left:0;
         }
