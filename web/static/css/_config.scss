@@ -33,6 +33,11 @@ $white:#FFF;
 
 
 
+// CALCULATE EMS
+@function calc-em($target, $context: $basefont) {
+    @return ($target / $context) * 1em;
+}
+
 // BORDER RADIUS
 @mixin border-radius($radii) {
             border-radius:$radii;
