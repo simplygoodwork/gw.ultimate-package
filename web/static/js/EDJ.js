@@ -86,7 +86,7 @@ EDJ.log = function() {
  * ---------------------------------------------------------------------------------------------------
 */
 EDJ.ios_rotate_fix = {
-    run: true,
+    run: false,
 
     init: function() {
         if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
