@@ -11,6 +11,7 @@ var EDJ = {
 
 
 EDJ.run_list = [
+    'ios_rotate_fix',
     'navigation'
 ];
 
@@ -72,6 +73,34 @@ EDJ.log = function() {
     if (EDJ.settings.debug === true && typeof(console) !== 'undefined') {
         console.log('[EDJ] ' + Array.prototype.join.call(arguments, ' '));
     }
+};
+
+
+/**
+ * iOS rotate fix
+ *
+ * Alter viewport meta when device rotates (http://adactio.com/journal/4470/)
+ *
+ * Used on: all pages
+ *
+ * ---------------------------------------------------------------------------------------------------
+*/
+EDJ.ios_rotate_fix = {
+    run: true,
+
+    init: function() {
+        if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+            var viewportmeta = document.querySelectorAll('meta[name="viewport"]')[0];
+            if (viewportmeta) {
+                viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
+                document.body.addEventListener('gesturestart', function() {
+                    viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+                }, false);
+            }
+        }
+
+    }
+
 };
 
 
