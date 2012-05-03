@@ -450,16 +450,16 @@ div#content_wrapper {
             width:271px;
         }
 
-    } // #branding
-    .svg #branding {
-        background-image:url("../../images/site/branding/branding.svg");
-        background-repeat:no-repeat;
+        .svg & {
+            background-image:url("../../images/site/branding/branding.svg");
+            background-repeat:no-repeat;
 
-        img {
-            visibility:hidden;
+            img {
+                visibility:hidden;
+            }
         }
 
-    } // .svg #branding
+    } // #branding
 
     /* @end */
 
