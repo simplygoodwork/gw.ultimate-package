@@ -9,7 +9,7 @@ $app->get('{template}', function() use($app) {
     $template = $app['request']->get('template').'.html';
     return $app['twig']->render($template);
 })
-->assert('url', '.*')
+->assert('template', '.*')
 ->value('template', 'index')
 ->method('GET');
 
