@@ -34,7 +34,7 @@ possible, and thus has little protection built in.
 ## Credits
 The project is currently maintained by [the team at Erskine Design][]. The original Ultimate Package was created by [Greg Wood][].
 
-![Erskine logo][ED branding]
+![Erskine logo](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAAAeCAMAAABuQXL6AAAAM1BMVEX///8AAAAPDw/Pz8+vr69/f39vb29fX19PT08/Pz8vLy8fHx/v7+/f39+/v7+Pj4+fn58bJ9idAAACFklEQVR4XrWW68rcMAxEdeT7Pe//tOUTcU3DFpZtd345DjkaRkJE3lTCyRc0+A53gXxDiTq/wW2Ahv+OnUCD65l6/kvoV36PWyBJZBvetMIJx+fijg1eVvMPrIcmEjbXs/bndTuOQDs20guso4j0UNn43iCK5J1Du7kJoPW7xNojLgvtB9d9WOPnECgyFUhyvEwZMLZ7O3RMwRwS5LpTGYo/WK+ADjE7ASCctFCRQhHTPlyQe6ZZCe1S6EaqJwUrUpMSDFMBdScFKJLYdsDffIZ0m5JJlnmXSxbNViKJTIJIwRTPm1JJiX0TaZufRSSjXSahN8zJBU6OlG4dl8mf3AV2xXahxN01fw9Fn8RMMKzld0S12t7sqms7hwsuD7B7vO48HLTdVa1AvbFJnlxRFWMsmaD+xkrElC1thZ26Px3HnnqE2h8LYIgndQXzcSlECdaVBnUkO0rCpmxUKLLlY4Uakm63R5E6C7GCoUScgtp5YCYS5JAB1ozKY1skAJqXh4Zi0kY7Y8uyLBjn09QwoY9VU0p6Urc/aK7tfsbNzdS7Ui7Fi2ugqZHfXt26ri5N++/HanEp4YWN4t7DXvdkebeXgLNNIQ6mfKxlWNPZWcYN8Dk2PbAXzW7DXjMfqT+xkoh7wyjrQ6yrT6xkavc2cv3jP4fAwZ4cTFNkUD/LoEIZLwKHZnMw+kfcCullONPJv6gR5Qv6BbiLD7urGduOAAAAAElFTkSuQmCC)
 
 ## License
 The Ultimate Package is Copyright &copy; 2012 [Erskine Design][] and is licensed under the [Creative Commons 3.0][] license.
@@ -49,5 +49,3 @@ The Ultimate Package is Copyright &copy; 2012 [Erskine Design][] and is licensed
 [Creative Commons 3.0]: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
 [download]: https://github.com/erskinedesign/ed.ultimate_package/zipball/master
-
-[ED branding]: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAAAeCAMAAABuQXL6AAAAM1BMVEX///8AAAAPDw/Pz8+vr69/f39vb29fX19PT08/Pz8vLy8fHx/v7+/f39+/v7+Pj4+fn58bJ9idAAACFklEQVR4XrWW68rcMAxEdeT7Pe//tOUTcU3DFpZtd345DjkaRkJE3lTCyRc0+A53gXxDiTq/wW2Ahv+OnUCD65l6/kvoV36PWyBJZBvetMIJx+fijg1eVvMPrIcmEjbXs/bndTuOQDs20guso4j0UNn43iCK5J1Du7kJoPW7xNojLgvtB9d9WOPnECgyFUhyvEwZMLZ7O3RMwRwS5LpTGYo/WK+ADjE7ASCctFCRQhHTPlyQe6ZZCe1S6EaqJwUrUpMSDFMBdScFKJLYdsDffIZ0m5JJlnmXSxbNViKJTIJIwRTPm1JJiX0TaZufRSSjXSahN8zJBU6OlG4dl8mf3AV2xXahxN01fw9Fn8RMMKzld0S12t7sqms7hwsuD7B7vO48HLTdVa1AvbFJnlxRFWMsmaD+xkrElC1thZ26Px3HnnqE2h8LYIgndQXzcSlECdaVBnUkO0rCpmxUKLLlY4Uakm63R5E6C7GCoUScgtp5YCYS5JAB1ozKY1skAJqXh4Zi0kY7Y8uyLBjn09QwoY9VU0p6Urc/aK7tfsbNzdS7Ui7Fi2ugqZHfXt26ri5N++/HanEp4YWN4t7DXvdkebeXgLNNIQ6mfKxlWNPZWcYN8Dk2PbAXzW7DXjMfqT+xkoh7wyjrQ6yrT6xkavc2cv3jP4fAwZ4cTFNkUD/LoEIZLwKHZnMw+kfcCullONPJv6gR5Qv6BbiLD7urGduOAAAAAElFTkSuQmCC
