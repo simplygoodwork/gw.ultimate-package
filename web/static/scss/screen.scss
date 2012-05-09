@@ -87,17 +87,17 @@ body {
 
 /* @group 2. DEFAULT STYLING -------------------- */
 
-p,
-ul,
-dl,
-ol,
 address,
+dl,
 fieldset,
 figure,
+form,
 hr,
+ol,
+p,
 pre,
 table,
-form {
+ul {
     // margin-bottom:;
 
     & + h2 {
@@ -126,6 +126,14 @@ ul {
     }
 }
 
+ol {
+    
+
+    li {
+        
+    }
+}
+
 dl {
     
 
@@ -133,14 +141,6 @@ dl {
         
     }
     dd {
-        
-    }
-}
-
-ol {
-    
-
-    li {
         
     }
 }
@@ -218,10 +218,10 @@ figure {
     }
 }
 
+iframe,
 img,
-video,
 object,
-iframe {
+video {
     height:auto;
     max-width:100%;
 }
@@ -486,9 +486,9 @@ div#content_wrapper {
     .horizontal {
         list-style:none;
 
-        li,
+        dd,
         dt,
-        dd {
+        li {
             @include inline-block;
             margin-left:0;
         }
