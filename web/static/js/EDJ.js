@@ -1,5 +1,7 @@
 // Set up our global Erskine Design Javascript object
-var EDJ = {
+var $,
+    console,
+    EDJ = {
     settings: {
         debug: true,
         STATIC_URL: '/static/'
@@ -27,8 +29,8 @@ EDJ.run_list = [
  * ---------------------------------------------------------------------------------------------------
 */
 EDJ.on_ready = function(settings) {
-    var i = 0;
-    var functions_to_run = EDJ.run_list.length;
+    var i = 0,
+        functions_to_run = EDJ.run_list.length;
 
     // Extend the settings object with any vars passed in
     $.extend(EDJ.settings, settings);
