@@ -1,4 +1,321 @@
 /* Modernizr 2.5.3 (Custom Build) | MIT & BSD
  * Build: http://www.modernizr.com/download/#-svg-touch-shiv-cssclasses-teststyles-prefixes
  */
-;window.Modernizr=function(a,b,c){function x(a){j.cssText=a}function y(a,b){return x(m.join(a+";")+(b||""))}function z(a,b){return typeof a===b}function A(a,b){return!!~(""+a).indexOf(b)}function B(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:z(f,"function")?f.bind(d||b):f}return!1}var d="2.5.3",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n={svg:"http://www.w3.org/2000/svg"},o={},p={},q={},r=[],s=r.slice,t,u=function(a,c,d,e){var f,i,j,k=b.createElement("div"),l=b.body,m=l?l:b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),k.appendChild(j);return f=["&#173;","<style>",a,"</style>"].join(""),k.id=h,(l?k:m).innerHTML+=f,m.appendChild(k),l||(m.style.background="",g.appendChild(m)),i=c(k,a),l?k.parentNode.removeChild(k):m.parentNode.removeChild(m),!!i},v={}.hasOwnProperty,w;!z(v,"undefined")&&!z(v.call,"undefined")?w=function(a,b){return v.call(a,b)}:w=function(a,b){return b in a&&z(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=s.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(s.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(s.call(arguments)))};return e});var C=function(c,d){var f=c.join(""),g=d.length;u(f,function(c,d){var f=b.styleSheets[b.styleSheets.length-1],h=f?f.cssRules&&f.cssRules[0]?f.cssRules[0].cssText:f.cssText||"":"",i=c.childNodes,j={};while(g--)j[i[g].id]=i[g];e.touch="ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch||(j.touch&&j.touch.offsetTop)===9},g,d)}([,["@media (",m.join("touch-enabled),("),h,")","{#touch{top:9px;position:absolute}}"].join("")],[,"touch"]);o.touch=function(){return e.touch},o.svg=function(){return!!b.createElementNS&&!!b.createElementNS(n.svg,"svg").createSVGRect};for(var D in o)w(o,D)&&(t=D.toLowerCase(),e[t]=o[D](),r.push((e[t]?"":"no-")+t));return x(""),i=k=null,function(a,b){function g(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function h(){var a=k.elements;return typeof a=="string"?a.split(" "):a}function i(a){var b={},c=a.createElement,e=a.createDocumentFragment,f=e();a.createElement=function(a){var e=(b[a]||(b[a]=c(a))).cloneNode();return k.shivMethods&&e.canHaveChildren&&!d.test(a)?f.appendChild(e):e},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+h().join().replace(/\w+/g,function(a){return b[a]=c(a),f.createElement(a),'c("'+a+'")'})+");return n}")(k,f)}function j(a){var b;return a.documentShived?a:(k.shivCSS&&!e&&(b=!!g(a,"article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio{display:none}canvas,video{display:inline-block;*display:inline;*zoom:1}[hidden]{display:none}audio[controls]{display:inline-block;*display:inline;*zoom:1}mark{background:#FF0;color:#000}")),f||(b=!i(a)),b&&(a.documentShived=b),a)}var c=a.html5||{},d=/^<|^(?:button|form|map|select|textarea)$/i,e,f;(function(){var a=b.createElement("a");a.innerHTML="<xyz></xyz>",e="hidden"in a,f=a.childNodes.length==1||function(){try{b.createElement("a")}catch(a){return!0}var c=b.createDocumentFragment();return typeof c.cloneNode=="undefined"||typeof c.createDocumentFragment=="undefined"||typeof c.createElement=="undefined"}()})();var k={elements:c.elements||"abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video",shivCSS:c.shivCSS!==!1,shivMethods:c.shivMethods!==!1,type:"default",shivDocument:j};a.html5=k,j(b)}(this,b),e._version=d,e._prefixes=m,e.testStyles=u,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+r.join(" "):""),e}(this,this.document);
+;
+
+
+
+window.Modernizr = (function( window, document, undefined ) {
+
+    var version = '2.5.3',
+
+    Modernizr = {},
+
+    enableClasses = true,
+
+    docElement = document.documentElement,
+
+    mod = 'modernizr',
+    modElem = document.createElement(mod),
+    mStyle = modElem.style,
+
+    inputElem  ,
+
+
+    toString = {}.toString,
+
+    prefixes = ' -webkit- -moz- -o- -ms- '.split(' '),
+
+
+    ns = {'svg': 'http://www.w3.org/2000/svg'},
+
+    tests = {},
+    inputs = {},
+    attrs = {},
+
+    classes = [],
+
+    slice = classes.slice,
+
+    featureName, 
+
+
+    injectElementWithStyles = function( rule, callback, nodes, testnames ) {
+
+      var style, ret, node,
+          div = document.createElement('div'),
+                body = document.body, 
+                fakeBody = body ? body : document.createElement('body');
+
+      if ( parseInt(nodes, 10) ) {
+                      while ( nodes-- ) {
+              node = document.createElement('div');
+              node.id = testnames ? testnames[nodes] : mod + (nodes + 1);
+              div.appendChild(node);
+          }
+      }
+
+                style = ['&#173;','<style>', rule, '</style>'].join('');
+      div.id = mod;
+          (body ? div : fakeBody).innerHTML += style;
+      fakeBody.appendChild(div);
+      if(!body){
+                fakeBody.style.background = "";
+          docElement.appendChild(fakeBody);
+      }
+
+      ret = callback(div, rule);
+        !body ? fakeBody.parentNode.removeChild(fakeBody) : div.parentNode.removeChild(div);
+
+      return !!ret;
+
+    },
+    _hasOwnProperty = ({}).hasOwnProperty, hasOwnProperty;
+
+    if ( !is(_hasOwnProperty, 'undefined') && !is(_hasOwnProperty.call, 'undefined') ) {
+      hasOwnProperty = function (object, property) {
+        return _hasOwnProperty.call(object, property);
+      };
+    }
+    else {
+      hasOwnProperty = function (object, property) { 
+        return ((property in object) && is(object.constructor.prototype[property], 'undefined'));
+      };
+    }
+
+
+    if (!Function.prototype.bind) {
+      Function.prototype.bind = function bind(that) {
+
+        var target = this;
+
+        if (typeof target != "function") {
+            throw new TypeError();
+        }
+
+        var args = slice.call(arguments, 1),
+            bound = function () {
+
+            if (this instanceof bound) {
+
+              var F = function(){};
+              F.prototype = target.prototype;
+              var self = new F;
+
+              var result = target.apply(
+                  self,
+                  args.concat(slice.call(arguments))
+              );
+              if (Object(result) === result) {
+                  return result;
+              }
+              return self;
+
+            } else {
+
+              return target.apply(
+                  that,
+                  args.concat(slice.call(arguments))
+              );
+
+            }
+
+        };
+
+        return bound;
+      };
+    }
+
+    function setCss( str ) {
+        mStyle.cssText = str;
+    }
+
+    function setCssAll( str1, str2 ) {
+        return setCss(prefixes.join(str1 + ';') + ( str2 || '' ));
+    }
+
+    function is( obj, type ) {
+        return typeof obj === type;
+    }
+
+    function contains( str, substr ) {
+        return !!~('' + str).indexOf(substr);
+    }
+
+
+    function testDOMProps( props, obj, elem ) {
+        for ( var i in props ) {
+            var item = obj[props[i]];
+            if ( item !== undefined) {
+
+                            if (elem === false) return props[i];
+
+                            if (is(item, 'function')){
+                                return item.bind(elem || obj);
+                }
+
+                            return item;
+            }
+        }
+        return false;
+    }
+
+
+    var testBundle = (function( styles, tests ) {
+        var style = styles.join(''),
+            len = tests.length;
+
+        injectElementWithStyles(style, function( node, rule ) {
+            var style = document.styleSheets[document.styleSheets.length - 1],
+                                                    cssText = style ? (style.cssRules && style.cssRules[0] ? style.cssRules[0].cssText : style.cssText || '') : '',
+                children = node.childNodes, hash = {};
+
+            while ( len-- ) {
+                hash[children[len].id] = children[len];
+            }
+
+                       Modernizr['touch'] = ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch || (hash['touch'] && hash['touch'].offsetTop) === 9; 
+                                }, len, tests);
+
+    })([
+                       ,['@media (',prefixes.join('touch-enabled),('),mod,')',
+                                '{#touch{top:9px;position:absolute}}'].join('')           ],
+      [
+                       ,'touch'                ]);
+
+
+
+    tests['touch'] = function() {
+        return Modernizr['touch'];
+    };
+
+
+
+    tests['svg'] = function() {
+        return !!document.createElementNS && !!document.createElementNS(ns.svg, 'svg').createSVGRect;
+    };
+    for ( var feature in tests ) {
+        if ( hasOwnProperty(tests, feature) ) {
+                                    featureName  = feature.toLowerCase();
+            Modernizr[featureName] = tests[feature]();
+
+            classes.push((Modernizr[featureName] ? '' : 'no-') + featureName);
+        }
+    }
+    setCss('');
+    modElem = inputElem = null;
+
+    ;(function(window, document) {
+
+        var options = window.html5 || {};
+
+        var reSkip = /^<|^(?:button|form|map|select|textarea)$/i;
+
+        var supportsHtml5Styles;
+
+        var supportsUnknownElements;
+
+      (function() {
+        var a = document.createElement('a');
+
+        a.innerHTML = '<xyz></xyz>';
+
+            supportsHtml5Styles = ('hidden' in a);
+        supportsUnknownElements = a.childNodes.length == 1 || (function() {
+                try {
+            (document.createElement)('a');
+          } catch(e) {
+            return true;
+          }
+          var frag = document.createDocumentFragment();
+          return (
+            typeof frag.cloneNode == 'undefined' ||
+            typeof frag.createDocumentFragment == 'undefined' ||
+            typeof frag.createElement == 'undefined'
+          );
+        }());
+
+      }());        function addStyleSheet(ownerDocument, cssText) {
+        var p = ownerDocument.createElement('p'),
+            parent = ownerDocument.getElementsByTagName('head')[0] || ownerDocument.documentElement;
+
+        p.innerHTML = 'x<style>' + cssText + '</style>';
+        return parent.insertBefore(p.lastChild, parent.firstChild);
+      }
+
+        function getElements() {
+        var elements = html5.elements;
+        return typeof elements == 'string' ? elements.split(' ') : elements;
+      }
+
+        function shivMethods(ownerDocument) {
+        var cache = {},
+            docCreateElement = ownerDocument.createElement,
+            docCreateFragment = ownerDocument.createDocumentFragment,
+            frag = docCreateFragment();
+
+
+        ownerDocument.createElement = function(nodeName) {
+                                                    var node = (cache[nodeName] || (cache[nodeName] = docCreateElement(nodeName))).cloneNode();
+          return html5.shivMethods && node.canHaveChildren && !reSkip.test(nodeName) ? frag.appendChild(node) : node;
+        };
+
+        ownerDocument.createDocumentFragment = Function('h,f', 'return function(){' +
+          'var n=f.cloneNode(),c=n.createElement;' +
+          'h.shivMethods&&(' +
+                    getElements().join().replace(/\w+/g, function(nodeName) {
+              cache[nodeName] = docCreateElement(nodeName);
+              frag.createElement(nodeName);
+              return 'c("' + nodeName + '")';
+            }) +
+          ');return n}'
+        )(html5, frag);
+      }        function shivDocument(ownerDocument) {
+        var shived;
+        if (ownerDocument.documentShived) {
+          return ownerDocument;
+        }
+        if (html5.shivCSS && !supportsHtml5Styles) {
+          shived = !!addStyleSheet(ownerDocument,
+                    'article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}' +
+                    'audio{display:none}' +
+                    'canvas,video{display:inline-block;*display:inline;*zoom:1}' +
+                    '[hidden]{display:none}audio[controls]{display:inline-block;*display:inline;*zoom:1}' +
+                    'mark{background:#FF0;color:#000}'
+          );
+        }
+        if (!supportsUnknownElements) {
+          shived = !shivMethods(ownerDocument);
+        }
+        if (shived) {
+          ownerDocument.documentShived = shived;
+        }
+        return ownerDocument;
+      }        var html5 = {
+
+            'elements': options.elements || 'abbr article aside audio bdi canvas data datalist details figcaption figure footer header hgroup mark meter nav output progress section summary time video',
+
+            'shivCSS': !(options.shivCSS === false),
+
+            'shivMethods': !(options.shivMethods === false),
+
+            'type': 'default',
+            'shivDocument': shivDocument
+      };        window.html5 = html5;
+
+        shivDocument(document);
+
+    }(this, document));
+
+    Modernizr._version      = version;
+
+    Modernizr._prefixes     = prefixes;
+
+    Modernizr.testStyles    = injectElementWithStyles;    docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +
+
+                                                    (enableClasses ? ' js ' + classes.join(' ') : '');
+
+    return Modernizr;
+
+})(this, this.document);
+;
