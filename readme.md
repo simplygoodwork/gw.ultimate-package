@@ -9,7 +9,7 @@ Create templates using the [Twig template engine][] in `/templates` as you need
 them and use `/templates/elements.html` to check your styles.
 
 The app will render your template directly from the url, so if you go to
-`/my/page` it will render the template in `/templates/my/page.html`.
+`/my/page.html` it will render the template in `/templates/my/page.html`.
 
 ## Requirements and setup
 * A __PHP >= 5.3__ web server to interpret the PHP files in the package
