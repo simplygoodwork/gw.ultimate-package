@@ -484,13 +484,21 @@ div#content_wrapper {
     /* @group 6.1. HORIZONTAL CLASS -------------------- */
 
     .horizontal {
+        *letter-spacing: normal; /* reset IE < 8 */
+        letter-spacing: -0.31em; /* webkit */
         list-style:none;
+        word-spacing: -0.43em; /* IE < 8 && gecko */
 
         dd,
         dt,
         li {
             @include inline-block;
+            display: inline-block;
+            letter-spacing: normal;
             margin-left:0;
+            vertical-align: top;
+            word-spacing: normal;
+            zoom: 1; *display: inline; /* IE < 8: fake inline-block */
         }
         a {
             display:block;
