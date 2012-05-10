@@ -40,8 +40,8 @@ $white:#FFF;
 
 // BORDER RADIUS
 @mixin border-radius($radii) {
-    border-radius:$radii;
     -webkit-border-radius:$radii;
+    border-radius:$radii;
 }
 
 // GRADIENT
