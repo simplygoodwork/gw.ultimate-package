@@ -1,11 +1,11 @@
-// Font stacks
+// FONT STACKS
 
 $sans:sans-serif;
 $serif:serif;
 
 
 
-// Font sizes
+// FONT SIZES
 
 $basefont:14;
 $baseh1:26;
@@ -17,7 +17,7 @@ $baseh4:14;
 
 
 
-// Font weights
+// FONT WEIGHTS
 
 $lighter:300;
 $normal:400;
@@ -26,7 +26,7 @@ $bold:700;
 
 
 
-// Colours
+// COLOURS
 
 $black:#000;
 $white:#FFF;
@@ -40,24 +40,22 @@ $white:#FFF;
 
 // BORDER RADIUS
 @mixin border-radius($radii) {
-            border-radius:$radii;
+    border-radius:$radii;
     -webkit-border-radius:$radii;
 }
 
 // GRADIENT
 @mixin gradient($from, $to, $fallback: $to) {
     background-color:$fallback;
-    background-image:       -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+    background-image:-webkit-gradient(linear, left top, left bottom, from($from), to($to));
     background-image:-webkit-linear-gradient(top, $from, $to);
-    background-image:   -moz-linear-gradient(top, $from, $to);
-    background-image:    -ms-linear-gradient(top, $from, $to);
-    background-image:     -o-linear-gradient(top, $from, $to);
-    background:              linear-gradient(to left bottom, $from, $to);
+    background-image:-moz-linear-gradient(top, $from, $to);
+    background-image:-ms-linear-gradient(top, $from, $to);
+    background-image:-o-linear-gradient(top, $from, $to);
+    background:linear-gradient(to left bottom, $from, $to);
 }
 
-// ADAPTED FROM BOURBON: https://github.com/thoughtbot/bourbon/
-
-// Micro clearfix provides an easy way to contain floats without adding additional markup
+// CLEARFIX
 @mixin clearfix {
     &:before,
     &:after {
@@ -70,13 +68,13 @@ $white:#FFF;
     zoom:1;
 }
 
-// Legacy support for inline-block in IE7 (maybe IE6)
+// INLINE BLOCK
 @mixin inline-block {
-  display:-moz-inline-box;
-  -moz-box-orient:vertical;
-  display:inline-block;
-  vertical-align:baseline;
-  zoom:1;
-  *display:inline;
-  *vertical-align:auto;
+    display:-moz-inline-box;
+    -moz-box-orient:vertical;
+    display:inline-block;
+    vertical-align:baseline;
+    zoom:1;
+    *display:inline;
+    *vertical-align:auto;
 }
