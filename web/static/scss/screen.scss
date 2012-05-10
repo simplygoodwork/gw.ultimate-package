@@ -1,38 +1,37 @@
+@import "config";
+@import "reset";
+
+
 /*
 
     [PROJECT NAME]
-    
+
     @version: 1.0
     @author: Erskine Design
-    
+
     CONTENTS ----------
-    
-        1 BODY
-            1.1 ACCESSIBILITY NAVIGATION
-        2. DEFAULT STYLING
-            2.1. FORMS
-            2.2. TABLES
-        3. HEADLINES
-        4. LINKS
-        5. LAYOUT
-            5.1. HEADER & BRANDING
-            5.2. FOOTER
-        6. NAVIGATION
-            6.1. HORIZONTAL CLASS
-            6.2. PRIMARY NAVIGATION
-        7. GLOBAL ELEMENTS
-    
+
+        - BODY
+            - ACCESSIBILITY NAVIGATION
+        - DEFAULT STYLING
+            - FORMS
+            - TABLES
+        - HEADLINES
+        - LINKS
+        - LAYOUT
+            - HEADER & BRANDING
+            - FOOTER
+        - NAVIGATION
+            - HORIZONTAL CLASS
+            - PRIMARY NAVIGATION
+        - GLOBAL ELEMENTS & COMPONENTS
+
     -------------------
-    
+
 */
 
 
-
-@import "reset";
-@import "config";
-
-
-/* @group 1. BODY -------------------- */
+// @start BODY -------------------- //
 
 body {
     background-color:$white;
@@ -41,7 +40,7 @@ body {
     line-height:(21 / $basefont);
 }
 
-    /* @group 1.1. ACCESSIBILITY NAVIGATION ---------- */
+    // @start ACCESSIBILITY NAVIGATION -------------------- //
     
     ul#nav_access {
         list-style:none;
@@ -77,15 +76,13 @@ body {
         outline:0;
     }
 
-    /* @end */
+    // @end ACCESSIBILITY NAVIGATION //
+
+// @end BODY //
 
 
 
-/* @end */
-
-
-
-/* @group 2. DEFAULT STYLING -------------------- */
+// @start DEFAULT STYLING -------------------- //
 
 address,
 dl,
@@ -226,7 +223,7 @@ video {
     max-width:100%;
 }
 
-    /* @group 2.1. FORMS ---------- */
+    // @start FORMS -------------------- //
 
     form {
         
@@ -280,7 +277,6 @@ video {
         
     }
 
-    /* SUBMIT ---------- */
     form .cta_button {
         
         button {
@@ -288,11 +284,11 @@ video {
             cursor:pointer;
             vertical-align:baseline;
         }
-    } // form .cta_button
+    }
 
-    /* @end */
+    // @end FORMS //
 
-    /* @group 2.2. TABLES ---------- */
+    // @start TABLES -------------------- //
 
     table {
         
@@ -342,15 +338,13 @@ video {
         }
     } // tbody
 
-    /* @end */
+    // @end TABLES //
+
+// @end DEFAULT STYLING //
 
 
 
-/* @end */
-
-
-
-/* @group 3. HEADLINES -------------------- */
+// @start HEADLINES -------------------- //
 
 h1,
 h2,
@@ -397,11 +391,11 @@ h4 {
 //     margin-bottom:calc-em(20, $baseh6);
 // }
 
-/* @end */
+// @end HEADLINES //
 
 
 
-/* @group 4. LINKS -------------------- */
+// @start LINKS -------------------- //
 
 a {
     
@@ -412,11 +406,11 @@ a {
     }
 }
 
-/* @end */
+// @end LINKS //
 
 
 
-/* @group 5. LAYOUT -------------------- */
+// @start LAYOUT -------------------- //
 
 div#page {
     
@@ -434,7 +428,7 @@ div#content_wrapper {
     
 }
 
-    /* @group 5.1. HEADER & BRANDING -------------------- */
+    // @start HEADER & BRANDING -------------------- //
 
     #header {
         
@@ -461,27 +455,23 @@ div#content_wrapper {
 
     } // #branding
 
-    /* @end */
+    // @end HEADER & BRANDING //
 
-    /* @group 5.2. FOOTER -------------------- */
+    // @start FOOTER -------------------- //
 
     #footer {
         
     }
 
-    /* @end */
+    // @end FOOTER //
+
+// @end LAYOUT //
 
 
 
-/* @end */
+// @start NAVIGATION -------------------- //
 
-
-
-/* @group 6. NAVIGATION -------------------- */
-
-
-
-    /* @group 6.1. HORIZONTAL CLASS -------------------- */
+    /* @start HORIZONTAL CLASS -------------------- */
 
     .horizontal {
         list-style:none;
@@ -495,11 +485,11 @@ div#content_wrapper {
         a {
             display:block;
         }
-    } // .horizontal
+    }
     
-    /* @end */
+    // @end HORIZONTAL CLASS //
     
-    /* @group 6.2. PRIMARY NAVIGATION -------------------- */
+    // @start PRIMARY NAVIGATION -------------------- //
     
     ul#nav_pri {
         
@@ -515,17 +505,15 @@ div#content_wrapper {
                 
             }
         }
-    } // ul#nav_pri
+    }
 
-    /* @end */
+    // @end PRIMARY NAVIGATION //
 
-
-
-/* @end */
+// @end NAVIGATION //
 
 
 
-/* @group 7. GLOBAL ELEMENTS -------------------- */
+// @start GLOBAL ELEMENTS & COMPONENTS -------------------- //
 
 .hide {
     display:none;
@@ -542,10 +530,8 @@ div#content_wrapper {
     @include clearfix;
 }
 
-/* @end */
-
-
-
 @import "components";
+
+// @end GLOBAL ELEMENTS & COMPONENTS //
 
 

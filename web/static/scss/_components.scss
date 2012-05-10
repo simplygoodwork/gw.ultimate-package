@@ -1,42 +1,36 @@
 /*
 
     COMPONENTS LIBRARY
-    
-    @version: 1.0
+
     @author: Erskine Design
-    
+
     CONTENTS ----------
-    
-        1. BLOCK
-        2. LISTINGS
-            2.1. ITEM LISTING
-            2.2. BLOCK LISTING
-            2.3. ARTICLE LISTING
-        3. CTA BUTTONS
-    
+
+        - BLOCK
+        - LISTINGS
+            - ITEM LISTING
+            - BLOCK LISTING
+            - ARTICLE LISTING
+        - CTA BUTTONS
+
     -------------------
-    
+
 */
 
 
-
-/* @group 1. BLOCK -------------------- */
+// @start BLOCK -------------------- //
 
 .block {
     
 }
 
-
-
-/* @end */
-
-
-
-/* @group 2. LISTINGS -------------------- */
+// @end BLOCK //
 
 
 
-    /* @group 2.1. ITEM LISTING -------------------- */
+// @start LISTINGS -------------------- //
+
+    // @start ITEM LISTING -------------------- //
 
     .item_listing {
         list-style:none;
@@ -65,33 +59,31 @@
             
         }
 
-    } // .item_listing
+    }
 
-    /* @end */
-    
-    /* 2.2. BLOCK LISTING (Base: item_listing) -------------------- */
+    // @end ITEM LISTING //
+
+    // @start BLOCK LISTING (Base: item_listing) -------------------- //
 
     .block_listing {
         
-    } // .block_listing
+    }
 
-    /* @end */
-    
-    /* @group 2.3. ARTICLE LISTING (Base: item_listing) -------------------- */
+    // @end BLOCK LISTING //
+
+    // @start ARTICLE LISTING (Base: item_listing) -------------------- //
 
     .article_listing {
         
-    } // .article_listing
+    }
 
-    /* @end */
+    // @end ARTICLE LISTING //
 
-
-
-/* @end */
+// @end LISTINGS //
 
 
 
-/* @group 3. CTA BUTTONS -------------------- */
+// @start CTA BUTTONS -------------------- //
 
 .cta_button {
     clear:both;
@@ -108,8 +100,8 @@
         }
     } // .cta_button a, .cta_button button
 
-} // .cta_button
+}
 
-/* @end */
+// @end CTA BUTTONS //
 
 

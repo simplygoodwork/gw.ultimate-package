@@ -1,27 +1,26 @@
+@import "config";
+@import "reset";
+
+
 /*
 
     PRINT STYLESHEET
-    
-    @version: 1.0
+
     @author: Erskine Design
-    
+
     CONTENTS ----------
-    
+
         - BODY
         - HEADLINES
         - LINKS
         - FOOTER
-    
+
     -------------------
- 
+
 */
 
 
-@import "reset";
-@import "config";
-
-
-/* @group BODY -------------------- */
+// @start BODY -------------------- //
 
 body {
     font-family:16px/1.375em Georgia,serif;
@@ -29,17 +28,16 @@ body {
     padding:7%;
 }
 
-/* DISPLAY NONE */
 form,
 .pagination {
     display:none;
 }
 
-/* @end */
+// @end BODY //
 
 
 
-/* @group HEADLINES -------------------- */
+// @start HEADLINES -------------------- //
 
 h1,h2,h3,h4 { 
     font-weight:normal;
@@ -64,22 +62,22 @@ h4 {
     font-style:italic;
 }
 
-/* @end */
+// @end HEADLINES //
 
 
 
-/* @group LINKS -------------------- */
+// @start LINKS -------------------- //
 
 a {
     color:#000;
     text-decoration:underline;
 }
 
-/* @end */
+// @end LINKS //
 
 
 
-/* @group FOOTER -------------------- */
+// @start FOOTER -------------------- //
 
 #footer {
     color:#666;
@@ -94,8 +92,8 @@ a {
     a {
         color:#666;
     }
-} // #footer
+}
 
-/* @end */
+// @end FOOTER //
 
 
