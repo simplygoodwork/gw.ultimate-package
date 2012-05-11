@@ -8,9 +8,11 @@
 //      - FONT SIZES
 //      - FONT WEIGHTS
 //      - COLOURS
+//      - SPRITE
 //  - FUNCTIONS
 //      - EM CALC
 //  - MIXINS
+//      - SPRITE BACKGROUND
 //      - BORDER RADIUS
 //      - LINEAR GRADIENT
 //      - MICRO CLEARFIX
@@ -55,6 +57,12 @@
 
     // @end COLOURS //
 
+    // @start SPRITE -------------------- //
+
+    $sprite: twitter, facebook, email;
+
+    // @end SPRITE //
+
 // @end DEFAULT VARIABLES //
 
 
@@ -74,6 +82,36 @@
 
 
 // @start MIXINS -------------------- //
+
+    // @start SPRITE BACKGROUND -------------------- //
+
+    @mixin sprite-bg($crop, $x:0, $y:$x, $hover:true) {
+        $spritegrid:500;
+        $i:0;
+        @each $part in $sprite {
+            @if ($part == $crop) {
+                $i:index($sprite, $part);
+            }
+        }
+        @if $i == 0 {
+            @warn "sprite-bg can't find #{$crop} in '$sprite'";
+        }
+        background-image:url("/static/images/icons/sprite.png");
+        background-position-x: ($x * 1px);
+        background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y);
+        background-repeat:no-repeat;
+        @if $hover == true {
+            &:hover,
+            &:focus {        
+                background-position-x: (($spritegrid * -1px) + ($x * 1px));
+            }
+        }
+        .svg & {
+            background-image:url("/static/images/icons/sprite.png");
+        }
+    }
+
+    // @end SPRITE BACKGROUND //
 
     // @start BORDER RADIUS -------------------- //
 
