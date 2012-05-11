@@ -94,7 +94,7 @@
             }
         }
         @if $i == 0 {
-            @warn "sprite-bg can't find #{$crop} in '$sprite'";
+            @warn "sprite-bg can't find '#{$crop}' in $sprite";
         }
         background-image:url("/static/images/icons/sprite.png");
         background-position-x: ($x * 1px);
