@@ -100,7 +100,7 @@
         background-position-x: ($x * 1px);
         background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y);
         background-repeat:no-repeat;
-        @if $hover == true {
+        @if $hover {
             &:hover,
             &:focus {        
                 background-position-x: (($spritegrid * -1px) + ($x * 1px));
