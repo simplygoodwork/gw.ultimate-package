@@ -3,7 +3,7 @@ The Ultimate Package is [Erskine Design][]'s framework for rapidly developing
 the front-end of our projects and is under constant development and improvement 
 by the team at Erskine Design, who use it daily.
 
-For Erskine's front-end coding standards, please refer to the [wiki][].
+Please refer to the wiki for [Erskine's front-end coding standards][wiki]
 
 ## Getting started
 The package is a barebones framework to help you rapidly develop your projects. 
