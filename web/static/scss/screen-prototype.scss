@@ -272,10 +272,12 @@ video {
     } // label
 
     input[type="text"],
+    input[type="email"],
     textarea {
+        @include box-sizing;
         border:1px solid #DDD;
         padding:calc-em(4.5);
-        width:90%;
+        width:100%;
 
         &.error {
             border-color:$pink1;
@@ -432,17 +434,26 @@ div#content_wrapper {
 
 .content_pri,
 .content_sec {
-    min-height:calc-em(660);
+
+    @media screen and (min-width:645px) {
+        min-height:calc-em(660);
+    }
 }
 
 .content_pri {
-    float:left;
-    width:percentage(620.5 / 940);
+
+    @media screen and (min-width:645px) {
+        float:left;
+        width:percentage(620.5 / 940);
+    }
 }
 
 .content_sec {
-    float:right;
-    width:percentage(300 / 940);
+
+    @media screen and (min-width:645px) {
+        float:right;
+        width:percentage(300 / 940);
+    }
 }
 
     // @start HEADER & BRANDING -------------------- //
