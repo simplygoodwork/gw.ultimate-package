@@ -17,6 +17,7 @@
 //      - LINEAR GRADIENT
 //      - MICRO CLEARFIX
 //      - INLINE BLOCK
+//      - BOX SIZING
 // ---------------------
 
 
@@ -170,6 +171,16 @@
     }
 
     // @end MICRO CLEARFIX //
+
+    // @start BOX SIZING -------------------- //
+
+    @mixin box_sizing($value: border-box) {
+        -moz-box-sizing:$value;
+        -webkit-box-sizing:$value;
+        box-sizing:$value;
+    }
+
+    // @end BOX SIZING //
 
 // @end MIXINS //
 
