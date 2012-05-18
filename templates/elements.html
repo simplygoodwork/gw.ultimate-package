@@ -4,6 +4,12 @@
 
 {% block content_wrapper %}
 
+    <ul class="horizontal breadcrumbs">
+        <li><a href="">Home</a> &raquo;</li>
+        <li><a href="">Listing</a> &raquo;</li>
+        <li class="cur"><a href="">Detail</a></li>
+    </ul> <!-- // .breadcrumbs -->
+
     <div class="content_pri">
 
         <h1>A level 1 heading</h1>
@@ -22,6 +28,8 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+        <hr />
+
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
         <blockquote>
@@ -32,7 +40,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         <figure>
-            <img src="/static/dev/images/dev.png" width="610" height="330" alt="" />
+            <img src="http://placehold.it/610x300&text=media" width="610" height="300" alt="" />
             <figcaption>This is an image caption</figcaption>
         </figure>
 
@@ -108,10 +116,14 @@
 
     <div class="content_sec">
 
-        <div class="block block_dark">
-            <h3>It&rsquo;s ultimate!</h3>
-            <p>This is a standard block, a standard block here. consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-        </div> <!-- // .block_dark -->
+        <h3>In this section</h3>
+        <ul class="basic_listing navigation">
+            <li><a href="">This is a list item</a></li>
+            <li class="cur"><a href="">This is another list item</a></li>
+            <li><a href="">A list item</a></li>
+            <li><a href="">Another list item here</a></li>
+            <li><a href="">This is another list item</a></li>
+        </ul> <!-- // .navigation -->
 
         <div class="block block_light">
             <h3>It&rsquo;s illegal!</h3>

@@ -13,6 +13,7 @@
             - ITEM LISTING
             - BLOCK LISTING
             - ARTICLE LISTING
+            - BASIC LISTING
         - CTA BUTTONS
 
     -------------------
@@ -97,6 +98,18 @@
     }
 
     // @end ARTICLE LISTING //
+
+    // @start BASIC LISTING (Base: item_listing) -------------------- //
+
+    .basic_listing {
+        list-style:none;
+
+        li {
+            margin-left:0;
+        }
+    }
+
+    // @end BASIC LISTING //
 
 // @end LISTINGS //
 

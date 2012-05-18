@@ -23,7 +23,7 @@
             - FOOTER
         - NAVIGATION
             - HORIZONTAL CLASS
-            - PRIMARY NAVIGATION
+            - BREADCRUMBS
         - GLOBAL ELEMENTS & COMPONENTS
 
     -------------------
@@ -149,18 +149,19 @@ dl {
 }
 
 hr {
-    
+    border:0 #CCC solid;
+    border-top-width:1px;
+    clear:both;
+    height:0;
 }
 
 blockquote {
-    background-color:#EEE;
-    padding:calc-em(15);
 
     p {
-        
+        font-style:italic;
     }
     cite {
-        
+        font-weight:$bold;
     }
 }
 
@@ -207,8 +208,9 @@ sub {
     vertical-align:sub;
 }
 
-small {
-    
+small,
+figcaption {
+    font-size:calc-em(12);
 }
 
 figure {
@@ -475,6 +477,7 @@ div#content_wrapper {
     // @start FOOTER -------------------- //
 
     #footer {
+        @include clearfix;
         background-color:#EEE;
         padding:calc-em(8) calc-em(15);
     }
@@ -486,6 +489,27 @@ div#content_wrapper {
 
 
 // @start NAVIGATION -------------------- //
+
+ul.navigation,
+ul#nav_pri {
+    background-color:#EEE;
+
+    li {
+
+        &.cur a {
+            background-color:#DDD;
+        }
+    }
+    a {
+        display:block;
+        padding:calc-em(10) calc-em(15);
+
+        &:hover,
+        &:focus {
+            
+        }
+    }
+} // .navigation
 
     /* @start HORIZONTAL CLASS -------------------- */
 
@@ -512,29 +536,27 @@ div#content_wrapper {
     }
     
     // @end HORIZONTAL CLASS //
-    
-    // @start PRIMARY NAVIGATION -------------------- //
-    
-    ul#nav_pri {
-        background-color:#EEE;
+
+    /* @start BREADCRUMBS -------------------- */
+
+    .breadcrumbs {
+        margin-bottom:calc-em(30);
 
         li {
+            margin-right:calc-em(5);
 
             &.cur a {
-                background-color:#DDD;
+                font-weight:$bold;
+                text-decoration:none;
             }
         }
         a {
-            padding:calc-em(10) calc-em(15);
-
-            &:hover,
-            &:focus {
-                
-            }
+            @include inline-block;
         }
     }
 
-    // @end PRIMARY NAVIGATION //
+    // @end BREADCRUMBS //
+
 
 // @end NAVIGATION //
 
