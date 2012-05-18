@@ -1,4 +1,4 @@
-![](https://github.com/erskinedesign/ed.ultimate_package/raw/master/web/static/images/branding/branding.png)
+![The Ultimate Package](https://github.com/erskinedesign/ed.ultimate_package/raw/master/web/static/images/branding/branding.png "The Ultimate Package")
 # The Ultimate Package
 The Ultimate Package is [Erskine Design][]'s framework for rapidly developing 
 the front-end of our projects and is under constant development and improvement 
