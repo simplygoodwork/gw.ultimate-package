@@ -119,6 +119,10 @@ ul {
 
 li {
     margin-left:calc-em(20);
+
+    ul {
+        margin-bottom:0;
+    }
 }
 
 ul {
