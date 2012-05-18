@@ -102,7 +102,11 @@
     // @start BASIC LISTING (Base: item_listing) -------------------- //
 
     .basic_listing {
-        list-style:none;
+
+        &,
+        ul {
+            list-style:none;
+        }
 
         li {
             margin-left:0;
