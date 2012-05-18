@@ -4,7 +4,7 @@
 
 /*
 
-    [PROJECT NAME]
+    SCREEN PROTOTYPE
 
     @version: 1.0
     @author: Erskine Design
@@ -37,7 +37,8 @@ body {
     background-color:$white;
     color:$black;
     font:$normal percentage($basefont/16) $sans1;
-    line-height:(20 / $basefont);
+    line-height:(21 / $basefont);
+    padding:((25 / $basefont) * 1em) 0;
 }
 
     // @start ACCESSIBILITY NAVIGATION -------------------- //
@@ -85,6 +86,7 @@ body {
 // @start DEFAULT STYLING -------------------- //
 
 address,
+blockquote,
 dl,
 fieldset,
 figure,
@@ -95,16 +97,16 @@ p,
 pre,
 table,
 ul {
-    // margin-bottom:;
+    margin-bottom:calc-em(20);
 
     & + h2 {
-        // padding-top:;
+        padding-top:calc-em(18, $baseh2);
     }
     & + h3 {
-        // padding-top:;
+        padding-top:calc-em(19, $baseh3);
     }
     & + h4 {
-        // padding-top:;
+        padding-top:calc-em(17, $baseh4);
     }
     // & + h5 {
     //     padding-top:;
@@ -115,8 +117,12 @@ ul {
 
 }
 
+li {
+    margin-left:calc-em(20);
+}
+
 ul {
-    
+    list-style:disc;
 
     li {
         
@@ -124,7 +130,7 @@ ul {
 }
 
 ol {
-    
+    list-style:decimal;
 
     li {
         
@@ -135,7 +141,7 @@ dl {
     
 
     dt {
-        
+        font-weight:$bold;
     }
     dd {
         
@@ -147,7 +153,8 @@ hr {
 }
 
 blockquote {
-    
+    background-color:#EEE;
+    padding:calc-em(15);
 
     p {
         
@@ -352,31 +359,31 @@ h3,
 h4,
 h5,
 h6 {
-    
+    font-family:$sans2;
+    font-weight:$bold;
+    line-height:1.4;
 }
 
 h1 {
     font-size:calc-em($baseh1);
-    // line-height:;
-    // margin-bottom:calc-em(20, $baseh1);
+    line-height:1.45;
+    margin-bottom:calc-em(21, $baseh1);
 }
 
 h2 {
     font-size:calc-em($baseh2);
-    // line-height:;
-    // margin-bottom:calc-em(20, $baseh2);
+    margin-bottom:calc-em(17, $baseh2);
 }
 
 h3 {
     font-size:calc-em($baseh3);
-    // line-height:;
-    // margin-bottom:calc-em(20, $baseh3);
+    margin-bottom:calc-em(19, $baseh3);
 }
 
 h4 {
     font-size:calc-em($baseh4);
-    // line-height:;
-    // margin-bottom:calc-em(20, $baseh4);
+    margin-bottom:calc-em(24, $baseh4);
+    text-transform:uppercase;
 }
 
 // h5 {
@@ -398,11 +405,11 @@ h4 {
 // @start LINKS -------------------- //
 
 a {
-    
+    color:$blue1;
 
     &:hover,
     &:focus {
-        
+        color:$blue2;
     }
 }
 
@@ -413,25 +420,34 @@ a {
 // @start LAYOUT -------------------- //
 
 div#page {
-    
+    margin:0 auto;
+    padding:0 3%;
+    max-width:calc-em(940);
 }
 
 div#content_wrapper {
-    
+    @include clearfix;
+}
+
+.content_pri,
+.content_sec {
+    min-height:calc-em(660);
 }
 
 .content_pri {
-    
+    float:left;
+    width:percentage(620.5 / 940);
 }
 
 .content_sec {
-    
+    float:right;
+    width:percentage(300 / 940);
 }
 
     // @start HEADER & BRANDING -------------------- //
 
     #header {
-        
+        padding-bottom:calc-em(20);
     }
 
     #branding {
@@ -500,13 +516,16 @@ div#content_wrapper {
     // @start PRIMARY NAVIGATION -------------------- //
     
     ul#nav_pri {
-        
+        background-color:#EEE;
 
         li {
-            
+
+            &.cur a {
+                background-color:#DDD;
+            }
         }
         a {
-            
+            padding:calc-em(10) calc-em(15);
 
             &:hover,
             &:focus {
@@ -538,7 +557,7 @@ div#content_wrapper {
     @include clearfix;
 }
 
-@import "components";
+@import "components-prototype";
 
 // @end GLOBAL ELEMENTS & COMPONENTS //
 

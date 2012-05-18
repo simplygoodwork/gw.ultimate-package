@@ -1,0 +1,126 @@
+/*
+
+    COMPONENTS PROTOTYPE LIBRARY
+
+    @author: Erskine Design
+
+    CONTENTS ----------
+
+        - BLOCK
+            - BLOCK LIGHT
+            - BLOCK DARK
+        - LISTINGS
+            - ITEM LISTING
+            - BLOCK LISTING
+            - ARTICLE LISTING
+        - CTA BUTTONS
+
+    -------------------
+
+*/
+
+
+// @start BLOCK -------------------- //
+
+.block {
+    margin-bottom:calc-em(20);
+    padding:calc-em(10) calc-em(15) calc-em(1);
+}
+
+    // @start BLOCK LIGHT (Base: block) -------------------- //
+
+    .block_light {
+        background-color:#EEE;
+    }
+
+    // @end BLOCK //
+
+    // @start BLOCK DARK (Base: block) -------------------- //
+
+    .block_dark {
+        background-color:#DDD;
+    }
+
+    // @end BLOCK //
+
+// @end BLOCK //
+
+
+
+// @start LISTINGS -------------------- //
+
+    // @start ITEM LISTING -------------------- //
+
+    .item_listing {
+        list-style:none;
+        margin-bottom:0;
+        @include clearfix();
+
+        .item {
+            margin-left:0;
+            position:relative;
+            @include clearfix();
+        }
+
+        a {
+            
+
+            &:hover,
+            &:focus {
+                
+            }
+        } // .item_listing a
+
+        .item_meta {
+            
+        }
+        .item_content {
+            
+        }
+
+    }
+
+    // @end ITEM LISTING //
+
+    // @start BLOCK LISTING (Base: item_listing) -------------------- //
+
+    .block_listing {
+        
+    }
+
+    // @end BLOCK LISTING //
+
+    // @start ARTICLE LISTING (Base: item_listing) -------------------- //
+
+    .article_listing {
+        
+    }
+
+    // @end ARTICLE LISTING //
+
+// @end LISTINGS //
+
+
+
+// @start CTA BUTTONS -------------------- //
+
+.cta_button {
+    clear:both;
+    text-align:center;
+
+    a,
+    button {
+        display:block;
+        text-decoration:none;
+
+        &:hover,
+        &:focus {
+            
+        }
+    } // .cta_button a, .cta_button button
+
+}
+
+// @end CTA BUTTONS //
+
+
