@@ -1,3 +1,4 @@
+![](https://github.com/erskinedesign/ed.ultimate_package/raw/master/web/static/images/branding/branding.png)
 # The Ultimate Package
 The Ultimate Package is [Erskine Design][]'s framework for rapidly developing 
 the front-end of our projects and is under constant development and improvement 
@@ -12,6 +13,8 @@ them and use `/templates/elements.html` to check your styles.
 
 The app will render your template directly from the url, so if you go to
 `/my/page.html` it will render the template in `/templates/my/page.html`.
+
+You can use `screen-prototype.scss` for prototyping and `screen.scss` for production work.
 
 ## Requirements and setup
 * A __PHP >= 5.3__ web server to interpret the PHP files in the package
