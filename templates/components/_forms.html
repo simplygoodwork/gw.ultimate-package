@@ -1,16 +1,8 @@
 <form action="" id="">
 
-    <h2>Registry information request</h2>
-
-    <small><em>(required)</em> Indicates required field</small>
-
-    <div class="notification error">
-        <p>Main error message here.</p>
-    </div>
+    <h2>Full form example</h2>
 
     <fieldset>
-
-        <legend>Fieldset label</legend>
 
         <dl>
 
@@ -19,7 +11,13 @@
             <dd>
                 <input class="error" type="text" name="fullname" id="id_fullname" />
                 <label class="error">Required field</label>
-                <small>Optional helper text here</small>
+                {# <small>Optional helper text here</small> #}
+            </dd>
+
+            {#-- Required text input --#}
+            <dt><label for="id_address">Address <em>(required)</em></label></dt>
+            <dd>
+                <input type="text" name="address" id="id_address" />
             </dd>
 
             {#-- Select box --#}
@@ -58,47 +56,6 @@
                 </select>
             </dd>
 
-            {#-- Required text input --#}
-            <dt><label for="id_address">Address <em>(required)</em></label></dt>
-            <dd>
-                <input type="text" name="address" id="id_address" />
-            </dd>
-            {#-- Small text input with quick check field --#}
-            <dt><label for="id_postcode_1">Postcode</label></dt>
-            <dd>
-                <input class="small" type="text" name="postcode_1" id="id_postcode_1" />
-                <ul>
-                    <li>
-                        <input type="checkbox" id="id_quick_check_1" /> 
-                        <label for="id_quick_check_1">Quick check field</label>
-                    </li>
-                </ul>
-            </dd>
-
-            {#-- Select box --#}
-            <dt><label for="id_document_type">Document type</label></dt>
-            <dd>
-                <select name="document_type" id="id_document_type">
-                    <option value="">Choose a document type</option>
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
-                    <option value="Option 4">Option 4</option>
-                </select>
-            </dd>
-
-            {#-- Select box --#}
-            <dt><label for="id_recipient_type">Recipient type</label></dt>
-            <dd>
-                <select name="recipient_type" id="id_recipient_type">
-                    <option value="">Choose a recipient type</option>
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                    <option value="Option 3">Option 3</option>
-                    <option value="Option 4">Option 4</option>
-                </select>
-            </dd>
-
             {#-- Email input --#}
             <dt><label for="id_email">Email address</label></dt>
             <dd>
@@ -121,28 +78,14 @@
                         <input type="radio" name="radios" id="id_radio_3" /> 
                         <label for="id_radio_3">Option 3</label>
                     </li>
-                    <li>
-                        <input type="radio" name="radios" id="id_radio_4" /> 
-                        <label for="id_radio_4">Option 4</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="radios" id="id_radio_5" /> 
-                        <label for="id_radio_5">Option 5</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="radios" id="id_radio_6" /> 
-                        <label for="id_radio_6">Option 6</label>
-                    </li>
                 </ul>
-                <small>Optional helper text here for the radio group</small>
+                {# <small>Optional helper text here for the radio group</small> #}
             </dd>
         </dl>
 
     </fieldset>
 
     <fieldset>
-
-        <legend>Fieldset label</legend>
 
         <dl>
             {#-- Checkbox group with helper text --#}
@@ -164,74 +107,14 @@
                         <input type="checkbox" id="id_checkbox_3" /> 
                         <label for="id_checkbox_3">Option 3</label>
                     </li>
-                    <li>
-                        <input type="checkbox" id="id_checkbox_4" /> 
-                        <label for="id_checkbox_4">Option 4</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="id_checkbox_5" /> 
-                        <label for="id_checkbox_5">Option 5</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" id="id_checkbox_6" /> 
-                        <label for="id_checkbox_6">Option 6</label>
-                    </li>
-                    <small>Optional helper text here for the checkbox group</small>
+                    {# <small>Optional helper text here for the checkbox group</small> #}
                 </ul>
-            </dd>
-
-            {#-- Small date input --#}
-            <dt><label for="id_date">Date of something here</label></dt>
-            <dd>
-                <input class="small datepicker" type="date" name="date" id="id_date" />
             </dd>
 
             {#-- Small text input --#}
             <dt><label for="id_postcode_2">Postcode</label></dt>
             <dd>
                 <input class="small" type="text" name="postcode_2" id="id_postcode_2" />
-            </dd>
-
-            {#-- Multi-date --#}
-            <dt>Detailed date of something here</dt>
-            <dd>
-                <ul>
-                    <li>
-                        <input type="checkbox" id="id_multi_day" /> 
-                        <label for="id_multi_day">Multi day event</label>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <input class="datepicker" type="date" name="start_date" id="id_start_date" /> 
-                        <label for="id_start_date">Start date</label>
-                    </li>
-                    <li>
-                        <input class="datepicker" type="date" name="end_date" id="id_end_date" /> 
-                        <label for="id_end_date">End date</label>
-                    </li>
-                    <li>
-                        <select name="start_time" id="id_start_time">
-                            <option value="">Choose a start time</option>
-                            <option value="Option 1">Option 1</option>
-                            <option value="Option 2">Option 2</option>
-                            <option value="Option 3">Option 3</option>
-                            <option value="Option 4">Option 4</option>
-                        </select> 
-                        <label for="id_start_time">Start time</label>
-                    </li>
-                    <li>
-                        <select name="end_time" id="id_end_time">
-                            <option value="">Choose an end time</option>
-                            <option value="Option 1">Option 1</option>
-                            <option value="Option 2">Option 2</option>
-                            <option value="Option 3">Option 3</option>
-                            <option value="Option 4">Option 4</option>
-                        </select> 
-                        <label for="id_end_time">End time</label>
-                    </li>
-                </ul>
             </dd>
 
             {#-- Textarea --#}
@@ -254,9 +137,9 @@
 
         </dl>
 
-        <ul class="horizontal nav_simple">
+        <ul class="horizontal">
             <li class="cta_button"><button type="submit">Primary action button</button></li>
-            <li class="cta_button cta_alt"><button type="reset">Secondary action button</button></li>
+            {# <li class="cta_button cta_alt"><button type="reset">Secondary action button</button></li> #}
         </ul>
 
     </fieldset>

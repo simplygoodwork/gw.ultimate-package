@@ -144,7 +144,7 @@ dl {
         font-weight:$bold;
     }
     dd {
-        
+        margin-bottom:calc-em(8);
     }
 }
 
@@ -247,10 +247,10 @@ video {
         }
 
         ul {
-            
+            list-style:none;
         }
         li {
-            
+            margin-left:0;
         }
 
     } // form
@@ -261,26 +261,25 @@ video {
 
     label {
         
-
-        em {
-            
+        &.error {
+            color:$pink1;
+            font-size:calc-em(12);
+            font-weight:$bold;
         }
+
     } // label
 
     input[type="text"],
     textarea {
-        
-    }
-    input[type="checkbox"],
-    input[type="radio"] {
-        
+        border:1px solid #DDD;
+        padding:calc-em(4.5);
+        width:90%;
+
+        &.error {
+            border-color:$pink1;
+        }
     }
     textarea {
-        
-    }
-
-    .error input,
-    .error textarea {
         
     }
 
@@ -298,7 +297,7 @@ video {
     // @start TABLES -------------------- //
 
     table {
-        
+        width:100%;
     }
 
     caption {
@@ -314,7 +313,7 @@ video {
 
     th,
     td {
-        
+        padding:calc-em(8);
     }
     th {
         
@@ -327,7 +326,7 @@ video {
         
 
         th {
-            
+            font-weight:$semibold;
         }
         td {
             
@@ -476,7 +475,8 @@ div#content_wrapper {
     // @start FOOTER -------------------- //
 
     #footer {
-        
+        background-color:#EEE;
+        padding:calc-em(8) calc-em(15);
     }
 
     // @end FOOTER //
