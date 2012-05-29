@@ -35,12 +35,15 @@
     .item_listing {
         list-style:none;
         margin-bottom:0;
-        @include clearfix();
+
+        &,
+        .item {
+            @include clearfix();
+        }
 
         .item {
             margin-left:0;
             position:relative;
-            @include clearfix();
         }
 
         a {
@@ -50,7 +53,7 @@
             &:focus {
                 
             }
-        } // .item_listing a
+        }
 
         .item_meta {
             
