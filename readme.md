@@ -1,5 +1,3 @@
-<a style="float:right;" href="http://gridpak.com/"><img src="https://github.com/erskinedesign/ed.ultimate_package/raw/master/web/static/images/branding/badge-gridpak.png"/></a>
-
 ![The Ultimate Package](https://github.com/erskinedesign/ed.ultimate_package/raw/master/web/static/images/branding/branding.png "The Ultimate Package")
 # The Ultimate Package
 The Ultimate Package is [Erskine Design][]'s framework for rapidly developing 
@@ -43,6 +41,8 @@ The project is currently maintained by [the team at Erskine Design][]. The origi
 
 ## License
 The Ultimate Package is Copyright &copy; 2012 [Erskine Design][] and is licensed under the [Creative Commons 3.0][] license.
+
+<a style="float:right;" href="http://gridpak.com/"><img src="https://github.com/erskinedesign/ed.ultimate_package/raw/master/web/static/images/branding/badge-gridpak.png"/></a>
 
 [Erskine Design]: http://erskinedesign.com/
 [Twig template engine]: http://twig.sensiolabs.org/
