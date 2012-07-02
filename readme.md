@@ -1,3 +1,5 @@
+<a style="float:right;" href="http://gridpak.com/"><img src="https://github.com/erskinedesign/ed.ultimate_package/raw/master/web/static/images/branding/badge-gridpak.png"/></a>
+
 ![The Ultimate Package](https://github.com/erskinedesign/ed.ultimate_package/raw/master/web/static/images/branding/branding.png "The Ultimate Package")
 # The Ultimate Package
 The Ultimate Package is [Erskine Design][]'s framework for rapidly developing 
