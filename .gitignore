@@ -2,6 +2,5 @@
 !.gitignore
 !.htaccess
 
-web/static/css/
-.sass-cache
-compilation_cache
+/vendor
+/web/static/css/
