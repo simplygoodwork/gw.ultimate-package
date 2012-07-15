@@ -21,10 +21,11 @@ You can use `screen-prototype.scss` for prototyping and `screen.scss` for produc
 * [SASS][] - Stylesheet language
 
 ### Installing the Ultimate Package
-1. Clone the repository, or probably better still - [download it][download] so you
+1. Clone the repository, `git clone git://github.com/erskinedesign/ed.ultimate_package.git` or probably better still - [download it][download] so you
 don't have all of our Git history.
-2. Install the submodules by running `git submodule init` then `git submodule update`
-3. Point your web server to the `/web` folder
+2. Install [Composer][] `curl -s http://getcomposer.org/installer | php`
+3. Install the requirements `php composer.phar install`
+4. Point your web server to the `/web` folder
 
 ### Installing SASS
 1. **Install**: Run `gem install sass` from the terminal
@@ -47,6 +48,7 @@ The Ultimate Package is Copyright &copy; 2012 [Erskine Design][] and is licensed
 [Erskine Design]: http://erskinedesign.com/
 [Twig template engine]: http://twig.sensiolabs.org/
 [SASS]: http://sass-lang.com/
+[Composer]: http://getcomposer.org/
 
 [the team at Erskine Design]: https://twitter.com/erskinedesign/team/members
 [Greg Wood]: http://gregorywood.co.uk/
