@@ -18,7 +18,7 @@ You can use `screen-prototype.scss` for prototyping and `screen.scss` for produc
 
 ## Requirements and setup
 * A __PHP >= 5.3__ web server to interpret the PHP files in the package
-* [SASS][] - Stylesheet language
+* [SASS][] >= 3.2.0.alpha.261 - Stylesheet language
 
 ### Installing the Ultimate Package
 1. Clone the repository, `git clone git://github.com/erskinedesign/ed.ultimate_package.git` or probably better still - [download it][download] so you
@@ -28,7 +28,7 @@ don't have all of our Git history.
 4. Point your web server to the `/web` folder
 
 ### Installing SASS
-1. **Install**: Run `gem install sass` from the terminal
+1. **Install**: Run `gem install sass --pre` from the terminal
 2. **Enable**: Run `sass --watch web/static/scss:web/static/css --style expanded`
 from the terminal within your project directory
 
