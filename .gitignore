@@ -2,5 +2,6 @@
 !.gitignore
 !.htaccess
 
+composer.lock
 /vendor
 /web/static/css/

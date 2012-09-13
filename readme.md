@@ -1,5 +1,7 @@
 ![The Ultimate Package](https://github.com/erskinedesign/ed.ultimate_package/raw/master/web/static/images/branding/branding.png "The Ultimate Package")
 # The Ultimate Package
+[![Build Status](https://secure.travis-ci.org/erskinedesign/ed.ultimate_package.png?branch=master)](http://travis-ci.org/erskinedesign/ed.ultimate_package)
+
 The Ultimate Package is [Erskine Design][]'s framework for rapidly developing 
 the front-end of our projects and is under constant development and improvement 
 by the team at Erskine Design, who use it daily.
@@ -18,7 +20,7 @@ You can use `screen-prototype.scss` for prototyping and `screen.scss` for produc
 
 ## Requirements and setup
 * A __PHP >= 5.3__ web server to interpret the PHP files in the package
-* [SASS][] - Stylesheet language
+* [SASS][] >= 3.2.0.alpha.261 - Stylesheet language
 
 ### Installing the Ultimate Package
 1. Clone the repository, `git clone git://github.com/erskinedesign/ed.ultimate_package.git` or probably better still - [download it][download] so you
