@@ -1,7 +1,8 @@
 # Ultimate Package specific
 !.gitignore
 !.htaccess
+.sass-cache
 
 composer.lock
 /vendor
-/web/static/css/
+/public/static/css/
