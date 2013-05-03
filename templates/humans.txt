@@ -1,6 +1,15 @@
-/* TEAM */
+  _____             _     _
+ | ____| _ __  ___ | | __(_) _ __    ___
+ |  _|  | '__|/ __|| |/ /| || '_ \  / _ \
+ | |___ | |   \__ \|   < | || | | ||  __/
+ |_____||_|   |___/|_|\_\|_||_| |_| \___|
 
-Team: Erskine Design
-Site: http://erskinedesign.com/
-Twitter: @erskinedesign
-Locations: Nottingham, UK & Houston, TX
+# This website was made by the team at Erskine Design.
+
+- Team: https://twitter.com/erskinedesign/team/members
+- Website: http://erskinedesign.com
+- Email: hello@erskinedesign.com
+- Twitter: https://twitter.com/erskinedesign
+- Locations: Nottingham, UK & Houston, TX
+
+Interested in joining our team? jobs@erskinedesign.com
