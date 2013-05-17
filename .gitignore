@@ -3,6 +3,7 @@
 !.htaccess
 .sass-cache
 
+composer.phar
 composer.lock
 /vendor
 /public/static/css/
