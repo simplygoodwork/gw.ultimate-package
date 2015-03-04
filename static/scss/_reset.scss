@@ -1,0 +1,20 @@
+/*
+
+    HTML reset stylesheet
+
+    @version: 1.0
+    @author: Good Work
+
+*/
+
+@import "compass/reset";
+
+html {
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    -moz-osx-font-smoothing:grayscale;
+    -moz-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    text-size-adjust:100%;
+}

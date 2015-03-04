@@ -1,9 +1,0 @@
-{
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.3.0",
-        "silex/silex": "1.0.*",
-        "twig/twig": ">=1.8.0,<2.0-dev",
-        "symfony/browser-kit"   : "2.1.*"
-    }
-}

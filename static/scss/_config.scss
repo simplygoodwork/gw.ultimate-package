@@ -1,0 +1,269 @@
+// SCSS CONFIGURATION LIBRARY
+
+// @author: Good Work
+
+// CONTENTS ------------
+//  - DEFAULT VARIABLES
+//      - FONT STACKS
+//      - FONT WEIGHTS
+//      - COLORS
+//  - FONT SIZES
+//  - FUNCTIONS
+//      - EM CALC
+//  - MIXINS
+//      - BOX SIZING
+//      - GRADIENTS
+// ---------------------
+
+// @import "compass/utilities/sprites";
+// @import "icons/*.png";
+// @include all-icons-sprites;
+
+
+// @start DEFAULT VARIABLES -------------------- //
+
+    // @start FONT STACKS -------------------- //
+
+    $font-family--serif-1:serif;
+    $font-family--sans-1:sans-serif;
+
+    $font-family--paragraph:$font-family--sans-1;
+    $font-family--heading:$font-family--serif-1;
+
+    // @end FONT STACKS //
+
+    // @start FONT WEIGHTS -------------------- //
+
+    $font-weight--light:300;
+    $font-weight--regular:400;
+    $font-weight--semibold:600;
+    $font-weight--bold:700;
+
+    $font-weight--paragraph:$font-weight--regular;
+    $font-weight--heading:$font-weight--semibold;
+
+    // @end FONT WEIGHTS //
+
+    // @start COLORS -------------------- //
+
+    // Usage: color:palette(grey, one);
+
+    $palettes: (
+        // imgBorder: (
+        //     one: rgb(226,224,214),
+        //     two: rgb(211,209,200),
+        //     three: rgb(202,206,193),
+        //     four: rgb(186,183,170),
+        // ),
+        // cream: (
+        //     one: rgb(250,249,244),
+        //     two: #FBF8E7,
+        //     three: rgb(237,234,218),
+        // ),
+        // grey: (
+        //     one: rgb(33,33,33),
+        //     two: #4C4E50,
+        //     three: rgb(164,163,163),
+        // ),
+        // orange: (
+        //     one: rgb(223,106,63),
+        //     two: rgb(208,96,56),
+        // ),
+        // green: (
+        //     one: rgb(65,138,57),
+        // ),
+        // blue: (
+        //     one: rgb(91,160,208),
+        //     two: rgb(59,130,158),
+        //     three: rgb(50,96,114),
+        // ),
+        // yellow: (
+        //     one: rgb(238,213,123),
+        //     two: rgb(230,204,110),
+        // ),
+        // brown: (
+        //     one: rgb(78,75,76),
+        // ),
+        // editor: (
+        //     one: rgb(64,137,241),
+        // ),
+        // red: (
+        //     one: rgb(238,68,68),
+        //     two: rgb(158,84,83),
+        // ),
+    );
+
+    @function palette($palette, $tone) {
+        @return map-get(map-get($palettes, $palette), $tone);
+    }
+
+    $color--paragraph:black;
+    $color--heading:black;
+
+    // @end COLORS //
+
+// @end DEFAULT VARIABLES //
+
+
+
+// @start FONT SIZES -------------------- //
+
+//
+// Self explanitory, but here's some vocab to get started:
+//
+// - "Standfirst" is the paragraph directly after the H1
+//
+// - 'padding-top--*' is there if you need to get artisanal
+//
+// - "Base elements" are things like p, ol, ul, figure, table, etc.
+//
+// - 'after-base--*' is a padding top on headings directly below
+//    base elements (p + h2, etc.)
+//
+// - 'after-parent--*' is a padding top for child headings after
+//    their parent heading (h1 + h2, etc.)
+//
+
+    // @start BASE -------------------- //
+
+    $font-size--base:20;
+    $line-height--base:30;
+    $margin-bottom--base:20;
+    $padding-top--base:0;
+
+    // @end BASE //
+
+    // @start HEADING 1 -------------------- //
+
+    $font-size--h1:33;
+    $line-height--h1:45;
+    $margin-bottom--h1:20;
+    $padding-top--h1:0;
+    $font-weight--h1:$font-weight--heading;
+
+    // @end HEADING 1 //
+
+    // @start STANDFIRST -------------------- //
+
+    $font-size--standfirst:27;
+    $line-height--standfirst:40;
+    $margin-bottom--standfirst:20;
+    $padding-top--standfirst:0; // For now, lets assume this is always after an H1
+    $font-weight--standfirst:$font-weight--paragraph;
+
+    // @end STANDFIRST //
+
+    // @start HEADING 2 -------------------- //
+
+    $font-size--h2:24;
+    $line-height--h2:30;
+    $margin-bottom--h2:20;
+    $padding-top--h2:0;
+    $font-weight--h2:$font-weight--heading;
+    $after-base--h2:0;
+    $after-parent--h2:0;
+
+    // @end HEADING 2 //
+
+    // @start HEADING 3 -------------------- //
+
+    $font-size--h3:19;
+    $line-height--h3:25;
+    $margin-bottom--h3:20;
+    $padding-top--h3:0;
+    $font-weight--h3:$font-weight--heading;
+    $after-base--h3:0;
+    $after-parent--h3:0;
+
+    // @end HEADING 3 //
+
+    // @start HEADING 4 -------------------- //
+
+    $font-size--h4:19;
+    $line-height--h4:25;
+    $margin-bottom--h4:20;
+    $padding-top--h4:0;
+    $font-weight--h4:$font-weight--heading;
+    $after-base--h4:0;
+    $after-parent--h4:0;
+
+    // @end HEADING 4 //
+
+    // @start HEADING 5 -------------------- //
+
+    $font-size--h5:19;
+    $line-height--h5:25;
+    $margin-bottom--h5:20;
+    $padding-top--h5:0;
+    $font-weight--h5:$font-weight--heading;
+    $after-base--h5:0;
+    $after-parent--h5:0;
+
+    // @end HEADING 5 //
+
+    // @start HEADING 6 -------------------- //
+
+    $font-size--h6:19;
+    $line-height--h6:25;
+    $margin-bottom--h6:20;
+    $padding-top--h6:0;
+    $font-weight--h6:$font-weight--heading;
+    $after-base--h6:0;
+    $after-parent--h6:0;
+
+    // @end HEADING 6 //
+
+// @end FONT SIZES //
+
+
+
+// @start FUNCTIONS -------------------- //
+
+    // @start EM CALC -------------------- //
+
+    @function calc-em($target, $context: $font-size--base) {
+        @return ($target / $context) * 1em;
+    }
+
+    // @end EM CALC //
+
+// @end FUNCTIONS //
+
+
+
+// @start MIXINS -------------------- //
+
+    // BOX SIZING -------------------- //
+    // http://compass-style.org/reference/compass/css3/box_sizing/
+
+    @import "compass/css3/box-sizing";
+
+    // GRADIENTS -------------------- //
+    // http://compass-style.org/examples/compass/css3/gradient/
+
+    @import "compass/css3/images";
+
+    // RESPOND TO ------------------ //
+    // http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+
+    @mixin respond-to($media) {
+        // @if $media == group_two {
+        //     @media screen and (min-width: 425px) { @content; }
+        // }
+        // @else if $media == group_three {
+        //     @media screen and (min-width: 575px) { @content; }
+        // }
+        // @else if $media == group_four {
+        //     @media screen and (min-width: 750px) { @content; }
+        // }
+        // @else if $media == group_five {
+        //     @media screen and (min-width: 900px) { @content; }
+        // }
+        // @else if $media == group_six {
+        //     @media screen and (min-width: 1140px) { @content; }
+        // }
+    }
+
+// @end MIXINS //
+
+

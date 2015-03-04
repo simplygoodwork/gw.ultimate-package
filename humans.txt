@@ -1,0 +1,6 @@
+/* DESIGN & BUILD */
+    Team:       Good Work
+    URL:        http://www.simplygoodwork.com
+    Contact:    hello [at] simplygoodwork.com
+    Twitter:    @simplygoodwork
+    From:       Dallas, TX

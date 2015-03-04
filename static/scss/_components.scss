@@ -1,0 +1,143 @@
+/*
+
+    COMPONENTS LIBRARY
+
+    @author: Good Work
+
+    CONTENTS ----------
+
+        - BLOCK
+        - LISTINGS
+            - BLOCK LISTING
+            - ARTICLE LISTING
+        - BUTTONS
+            - PRIMARY BUTTON
+        - ICONS
+
+    -------------------
+
+*/
+
+
+// @start BLOCK -------------------- //
+
+.block {
+
+}
+
+// @end BLOCK //
+
+
+
+// @start LISTINGS -------------------- //
+
+.listing {
+    list-style:none;
+    margin-bottom:0;
+    padding:0;
+
+    &,
+    .listing__item {
+        @extend %clearfix;
+    }
+
+    .listing__item {
+        margin:0;
+        position:relative;
+    }
+
+    a {
+
+
+        &:hover,
+        &:focus {
+
+        }
+    }
+
+    .item__meta {
+
+    }
+    .item__content {
+
+    }
+
+}
+
+    // @start BLOCK LISTING -------------------- //
+
+    .listing--block {
+
+    }
+
+    // @end BLOCK LISTING //
+
+    // @start ARTICLE LISTING -------------------- //
+
+    .listing--article {
+
+    }
+
+    // @end ARTICLE LISTING //
+
+// @end LISTINGS //
+
+
+
+// @start BUTTONS -------------------- //
+
+.button {
+    clear:both;
+
+    a,
+    button {
+        display:inline-block;
+        text-align:center;
+        text-decoration:none;
+
+        &:hover,
+        &:focus {
+
+        }
+    }
+
+}
+
+    // @start PRIMARY BUTTON -------------------- //
+
+    .button--pri {
+
+        a,
+        button {
+
+            &:hover,
+            &:focus {
+
+            }
+        }
+    }
+
+    // @end PRIMARY BUTTON //
+
+// @end BUTTONS //
+
+
+
+// @start ICONS -------------------- //
+
+.icon {
+    position:relative;
+
+    &:before {
+        background-position:0 0;
+        background-repeat:no-repeat;
+        content:"";
+        display:block;
+        position:absolute;
+        text-indent:-9999em;
+    }
+}
+
+// @end ICONS //
+
+

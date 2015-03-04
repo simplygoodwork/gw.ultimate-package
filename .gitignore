@@ -1,9 +1,12 @@
-# Ultimate Package specific
 !.gitignore
 !.htaccess
+Gemfile.lock
+
+# Ignore .DS_store file
+.DS_Store
+
+# Ignore Sass' cache
 .sass-cache
 
-composer.phar
-composer.lock
-/vendor
-/public/static/css/
+# Ignore generated CSS
+/static/css/**/*.css

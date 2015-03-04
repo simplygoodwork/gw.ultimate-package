@@ -1,0 +1,636 @@
+@import "config", "reset";
+
+
+/*
+
+    [PROJECT NAME]
+
+    @version: 1.0
+    @author: Good Work
+
+    CONTENTS ----------
+
+        - BODY
+            - ACCESSIBILITY NAVIGATION
+        - DEFAULT STYLING
+            - FORMS
+            - TABLES
+        - HEADLINES
+        - LINKS
+        - LAYOUT
+            - HEADER & BRANDING
+            - FOOTER
+        - NAVIGATION
+            - BASIC LIST
+            - HORIZONTAL LIST
+            - NAVIGATION
+            - PRIMARY NAVIGATION
+        - GLOBAL ELEMENTS & COMPONENTS
+
+    -------------------
+
+*/
+
+
+// @start BODY -------------------- //
+
+html {
+    overflow-y:scroll;
+}
+
+body {
+    background-color:transparent;
+    color:$color--paragraph;
+    font:$font-weight--paragraph percentage($font-size--base/16) $font-family--paragraph;
+    line-height:($line-height--base / $font-size--base);
+}
+
+    // @start ACCESSIBILITY NAVIGATION -------------------- //
+
+    ul#nav_access {
+        list-style:none;
+        margin:0;
+        position:relative;
+
+        li {
+            height:0;
+        }
+        a {
+            background:#FFC;
+            border:2px solid #DDD;
+            display:block;
+            font-size:calc-em(11);;
+            font-weight:bold;
+            left:-9999px;
+            padding:calc-em(10, 11);
+            position:absolute;
+            top:0;
+
+            &:hover,
+            &:focus {
+                color:#333;
+                left:0;
+            }
+        }
+
+    }
+    #primary-navigation:focus,
+    #primary-content:focus {
+        outline:0;
+    }
+
+    // @end ACCESSIBILITY NAVIGATION //
+
+// @end BODY //
+
+
+
+// @start DEFAULT STYLING -------------------- //
+
+address,
+dl,
+fieldset,
+figure,
+form,
+hr,
+ol,
+p,
+pre,
+table,
+ul {
+    margin-bottom:calc-em($margin-bottom--base);
+
+    & + h2 {
+        padding-top:calc-em($after-base--h2, $font-size--h2);
+    }
+    & + h3 {
+        padding-top:calc-em($after-base--h3, $font-size--h3);
+    }
+    & + h4 {
+        padding-top:calc-em($after-base--h4, $font-size--h4);
+    }
+    & + h5 {
+        padding-top:calc-em($after-base--h5, $font-size--h5);
+    }
+    & + h6 {
+        padding-top:calc-em($after-base--h6, $font-size--h6);
+    }
+
+}
+
+ul {
+    list-style:disc;
+
+    li {
+        margin-left:calc-em(20);
+    }
+}
+
+ol {
+    list-style:decimal;
+
+    li {
+        margin-left:calc-em(20);
+    }
+}
+
+dl {
+
+    dt {
+
+    }
+    dd {
+
+    }
+}
+
+hr {
+
+}
+
+blockquote {
+
+    p {
+
+    }
+    cite {
+
+    }
+}
+
+code,
+pre {
+    font-family:monospace;
+}
+code {
+
+}
+pre {
+
+    code {
+
+    }
+}
+
+abbr {
+
+    &:hover {
+        cursor:help;
+    }
+}
+
+del {
+    text-decoration:line-through;
+}
+
+b,
+strong {
+    font-weight:$font-weight--semibold;
+}
+em,
+i {
+    font-style:italic;
+}
+
+sup {
+    vertical-align:super;
+}
+sub {
+    vertical-align:sub;
+}
+
+small {
+
+}
+
+figure {
+
+    img {
+
+    }
+    figcaption {
+
+    }
+}
+
+iframe,
+img,
+object,
+video {
+    height:auto;
+    max-width:100%;
+}
+
+    // @start FORMS -------------------- //
+
+    form {
+
+
+        dl {
+
+
+            dt {
+
+            }
+            dd {
+
+            }
+        }
+
+        ul {
+
+        }
+        li {
+
+        }
+
+    }
+
+    fieldset {
+
+    }
+
+    label {
+
+
+        em {
+
+        }
+    }
+
+    input[type="text"],
+    textarea {
+
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+
+    }
+    textarea {
+
+    }
+
+    form .button {
+
+        button {
+            border:0;
+            cursor:pointer;
+            vertical-align:baseline;
+        }
+    }
+
+    // @end FORMS //
+
+    // @start TABLES -------------------- //
+
+    table {
+
+    }
+
+    caption {
+
+    }
+    legend {
+
+    }
+
+    tr {
+
+    }
+
+    th,
+    td {
+
+    }
+    th {
+
+    }
+    td {
+
+    }
+
+    thead {
+
+
+        th {
+
+        }
+        td {
+
+        }
+    }
+
+    tbody {
+
+
+        th {
+
+        }
+        td {
+
+        }
+    }
+
+    // @end TABLES //
+
+// @end DEFAULT STYLING //
+
+
+
+// @start HEADLINES -------------------- //
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color:$color--heading;
+    font-family:$font-family--heading;
+    font-weight:$font-weight--heading;
+}
+
+h1 {
+    font-size:calc-em($font-size--h1);
+    font-weight:$font-weight--h1;
+    line-height:($line-height--h1 / $font-size--h1);
+    margin-bottom:calc-em($margin-bottom--h1, $font-size--h1);
+    padding-top:calc-em($padding-top--h1, $font-size--h1);
+
+    & + p {
+        // For now, this is "p.standfirst"
+        font-size:calc-em($font-size--standfirst);
+        font-weight:$font-weight--standfirst;
+        line-height:($line-height--standfirst / $font-size--standfirst);
+        margin-bottom:calc-em($margin-bottom--standfirst, $font-size--standfirst);
+        padding-top:calc-em($padding-top--standfirst, $font-size--standfirst);
+    }
+
+    & + h2 {
+        padding-top:calc-em($after-parent--h2, $font-size--h2);
+    }
+}
+
+h2 {
+    font-size:calc-em($font-size--h2);
+    font-weight:$font-weight--h2;
+    line-height:($line-height--h2 / $font-size--h2);
+    margin-bottom:calc-em($margin-bottom--h2, $font-size--h2);
+    padding-top:calc-em($padding-top--h2, $font-size--h2);
+
+    & + h3 {
+        padding-top:calc-em($after-parent--h3, $font-size--h3);
+    }
+}
+
+h3 {
+    font-size:calc-em($font-size--h3);
+    font-weight:$font-weight--h3;
+    line-height:($line-height--h3 / $font-size--h3);
+    margin-bottom:calc-em($margin-bottom--h3, $font-size--h3);
+    padding-top:calc-em($padding-top--h3, $font-size--h3);
+
+    & + h4 {
+        padding-top:calc-em($after-parent--h4, $font-size--h4);
+    }
+}
+
+h4 {
+    font-size:calc-em($font-size--h4);
+    font-weight:$font-weight--h4;
+    line-height:($line-height--h4 / $font-size--h4);
+    margin-bottom:calc-em($margin-bottom--h4, $font-size--h4);
+    padding-top:calc-em($padding-top--h4, $font-size--h4);
+
+    & + h5 {
+        padding-top:calc-em($after-parent--h5, $font-size--h5);
+    }
+}
+
+h5 {
+    font-size:calc-em($font-size--h5);
+    font-weight:$font-weight--h5;
+    line-height:($line-height--h5 / $font-size--h5);
+    margin-bottom:calc-em($margin-bottom--h5, $font-size--h5);
+    padding-top:calc-em($padding-top--h5, $font-size--h5);
+
+    & + h6 {
+        padding-top:calc-em($after-parent--h6, $font-size--h6);
+    }
+}
+
+h6 {
+    font-size:calc-em($font-size--h6);
+    font-weight:$font-weight--h6;
+    line-height:($line-height--h6 / $font-size--h6);
+    margin-bottom:calc-em($margin-bottom--h6, $font-size--h6);
+    padding-top:calc-em($padding-top--h6, $font-size--h6);
+}
+
+// @end HEADLINES //
+
+
+
+// @start LINKS -------------------- //
+
+a {
+    color:blue;
+    text-decoration:none;
+
+    &:hover,
+    &:focus {
+        text-decoration:underline;
+    }
+}
+
+// @end LINKS //
+
+
+
+// @start LAYOUT -------------------- //
+
+.wrapper {
+
+}
+.wrapper__container {
+
+}
+
+.content-pri {
+
+}
+.content-sec {
+
+}
+
+    // @start HEADER & BRANDING -------------------- //
+
+    [role="banner"].wrapper {
+
+    }
+
+    .branding {
+        margin:0;
+        padding:0;
+
+        &,
+        a {
+            height:102px;
+            width:160px;
+        }
+
+        a {
+            display:block;
+        }
+
+        .svg & {
+            background-image:url("../images/branding/project-name-logo.svg");
+            background-repeat:no-repeat;
+
+            img {
+                visibility:hidden;
+            }
+        }
+    }
+
+    // @end HEADER & BRANDING //
+
+    // @start FOOTER -------------------- //
+
+    [role="contentinfo"].wrapper {
+
+    }
+
+    // @end FOOTER //
+
+// @end LAYOUT //
+
+
+
+// @start NAVIGATION -------------------- //
+
+    [role="navigation"].wrapper {
+
+    }
+
+    /* @start BASIC LIST -------------------- */
+
+    %list--basic {
+        list-style:none;
+        margin:0;
+        padding:0;
+
+        dd,
+        dt,
+        li,
+        ol {
+            margin:0;
+        }
+
+    }
+
+    .list--basic {
+        @extend %list--basic;
+    }
+
+    // @end LIST BASIC //
+
+    /* @start HORIZONTAL LIST -------------------- */
+
+    %list--horizontal {
+        @extend %list--basic;
+
+        dd,
+        dt,
+        li,
+        ol {
+            display:inline-block;
+        }
+        a {
+            display:block;
+        }
+    }
+
+    .list--horizontal {
+        @extend %list--horizontal;
+    }
+
+    // @end LIST HORIZONTAL //
+
+    /* @start NAVIGATION -------------------- */
+
+    .navigation {
+        @extend %list--horizontal;
+
+        dd,
+        dt,
+        li,
+        ol {
+
+        }
+        a {
+
+            &:hover,
+            &:focus {
+
+            }
+        }
+    }
+
+    // @end NAVIGATION //
+
+    /* @start PRIMARY NAVIGATION -------------------- */
+
+    .navigation--pri {
+
+        dd,
+        dt,
+        li,
+        ol {
+
+        }
+        a {
+
+            &:hover,
+            &:focus {
+
+            }
+        }
+    }
+
+    // @end PRIMARY NAVIGATION //
+
+// @end NAVIGATION //
+
+
+
+// @start GLOBAL ELEMENTS & COMPONENTS -------------------- //
+
+.hide {
+    display:none;
+}
+
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+
+%clearfix {
+    &:after {
+        content:"";
+        clear:both;
+        display:table;
+    }
+}
+.clearfix {
+    @extend %clearfix;
+}
+
+@import "components";
+
+// @end GLOBAL ELEMENTS & COMPONENTS //
+
+
+
