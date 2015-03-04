@@ -1,6 +1,8 @@
+![The Ultimate Package](https://raw.githubusercontent.com/simplygoodwork/gw.ultimate_package/master/static/images/branding/project-name-logo.png "The Ultimate Package")
+
 # The Ultimate Package &trade;
 
-The Ultimate Package is [Good Work][1]'s framework for rapidly developing the front-end of our projects and is under constant development and improvement by the team at Good Work, who use it daily.
+The Ultimate Package is [Good Work][1]'s framework for rapidly developing the front-end of our projects.
 
 ## Requirements
 
@@ -11,15 +13,20 @@ The Ultimate Package is [Good Work][1]'s framework for rapidly developing the fr
 
 If you're just getting setup, run:
 
-1. `bundle install`
+`bundle install`
 
 Else, follow these difficult steps:
 
-1. `compass watch`
+`compass watch`
 
-## Development
+## Credits
 
-Use [gitflow][2] (Always work from `develop` and use release branches to merge into `master`, etc.)
+The project is currently maintained by the team at Good Work. The original Ultimate Package was created by [Greg Wood][2].
+
+## License
+
+The Ultimate Package is Copyright &copy; 2015 [Good Work][1] and is licensed under the [Creative Commons 3.0][3] license.
 
 [1]: http://www.simplygoodwork.com
-[2]: https://github.com/nvie/gitflow
+[2]: http://gregorywood.co.uk
+[3]: http://creativecommons.org/licenses/by-nc-sa/3.0/
